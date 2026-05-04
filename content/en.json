@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "title": "Sifnos",
+    "subtitle": "A Local's Guide",
+    "description": "Favourite beaches, tavernas, bars and flavours of a local — all in one place.",
+    "lang": "en",
+    "heroImageUrl": null
+  },
+  "nav": {
+    "beaches": "Beaches",
+    "drinks": "Drinks",
+    "food": "Food",
+    "tips": "Tips"
+  },
+  "ui": {
+    "languageToggle": "ΕΛ",
+    "ratingLabels": {
+      "0": "Skip it",
+      "1": "Worth a visit",
+      "2": "Recommended",
+      "3": "Must visit"
+    },
+    "mapsLink": "View on map",
+    "mustTryLabel": "Try:",
+    "accessLabels": {
+      "car": "By car",
+      "hike": "Hiking trail",
+      "boat": "By sea",
+      "walking": "On foot"
+    }
+  },
+  "sections": {
+    "beaches": {
+      "label": "Beaches",
+      "intro": "Sandy, pebble and rocky shores — my favourite spots for a swim on the island.",
+      "windTip": "When the north wind (meltemi) picks up, head to Faros, Vathi or Platy Gialos — they face South-East or South-West and stay calm. Always ask locals about the weather too.",
+      "subsections": [
+        {
+          "id": "sandy",
+          "label": "Sandy Beaches",
+          "items": [
+            {
+              "id": "kamares",
+              "name": "Kamares",
+              "parentArea": null,
+              "note": "The island's port",
+              "rating": 1,
+              "access": ["car"],
+              "tags": ["sandy", "large", "port"],
+              "description": "The main beach at the port. Long stretch of sand but nothing particularly special scenery-wise.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "glyfo",
+              "name": "Glyfo",
+              "parentArea": "Faros",
+              "note": "1 of 3 beaches at Faros",
+              "rating": 3,
+              "access": ["car"],
+              "tags": ["sandy", "turquoise water", "youth-friendly", "must"],
+              "description": "Our favourite in 2020. You walk through Faros beach to get there. Draws a young crowd from morning through late afternoon in summer.",
+              "tips": "From here there's a short path (about 10 min on foot) to Chrysopigi beach (Apokopto).",
+              "mapsUrl": null
+            },
+            {
+              "id": "farou",
+              "name": "Faros",
+              "parentArea": "Faros",
+              "note": "The main Faros beach",
+              "rating": 1,
+              "access": ["car"],
+              "tags": ["sandy", "organised"],
+              "description": "The central beach at Faros. Nice and organised, but more touristy than its neighbours.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "fasolou",
+              "name": "Fasolou",
+              "parentArea": "Faros",
+              "note": "3rd beach at Faros",
+              "rating": 2,
+              "access": ["car"],
+              "tags": ["sandy", "quiet", "families"],
+              "description": "On the road to Faros, look for the sign to turn left before reaching the harbour and parking area. Nice beach, in 2020 it mostly attracted families.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "platy-gialos",
+              "name": "Platy Gialos",
+              "parentArea": null,
+              "note": null,
+              "rating": 2,
+              "access": ["car"],
+              "tags": ["sandy", "large", "organised", "beach bars"],
+              "description": "The most organised beach on the island, with two beach bars popular with younger crowds: Old Captain and Palmira. Of the three large beaches (Kamares, Vathi, Platy Gialos), this one has the most going on.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "vathu",
+              "name": "Vathi",
+              "parentArea": null,
+              "note": null,
+              "rating": 1,
+              "access": ["car"],
+              "tags": ["sandy", "large", "quiet", "south-west facing"],
+              "description": "A large beach facing south-west — a good call when the north wind is blowing. Nothing spectacular scenically, but peaceful.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "chrysopigi-apokopto",
+              "name": "Chrysopigi (Apokopto)",
+              "parentArea": null,
+              "note": "Sandy beach below the church",
+              "rating": 1,
+              "access": ["car", "walking"],
+              "tags": ["sandy", "church", "historic"],
+              "description": "A small sandy cove beside the famous Panagia Chrysopigi church. Worth visiting for the atmosphere of the place.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "cherronisos",
+              "name": "Cherronisos",
+              "parentArea": null,
+              "note": null,
+              "rating": 0,
+              "access": ["car"],
+              "tags": ["sandy"],
+              "description": "The sandy beach here is not recommended. However, the rocky coastline and the picturesque fishing village are absolutely worth a visit.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "fykiada",
+              "name": "Fykiada",
+              "parentArea": null,
+              "note": "Accessible only by trail or boat",
+              "rating": 2,
+              "access": ["hike", "boat"],
+              "tags": ["sandy", "crystal-clear water", "hiking", "hidden gem"],
+              "description": "One of the cleanest beaches on the island, tucked in the south. The hike is fairly flat (3.2 km, about 50 minutes) and the trail is fully signposted.",
+              "tips": "Start from Faros. The path is clearly marked — you won't get lost.",
+              "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA"
+            }
+          ]
+        },
+        {
+          "id": "pebble",
+          "label": "Pebble Beaches",
+          "items": [
+            {
+              "id": "vroulidia",
+              "name": "Vroulidia",
+              "parentArea": null,
+              "note": null,
+              "rating": 0,
+              "access": ["car"],
+              "tags": ["pebble", "difficult access"],
+              "description": "Not recommended. The rocks underwater are slippery and the road down has an extremely steep gradient. If you do go, leave the car at the top.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "kastro-pebble",
+              "name": "Kastro (Gialoudia)",
+              "parentArea": "Kastro",
+              "note": null,
+              "rating": 0,
+              "access": ["car"],
+              "tags": ["pebble", "small", "rough weather"],
+              "description": "A small beach that's usually exposed to rough conditions. Not recommended.",
+              "tips": null,
+              "mapsUrl": null
+            }
+          ]
+        },
+        {
+          "id": "rocky",
+          "label": "Rocky Shores",
+          "items": [
+            {
+              "id": "poulati",
+              "name": "Poulati",
+              "parentArea": "Artemonas",
+              "note": "Just outside Artemonas",
+              "rating": 2,
+              "access": ["car", "walking"],
+              "tags": ["rocky", "turquoise water", "secluded", "short descent"],
+              "description": "One of my favourite rocky spots. A short dirt road leads to a small descent (5 minutes with steps). Crystal-clear turquoise water — reminiscent of Paxos.",
+              "tips": "Swim to the left of the rock formation in the water — that's where the pebble seabed and the most vivid turquoise colour are.",
+              "mapsUrl": null
+            },
+            {
+              "id": "chrysopigi-rocky",
+              "name": "Chrysopigi (rocky side)",
+              "parentArea": null,
+              "note": "Rocks to the right of the church",
+              "rating": 2,
+              "access": ["car"],
+              "tags": ["rocky", "church", "cliff jumping", "busy"],
+              "description": "The flat rocks to the right of the Panagia Chrysopigi church (as you walk down) make for perfect sunbathing and diving spots. In 2020 it was a must — always full of young people.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "kastro-rocky",
+              "name": "Kastro (Eptamartiros church)",
+              "parentArea": "Kastro",
+              "note": "Beside the picturesque church",
+              "rating": 1,
+              "access": ["car", "walking"],
+              "tags": ["rocky", "church", "less crowded"],
+              "description": "A similar experience to Chrysopigi but with fewer people and slightly trickier rock access.",
+              "tips": null,
+              "mapsUrl": null
+            },
+            {
+              "id": "cherronisos-rocky",
+              "name": "Cherronisos (rocky coast)",
+              "parentArea": null,
+              "note": "Northernmost point of the island",
+              "rating": 1,
+              "access": ["car", "walking"],
+              "tags": ["rocky", "fishing village", "picturesque", "quiet"],
+              "description": "A charming fishing village at the northernmost tip of Sifnos. Beautiful rocky coastline, typically quiet. Park on the square and walk to the rocks.",
+              "tips": "This is where I'm from.",
+              "mapsUrl": null
+            }
+          ]
+        }
+      ]
+    },
+    "drinks": {
+      "label": "Drinks",
+      "intro": "From sunset cocktails in Kastro to after-hours in Apollonia — my go-to spots for drinks on Sifnos.",
+      "areas": [
+        {
+          "id": "kastro",
+          "areaName": "Kastro",
+          "items": [
+            {
+              "id": "cavo-sunrise",
+              "name": "Cavo Sunrise",
+              "aka": "Kouvanós",
+              "rating": 3,
+              "tags": ["sunset", "cocktails", "laid-back", "must"],
+              "description": "Our base camp in 2020 — we always started here. Go for the sunset or later. Chilled-out music, generous pours and the owner Kyrios Kostas (who calls himself the Che Guevara of Sifnos) is a true character.",
+              "mustTry": ["Rum Pineapple", "Mojito", "Rum Cola"],
+              "note": "Not the tidiest place — but YOLO."
+            }
+          ]
+        },
+        {
+          "id": "apollonia",
+          "areaName": "Apollonia",
+          "intro": "The alley (steno) of Apollonia is the heart of the nightlife. Plenty of options depending on your mood.",
+          "items": [
+            {
+              "id": "botzi",
+              "name": "Botzi",
+              "aka": null,
+              "rating": 2,
+              "tags": ["rooftop", "upscale", "alley"],
+              "description": "Rooftop bar in the alley of Apollonia. One of the main choices for drinks with a view.",
+              "mustTry": [],
+              "note": null
+            },
+            {
+              "id": "cosi",
+              "name": "Cosi",
+              "aka": null,
+              "rating": 2,
+              "tags": ["rooftop", "upscale", "alley"],
+              "description": "Another rooftop in the alley, similar vibe to Botzi. These two are the main options for a more polished atmosphere.",
+              "mustTry": [],
+              "note": null
+            },
+            {
+              "id": "doloma",
+              "name": "Doloma",
+              "aka": null,
+              "rating": 2,
+              "tags": ["alternative", "music", "upper alley"],
+              "description": "More alternative music and atmosphere. Located higher up in the alley.",
+              "mustTry": [],
+              "note": null
+            },
+            {
+              "id": "mantalou",
+              "name": "Mantalou",
+              "aka": null,
+              "rating": 2,
+              "tags": ["alternative", "music", "upper alley"],
+              "description": "Together with Doloma, the go-to spots for a more alternative crowd in the upper part of the alley.",
+              "mustTry": [],
+              "note": null
+            },
+            {
+              "id": "drakakis",
+              "name": "Drakakis",
+              "aka": null,
+              "rating": 2,
+              "tags": ["mezedes", "wine", "ouzo", "tsipouro", "slightly pricey"],
+              "description": "A mezedopoleio (small plates bar) on the same street. A bit pricey but a great spot — and you can't get more central than this.",
+              "mustTry": [],
+              "note": "Slightly expensive but worth it."
+            },
+            {
+              "id": "grado",
+              "name": "GRADO",
+              "aka": null,
+              "rating": 2,
+              "tags": ["after hours", "club", "greek music", "international music"],
+              "description": "The place for late-night dancing. Normally runs two floors: upstairs Greek music, downstairs international.",
+              "mustTry": [],
+              "note": "Ask if a reservation is needed."
+            }
+          ]
+        },
+        {
+          "id": "artemonas",
+          "areaName": "Artemonas",
+          "intro": "The most beautiful village to wander through — and its scene has grown a lot in recent years.",
+          "items": [
+            {
+              "id": "mosaiko",
+              "name": "Mosaiko",
+              "aka": null,
+              "rating": 3,
+              "tags": ["mezedes", "must", "Artemonas"],
+              "description": "A must in Artemonas. A great mezedopoleio with a lovely atmosphere.",
+              "mustTry": [],
+              "note": null
+            },
+            {
+              "id": "diachroniko",
+              "name": "Diachroniko",
+              "aka": null,
+              "rating": 1,
+              "tags": ["bar", "casual", "Artemonas"],
+              "description": "A casual bar on the way to Mosaiko. Might catch your eye — worth a quick stop.",
+              "mustTry": [],
+              "note": null
+            }
+          ]
+        }
+      ]
+    },
+    "food": {
+      "label": "Food",
+      "intro": "Sifnos is the birthplace of Nikolaos Tselementes — the father of Greek cuisine. The island has a strong culinary identity you shouldn't miss.",
+      "restaurants": {
+        "label": "Tavernas & Restaurants",
+        "items": [
+          {
+            "id": "kelari",
+            "name": "To Kelari",
+            "location": "Kato Petali",
+            "locationDetail": "just outside Apollonia",
+            "rating": 3,
+            "tags": ["traditional", "local recipes", "must"],
+            "description": "One of the best places to try authentic Sifnian cooking.",
+            "mapsUrl": null
+          },
+          {
+            "id": "tsikali",
+            "name": "Tsikali",
+            "location": "Vathi",
+            "locationDetail": "right on the beach",
+            "rating": 3,
+            "tags": ["traditional", "beachfront", "local recipes"],
+            "description": "A taverna right on Vathi beach. Perfect for a long lunch after swimming.",
+            "mapsUrl": null
+          },
+          {
+            "id": "chrysopigi-taverna",
+            "name": "Chrysopigi",
+            "location": "Chrysopigi",
+            "locationDetail": "on Apokopto beach",
+            "rating": 3,
+            "tags": ["traditional", "beachfront", "church views"],
+            "description": "The namesake taverna right on Chrysopigi beach (Apokopto). Great sea views and the iconic church as backdrop.",
+            "mapsUrl": null
+          }
+        ]
+      },
+      "localFood": {
+        "label": "Traditional Foods & Flavours",
+        "intro": "The must-try foods and products of Sifnos:",
+        "items": [
+          {
+            "id": "mastelo",
+            "name": "Mastelo",
+            "tags": ["meat", "clay pot", "red wine"],
+            "description": "Baby goat slow-cooked in red wine and dill inside a lidded clay pot of the same name (shaped like a casserole dish). The ultimate Sifnian recipe."
+          },
+          {
+            "id": "revythada",
+            "name": "Revythada",
+            "tags": ["chickpeas", "vegan", "traditional"],
+            "description": "Chickpeas soaked in rainwater and slow-cooked for many hours with onion until they turn creamy and silky. Served with a squeeze of lemon and crusty bread — pure bliss."
+          },
+          {
+            "id": "revythokeftedes",
+            "name": "Revythokeftedes",
+            "tags": ["chickpeas", "vegan", "fried"],
+            "description": "Chickpea fritters — falafel before it was cool."
+          },
+          {
+            "id": "kaparosalata",
+            "name": "Kaparosalata",
+            "tags": ["salad", "capers", "local"],
+            "description": "The island is covered in wild caper bushes hanging off stone walls. The caper salad is made with plenty of onion and some say it tastes a bit like stifado because of it."
+          },
+          {
+            "id": "myzithra",
+            "name": "(Xino)myzithra",
+            "tags": ["cheese", "white", "fresh"],
+            "description": "A soft white cheese that is incredible and pairs perfectly with a Greek salad. Ask for it instead of feta — it'll likely be the local version."
+          },
+          {
+            "id": "manoura",
+            "name": "Manoura",
+            "tags": ["cheese", "red wine", "aged", "strong"],
+            "description": "A strong aged cheese ripened in red wine, with a dark crust of wine sediment on the outside. It looks like mud on the rind — but that's where all the flavour is. Do not skip this."
+          }
+        ]
+      },
+      "bakeries": {
+        "label": "Bakeries & Sweets",
+        "items": [
+          {
+            "id": "veniou",
+            "name": "Veniou Bakery",
+            "location": "Kamares",
+            "locationDetail": null,
+            "rating": 3,
+            "tags": ["bougatsa", "cheese pie", "handmade", "breakfast"],
+            "description": "Handmade bougatsa and cheese pies in Kamares. The perfect stop right off the ferry.",
+            "mapsUrl": null
+          },
+          {
+            "id": "grigoris",
+            "name": "Grigoris",
+            "location": "Artemonas",
+            "locationDetail": null,
+            "rating": 3,
+            "tags": ["almond sweets", "traditional pastries", "ring biscuits"],
+            "description": "The best traditional sweets on the island: amygdalota (almond macaroons), oven biscuits, aniseed rings and wine biscuits.",
+            "mapsUrl": null
+          }
+        ]
+      }
+    },
+    "tips": {
+      "label": "Tips",
+      "items": [
+        {
+          "id": "wind",
+          "title": "Weather & Wind",
+          "icon": "wind",
+          "description": "When the north wind (meltemi) blows hard, move to Faros, Vathi or Platy Gialos. These beaches face South-East or South-West and stay much calmer. Always ask a local for the forecast too."
+        },
+        {
+          "id": "agios-symeon",
+          "title": "Agios Symeon viewpoint",
+          "icon": "mountain",
+          "description": "Drive up to Agios Symeon, just 10 minutes from Kamares. Incredible panoramic view with zero effort — the road goes all the way to the top."
+        },
+        {
+          "id": "ceramics",
+          "title": "Ceramics — the Sifnian Potters",
+          "icon": "gift",
+          "description": "Sifnians were historically known as Tsoukalades (pot-makers) — masters of the wheel and major exporters of earthenware. The island is full of ceramics shops. For a gift, a traditional clay cooking pot (tsukali or gastra) is the perfect souvenir.",
+          "highlight": "On Cherronisos beach you'll find the workshop 'Keramika i Dyskoli' — one of the most traditional on the island."
+        },
+        {
+          "id": "ask-locals",
+          "title": "Ask the Locals",
+          "icon": "people",
+          "description": "Always ask locals for tips, weather updates and any festivals or village celebrations happening during your stay. If you find a panigiri (religious feast), go — it's an experience."
+        }
+      ]
+    }
+  }
+}
