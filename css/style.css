@@ -671,6 +671,23 @@ ul  { list-style: none; }
   text-align: center;
 }
 
+.bmac-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  background: #FFDD00;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  transition: opacity 0.15s;
+}
+
+.bmac-btn:hover { opacity: 0.8; }
+
 .footer-text {
   font-size: 0.875rem;
   color: rgba(255,255,255,0.55);
