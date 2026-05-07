@@ -178,6 +178,7 @@ function drinkCard(item, ui) {
       ${note}
       <div class="card-bottom">
         ${renderTags(item.tags)}
+        ${renderMapsLink(item.mapsUrl, ui.mapsLink)}
       </div>
     </article>`;
 }

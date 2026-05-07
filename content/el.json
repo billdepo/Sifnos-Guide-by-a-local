@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Σίφνος",
-    "subtitle": "Ο Οδηγός ενός Ντόπιου",
-    "description": "Οι αγαπημένες παραλίες, ταβέρνες, μπαράκια και γεύσεις ενός ντόπιου — όλα σε ένα μέρος.",
+    "subtitle": "Ο οδηγός ενός ξενιτεμένου ντεμέκ ντόπιου",
+    "description": "Οι αγαπημένες παραλίες, ταβέρνες, μπαράκια και γεύσεις μου, όλα σε ένα μέρος.",
     "lang": "el",
     "heroImageUrl": null
   },
@@ -48,33 +48,21 @@
               "rating": 1,
               "access": ["car"],
               "tags": ["αμμώδης", "μεγάλη", "λιμάνι"],
-              "description": "Η κεντρική παραλία του λιμανιού. Μεγάλη σε μήκος αλλά χωρίς κάτι ιδιαίτερο από θέμα ομορφιάς.",
+              "description": "Η κεντρική παραλία του λιμανιού. Βολεύει για ένα τελευταίο μπάνιο πριν φύγετε από το λιμάνι. Στην παραλία λειτουργεί το Old Captain — ένα από τα λίγα beach bar που κρατούν αυθεντικό χαρακτήρα. Καφές και τάβλι.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece"
             },
             {
               "id": "glyfo",
-              "name": "Γλυφό",
+              "name": "Γλυφό / Βλυχό",
               "parentArea": "Φάρος",
               "note": "1 από τις 3 παραλίες στο Φάρο",
               "rating": 3,
               "access": ["car"],
               "tags": ["αμμώδης", "τιρκουάζ νερά", "νεολαία", "must"],
-              "description": "Η αγαπημένη μας για το 2020. Περνάτε μέσα από την παραλία Φάρου για να φτάσετε εκεί. Το καλοκαίρι μαζεύεται αρκετή νεολαία από το πρωί μέχρι αργά το απόγευμα.",
-              "tips": "Από εδώ έχει και ένα δρομάκι για την παραλία της Χρυσοπηγής (Αποκοφτό), περίπου 10 λεπτά με τα πόδια.",
-              "mapsUrl": null
-            },
-            {
-              "id": "farou",
-              "name": "Φάρου",
-              "parentArea": "Φάρος",
-              "note": "Κεντρική παραλία στο Φάρο",
-              "rating": 1,
-              "access": ["car"],
-              "tags": ["αμμώδης", "οργανωμένη"],
-              "description": "Η κεντρική παραλία του Φάρου. Ωραία, οργανωμένη, αλλά πιο τουριστική από τις διπλανές της.",
-              "tips": null,
-              "mapsUrl": null
+              "description": "Περνάτε μέσα από την παραλία Φάρου για να φτάσετε εκεί περπατώντας 3 λεπτά.",
+              "tips": "Από εδώ έχει και ένα δρομάκι για την εκκλησία της Χρυσοπηγής, περίπου 15 λεπτά με τα πόδια. Κατά μήκος της διαδρομής θα δείτε μια πλατφόρμα φόρτωσης πλοίων παρατημένη από την εποχή που γίνονταν εξορύξεις στο νησί.",
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Glyfo+Beach+Faros+Sifnos+Greece"
             },
             {
               "id": "fasolou",
@@ -84,9 +72,9 @@
               "rating": 2,
               "access": ["car"],
               "tags": ["αμμώδης", "ήσυχη", "οικογένειες"],
-              "description": "Πηγαίνοντας προς Φάρο υπάρχει πινακίδα να στρίψετε αριστερά πριν φτάσετε στο λιμάνι. Ωραία παραλία, το 2020 μάζευε κυρίως οικογένειες.",
+              "description": "Πηγαίνοντας προς Φάρο υπάρχει πινακίδα να στρίψετε αριστερά πριν φτάσετε στο λιμάνι. Ωραία παραλία, μαζεύει κυρίως οικογένειες.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fasolou+Beach+Sifnos+Greece"
             },
             {
               "id": "platy-gialos",
@@ -96,45 +84,45 @@
               "rating": 2,
               "access": ["car"],
               "tags": ["αμμώδης", "μεγάλη", "οργανωμένη", "beach bars"],
-              "description": "Πιο οργανωμένη παραλία με 2 beach bars με νεολαίους: το Old Captain και το Palmira. Από τις 3 μεγάλες παραλίες (Καμάρες, Βαθύ, Πλατύς Γιαλός) αυτή είναι η πιο ενδιαφέρουσα.",
+              "description": "Η πιο οργανωμένη παραλία του νησιού με 2 beach bars: το Lost Bay και το Palmira. Από τις 3 μεγάλες παραλίες (Καμάρες, Βαθύ, Πλατύς Γιαλός) αυτή είναι η πιο ενδιαφέρουσα.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Beach+Sifnos+Greece"
             },
             {
               "id": "vathu",
               "name": "Βαθύ",
               "parentArea": null,
               "note": null,
-              "rating": 1,
+              "rating": 2,
               "access": ["car"],
-              "tags": ["αμμώδης", "μεγάλη", "ήσυχη", "νοτιοδυτική"],
-              "description": "Μεγάλη παραλία που κοιτάει νοτιοδυτικά — καλή επιλογή όταν φυσάει βοριάς. Δεν είναι κάτι ιδιαίτερο από θέμα ομορφιάς αλλά είναι ήρεμη.",
+              "tags": ["αμμώδης", "μεγάλη", "beach bar", "ταβέρνες"],
+              "description": "Μεγάλη παραλία που κοιτάει νοτιοδυτικά. Το πιο ωραίο μέρος αν έχετε ομπρέλα/σκίαστρο είναι μπροστά από το ξενοδοχείο «Elies» όπου έχει άπλα. Επίσης έχει και ορισμένα beach bar παραδίπλα αν θέλετε ξαπλώστρα. Έχει ορισμένα καλά ταβερνάκια για φαγητό μετά, την Ωκεανίδα και το Τσικάλι.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vathi+Beach+Sifnos+Greece"
             },
             {
               "id": "chrysopigi-apokopto",
-              "name": "Χρυσοπηγή (Αποκοφτό)",
+              "name": "Χρυσοπηγή (Σαούρες)",
               "parentArea": null,
-              "note": "Αμμώδης παραλία κάτω από την εκκλησία",
-              "rating": 1,
+              "note": "Αμμώδης παραλία δίπλα στην εκκλησία",
+              "rating": 2,
               "access": ["car", "walking"],
-              "tags": ["αμμώδης", "εκκλησία", "ιστορική"],
-              "description": "Μικρή αμμώδης παραλία δίπλα στην περίφημη εκκλησία της Παναγίας Χρυσοπηγής. Αξίζει για την ατμόσφαιρα του χώρου.",
+              "tags": ["αμμώδης", "εκκλησία", "βράχια", "βουτιές"],
+              "description": "Μικρή αμμώδης παραλία δίπλα στην περίφημη εκκλησία της Παναγίας Χρυσοπηγής. Αξίζει για την ατμόσφαιρα του χώρου. Είναι από τη δεξιά πλευρά της εκκλησίας όπως κοιτάζετε την εκκλησία. Επιβάλλεται και μια βουτιά από τα βράχια της Χρυσοπηγής απέναντι ακριβώς.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Beach+Sifnos+Greece"
             },
             {
               "id": "cherronisos",
               "name": "Χερρόνησος",
               "parentArea": null,
-              "note": null,
-              "rating": 0,
-              "access": ["car"],
-              "tags": ["αμμώδης"],
-              "description": "Δεν συνιστάται η αμμώδης παραλία εδώ. Αξίζει όμως να πάτε για τη βραχώδη ακτή και το γραφικό ψαροχώρι.",
+              "note": "Το πιο βόρειο σημείο του νησιού",
+              "rating": 1,
+              "access": ["car", "walking"],
+              "tags": ["αμμώδης", "ψαροχώρι", "γραφικό", "ηλιοβασίλεμα"],
+              "description": "Μικρή αμμώδης παραλία με προβλήτα για βουτιές. Το πιο γραφικό ψαροχώρι της Σίφνου μάλλον. Αν μείνετε ως το ηλιοβασίλεμα, ανεβείτε στον Άγιο Γεώργιο (15 λεπτά από την πλατεία — μπορείτε και με αμάξι ως τα μισά) για θέα προς Σέριφο. Έχει πόρτα — ανοίξτε την άφοβα και μπείτε.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece"
             },
             {
               "id": "fykiada",
@@ -144,8 +132,8 @@
               "rating": 2,
               "access": ["hike", "boat"],
               "tags": ["αμμώδης", "κρυστάλλινα νερά", "πεζοπορία", "κρυμμένη"],
-              "description": "Μια από τις πιο καθαρές παραλίες του νησιού στα νότια. Η πεζοπορία είναι σχετικά flat (3.2 km, περίπου 50 λεπτά) και το μονοπάτι είναι πλήρως σηματοδοτημένο.",
-              "tips": "Ξεκινάτε από το Φάρο. Το μονοπάτι είναι σηματοδοτημένο οπότε δεν χάνεστε.",
+              "description": "Μια από τις πιο καθαρές παραλίες του νησιού στα νότια. Η πεζοπορία είναι σχετικά flat (3.2 km, περίπου 50 λεπτά) και το μονοπάτι είναι πλήρως σηματοδοτημένο. Από Ιούνιο κάνουν επίσης καραβάκια από Πλατύ Γιαλό και Καμάρες.",
+              "tips": "Ξεκινάτε από το δρόμο προς το Βαθύ (~2 χλμ πριν φτάσετε). Το μονοπάτι είναι σηματοδοτημένο οπότε δεν χάνεστε.",
               "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA"
             }
           ]
@@ -164,19 +152,19 @@
               "tags": ["βότσαλα", "δύσκολη πρόσβαση"],
               "description": "Δεν συνιστάται. Έχει πέτρες με γλίτσα μέσα στη θάλασσα και η κατηφόρα του δρόμου είναι πολύ μεγάλη. Αν πάτε, αφήστε το αμάξι σας ψηλά.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vroulidia+Beach+Sifnos+Greece"
             },
             {
               "id": "kastro-pebble",
-              "name": "Κάστρο (Γιαλούδια)",
+              "name": "Κάστρο (Σεράλια)",
               "parentArea": "Κάστρο",
               "note": null,
               "rating": 0,
               "access": ["car"],
-              "tags": ["βότσαλα", "μικρή", "κακοκαιρία"],
-              "description": "Μικρή παραλία που πιάνει συνήθως κακοκαιρία. Δεν συνιστάται.",
+              "tags": ["βότσαλα", "μικρή"],
+              "description": "Μικρή παραλία κάτω από το Κάστρο. Δεν συνιστάται.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seralia+Beach+Kastro+Sifnos+Greece"
             }
           ]
         },
@@ -194,7 +182,7 @@
               "tags": ["βράχια", "τιρκουάζ νερά", "ήσυχη", "κατάβαση"],
               "description": "Από τις αγαπημένες μου βραχώδεις ακτές. Λίγο χωματόδρομος για να φτάσετε και μια μικρή κατάβαση με σκαλάκια (5 λεπτά). Πεντακάθαρα τιρκουάζ νερά — σαν τους Παξούς.",
               "tips": "Κολυμπήστε αριστερότερα του βράχου για να δείτε τα τιρκουάζ νερά με βότσαλα στον πάτο.",
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poulati+Rocky+Beach+Artemonas+Sifnos+Greece"
             },
             {
               "id": "chrysopigi-rocky",
@@ -204,9 +192,9 @@
               "rating": 2,
               "access": ["car"],
               "tags": ["βράχια", "εκκλησία", "βουτιές", "κόσμος"],
-              "description": "Στα βραχάκια δεξιά (κατεβαίνοντας) της εκκλησίας της Παναγίας Χρυσοπηγής. Πολύ βολικά βράχια για να αράξετε και να κάνετε βουτιές. Το 2020 ήταν must — πολύς κόσμος στις ηλικίες μας.",
+              "description": "Στα βραχάκια δεξιά (κατεβαίνοντας) της εκκλησίας της Παναγίας Χρυσοπηγής. Πολύ βολικά βράχια για να αράξετε και να κάνετε βουτιές. Must.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece"
             },
             {
               "id": "kastro-rocky",
@@ -218,7 +206,7 @@
               "tags": ["βράχια", "εκκλησία", "λιγότερος κόσμος"],
               "description": "Παρόμοια εμπειρία με Χρυσοπηγή αλλά με λιγότερο κόσμο και ίσως λίγο πιο δύσβατα τα βράχια.",
               "tips": null,
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartiros+Church+Kastro+Sifnos+Greece"
             },
             {
               "id": "cherronisos-rocky",
@@ -230,7 +218,7 @@
               "tags": ["βράχια", "ψαροχώρι", "γραφικό", "ήρεμο"],
               "description": "Γραφικό ψαροχώρι στο βορειότερο σημείο του νησιού. Πολύ ωραία βραχώδης ακτή αλλά χωρίς πολύ κόσμο συνήθως. Αφήστε το αμάξι στην πλατεία και πηγαίνετε πεζή.",
               "tips": "Από εκεί κατάγομαι.",
-              "mapsUrl": null
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece"
             }
           ]
         }
@@ -250,9 +238,10 @@
               "aka": "Κουβανός",
               "rating": 3,
               "tags": ["ηλιοβασίλεμα", "cocktails", "χαλαρό", "must"],
-              "description": "Το ορμητήριό μας το 2020. Πηγαίνετε οπωσδήποτε με το ηλιοβασίλεμα ή αργότερα. Χαλαρή μουσική, μπαμπάτσικες μερίδες και ο κυρ Κώστας (που αυτοαποκαλείται Τσε Γκεβάρα της Σίφνου) είναι μορφή μεγάλη.",
+              "description": "Πηγαίνετε οπωσδήποτε με το ηλιοβασίλεμα ή αργότερα. Χαλαρή μουσική, μπαμπάτσικες μερίδες και ο κυρ Κώστας (που αυτοαποκαλείται Τσε Γκεβάρα της Σίφνου) είναι μορφή μεγάλη.",
               "mustTry": ["Ρούμι Ανανά", "Mojito", "Ρούμι Cola"],
-              "note": "Δεν είναι το πιο καθαρό μαγαζί — αλλά YOLO."
+              "note": "Δεν είναι το πιο καθαρό μαγαζί — αλλά YOLO.",
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cavo+Sunrise+Kastro+Sifnos+Greece"
             }
           ]
         },
@@ -269,7 +258,8 @@
               "tags": ["ταράτσα", "κυρίλε", "στενό"],
               "description": "Ταράτσα στο στενό της Απολλωνίας. Από τις κύριες επιλογές για ποτό με θέα.",
               "mustTry": [],
-              "note": null
+              "note": null,
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Botzi+Bar+Apollonia+Sifnos+Greece"
             },
             {
               "id": "cosi",
@@ -279,7 +269,8 @@
               "tags": ["ταράτσα", "κυρίλε", "στενό"],
               "description": "Ταράτσα στο στενό, παρόμοιο με το Μπότζι. Οι δύο κύριες επιλογές για πιο κυρίλε ατμόσφαιρα.",
               "mustTry": [],
-              "note": null
+              "note": null,
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cosi+Bar+Apollonia+Sifnos+Greece"
             },
             {
               "id": "doloma",
@@ -289,7 +280,8 @@
               "tags": ["alternative", "μουσική", "ψηλά στο στενό"],
               "description": "Πιο alternative μουσική και ατμόσφαιρα. Βρίσκεται ψηλότερα στο στενό.",
               "mustTry": [],
-              "note": null
+              "note": null,
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Doloma+Bar+Apollonia+Sifnos+Greece"
             },
             {
               "id": "mantalou",
@@ -299,7 +291,8 @@
               "tags": ["alternative", "μουσική", "ψηλά στο στενό"],
               "description": "Μαζί με το Δόλωμα είναι οι επιλογές για πιο alternative ατμόσφαιρα ψηλά στο στενό.",
               "mustTry": [],
-              "note": null
+              "note": null,
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantalou+Bar+Apollonia+Sifnos+Greece"
             },
             {
               "id": "drakakis",
@@ -309,7 +302,8 @@
               "tags": ["μεζές", "κρασί", "ούζο", "τσίπουρο", "λίγο ακριβό"],
               "description": "Μεζεδοπωλείο στον ίδιο δρόμο με τα άλλα. Λίγο τσιμπημένο αλλά ωραίο μαγαζί — και πιο κέντρο δε γίνεται.",
               "mustTry": [],
-              "note": "Λίγο ακριβό αλλά αξίζει."
+              "note": "Λίγο ακριβό αλλά αξίζει.",
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Drakakis+Apollonia+Sifnos+Greece"
             },
             {
               "id": "grado",
@@ -319,7 +313,8 @@
               "tags": ["after hours", "club", "ελληνική μουσική", "ξένη μουσική"],
               "description": "Για πιο after καταστάσεις. Κανονικά λειτουργεί 2 ορόφους: πάνω ελληνικά, κάτω ξένα.",
               "mustTry": [],
-              "note": "Ρωτήστε αν χρειάζεται κράτηση."
+              "note": "Ρωτήστε αν χρειάζεται κράτηση.",
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grado+Club+Apollonia+Sifnos+Greece"
             }
           ]
         },
@@ -336,7 +331,8 @@
               "tags": ["μεζεδοπωλείο", "must", "Αρτεμώνας"],
               "description": "Must επιλογή στον Αρτεμώνα. Μεζεδοπωλείο με ωραία ατμόσφαιρα.",
               "mustTry": [],
-              "note": null
+              "note": null,
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mosaiko+Artemonas+Sifnos+Greece"
             },
             {
               "id": "diachroniko",
@@ -346,7 +342,8 @@
               "tags": ["μπαράκι", "χαλαρό", "Αρτεμώνας"],
               "description": "Χαλαρό μπαράκι στη διαδρομή για το Μωσαικό. Μπορεί να σας ψήσει.",
               "mustTry": [],
-              "note": null
+              "note": null,
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Diachroniko+Bar+Artemonas+Sifnos+Greece"
             }
           ]
         }
@@ -366,7 +363,7 @@
             "rating": 3,
             "tags": ["παραδοσιακό", "τοπικές συνταγές", "must"],
             "description": "Από τις καλύτερες επιλογές για παραδοσιακές σιφνέικες συνταγές.",
-            "mapsUrl": null
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece"
           },
           {
             "id": "tsikali",
@@ -376,17 +373,17 @@
             "rating": 3,
             "tags": ["παραδοσιακό", "στην παραλία", "τοπικές συνταγές"],
             "description": "Ταβέρνα πάνω στην παραλία του Βαθύ. Ιδανική για μεσημεριανό μετά τη θάλασσα.",
-            "mapsUrl": null
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsikali+Taverna+Vathi+Sifnos+Greece"
           },
           {
             "id": "chrysopigi-taverna",
             "name": "Χρυσοπηγή",
             "location": "Χρυσοπηγή",
-            "locationDetail": "πάνω στην παραλία Αποκοφτό",
+            "locationDetail": "πάνω στην παραλία",
             "rating": 3,
             "tags": ["παραδοσιακό", "στην παραλία", "εκκλησία"],
-            "description": "Ομώνυμη ταβέρνα πάνω στην παραλία της Χρυσοπηγής (Αποκοφτό). Ωραία θέα στη θάλασσα και την εκκλησία.",
-            "mapsUrl": null
+            "description": "Ταβέρνα πάνω στην παραλία της Χρυσοπηγής. Ωραία θέα στη θάλασσα και την εκκλησία.",
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Taverna+Sifnos+Greece"
           }
         ]
       },
@@ -439,19 +436,21 @@
             "id": "veniou",
             "name": "Εργαστήριο Βενιού",
             "location": "Καμάρες",
+            "locationDetail": null,
             "rating": 3,
             "tags": ["μπουγάτσα", "τυρόπιτα", "χειροποίητο", "πρωινό"],
             "description": "Χειροποίητες μπουγάτσες και τυρόπιτες στις Καμάρες. Ιδανικό για πρωινό φτάνοντας από το πλοίο.",
-            "mapsUrl": null
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Veniou+Bakery+Kamares+Sifnos+Greece"
           },
           {
             "id": "grigoris",
             "name": "Γρηγόρης",
             "location": "Αρτεμώνας",
+            "locationDetail": null,
             "rating": 3,
             "tags": ["αμυγδαλωτά", "παραδοσιακά γλυκά", "κουλούρια"],
             "description": "Τα καλύτερα παραδοσιακά γλυκά: αμυγδαλωτά, μπισκότα φούρνου, κουλούρια με γλυκάνισο και κρασοκούλουρα.",
-            "mapsUrl": null
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grigoris+Pastry+Artemonas+Sifnos+Greece"
           }
         ]
       }
