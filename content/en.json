@@ -49,6 +49,8 @@
               "tags": ["sandy", "large", "port"],
               "description": "The main beach at the port. Handy for a last swim before catching the ferry. On the beach you'll find Old Captain — one of the few beach bars that have kept their authentic character. Coffee and backgammon.",
               "tips": null,
+              "lat": 36.983,
+              "lng": 24.670,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece"
             },
             {
@@ -61,6 +63,8 @@
               "tags": ["sandy", "turquoise water", "youth-friendly", "must"],
               "description": "Walk through Faros beach to get there — it's about 3 minutes on foot.",
               "tips": "From here a short path leads to the Chrysopigi church, about 15 minutes on foot. Along the way you'll pass an abandoned ore-loading platform — a remnant of the mining operations that once took place on the island.",
+              "lat": 36.875,
+              "lng": 24.736,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Glyfo+Beach+Faros+Sifnos+Greece"
             },
             {
@@ -73,6 +77,8 @@
               "tags": ["sandy", "quiet", "families"],
               "description": "On the road to Faros, look for the sign to turn left before reaching the harbour and parking area. Nice beach, mostly attracts families.",
               "tips": null,
+              "lat": 36.871,
+              "lng": 24.741,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fasolou+Beach+Sifnos+Greece"
             },
             {
@@ -85,6 +91,8 @@
               "tags": ["sandy", "large", "organised", "beach bars"],
               "description": "The most organised beach on the island, with two beach bars: Lost Bay and Palmira. Of the three large beaches (Kamares, Vathi, Platy Gialos), this one has the most going on.",
               "tips": null,
+              "lat": 36.900,
+              "lng": 24.727,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Beach+Sifnos+Greece"
             },
             {
@@ -97,6 +105,8 @@
               "tags": ["sandy", "large", "beach bar", "tavernas"],
               "description": "A large beach facing south-west. The nicest spot if you have your own parasol is in front of the 'Elies' hotel, where there's plenty of space to spread out. There are also beach bars nearby if you prefer a sun lounger. Good tavernas for a meal afterwards: Okeanida and Tsikali.",
               "tips": null,
+              "lat": 36.933,
+              "lng": 24.669,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vathi+Beach+Sifnos+Greece"
             },
             {
@@ -109,6 +119,8 @@
               "tags": ["sandy", "church", "rocks", "diving"],
               "description": "A small sandy cove beside the famous Panagia Chrysopigi church. Worth visiting for the atmosphere of the place. The beach is on the right side of the church as you face it. A dive off the rocks directly opposite is non-negotiable.",
               "tips": null,
+              "lat": 36.874,
+              "lng": 24.747,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Beach+Sifnos+Greece"
             },
             {
@@ -121,6 +133,8 @@
               "tags": ["sandy", "fishing village", "picturesque", "sunset"],
               "description": "A small sandy beach with a jetty for diving. Probably the most picturesque fishing village on Sifnos. If you stay until sunset, climb up to Agios Georgios (15 minutes from the square — you can drive halfway) for views towards Serifos. There's a gate — open it without hesitation and go in.",
               "tips": null,
+              "lat": 37.003,
+              "lng": 24.695,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece"
             },
             {
@@ -133,6 +147,8 @@
               "tags": ["sandy", "crystal-clear water", "hiking", "hidden gem"],
               "description": "One of the cleanest beaches on the island, tucked in the south. The hike is fairly flat (3.2 km, about 50 minutes) and the trail is fully signposted. From June, small boats also run from Platy Gialos and Kamares.",
               "tips": "Start from the road to Vathi (about 2 km before you reach it). The path is clearly marked — you won't get lost.",
+              "lat": 36.893,
+              "lng": 24.657,
               "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA"
             }
           ]

@@ -9,6 +9,8 @@ const state = {
   data: null,
 };
 
+let _beachMap = null;
+
 // ─── DOM Helpers ──────────────────────────────────────────────
 const $ = id => document.getElementById(id);
 
@@ -97,10 +99,14 @@ function renderBeaches(data, ui) {
     data.subsections.map(sub => `
       <div class="subsection">
         <h3 class="subsection-title">${sub.label}</h3>
+        ${sub.id === 'sandy' ? '<div id="beach-map" class="beach-map"></div>' : ''}
         <div class="card-grid">
           ${sub.items.map(item => beachCard(item, ui)).join('')}
         </div>
       </div>`).join(''));
+
+  const sandySub = data.subsections.find(s => s.id === 'sandy');
+  if (sandySub) initBeachMap(sandySub.items, ui);
 }
 
 function beachCard(item, ui) {
@@ -130,6 +136,47 @@ function beachCard(item, ui) {
         ${renderMapsLink(item.mapsUrl, ui.mapsLink)}
       </div>
     </article>`;
+}
+
+// ─── Beach Map ────────────────────────────────────────────────
+
+function initBeachMap(items, ui) {
+  if (typeof L === 'undefined') return;
+  if (_beachMap) { _beachMap.remove(); _beachMap = null; }
+
+  const el = document.getElementById('beach-map');
+  if (!el) return;
+
+  const mapped = items.filter(item => item.lat && item.lng);
+  if (!mapped.length) return;
+
+  _beachMap = L.map('beach-map');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(_beachMap);
+
+  const colors = { 3: '#2d6a4f', 2: '#1A4F7A', 1: '#C0623B', 0: '#888' };
+  const bounds = [];
+
+  mapped.forEach(item => {
+    const marker = L.circleMarker([item.lat, item.lng], {
+      radius: 10,
+      fillColor: colors[item.rating] || '#888',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.9,
+    }).addTo(_beachMap);
+
+    const label = ui.ratingLabels[String(item.rating)] || '';
+    const mapsLink = item.mapsUrl
+      ? `<br><a href="${item.mapsUrl}" target="_blank" rel="noopener">↗ Google Maps</a>` : '';
+    marker.bindPopup(`<strong>${item.name}</strong><br><small>${label}</small>${mapsLink}`);
+    bounds.push([item.lat, item.lng]);
+  });
+
+  _beachMap.fitBounds(bounds, { padding: [40, 40] });
 }
 
 // ─── Section: Drinks ──────────────────────────────────────────
