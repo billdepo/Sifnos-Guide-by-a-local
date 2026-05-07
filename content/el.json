@@ -51,7 +51,7 @@
               "description": "Η κεντρική παραλία του λιμανιού. Βολεύει για ένα τελευταίο μπάνιο πριν φύγετε από το λιμάνι. Στην παραλία λειτουργεί το Old Captain — ένα από τα λίγα beach bar που κρατούν αυθεντικό χαρακτήρα. Καφές και τάβλι.",
               "tips": null,
               "lat": 36.983,
-              "lng": 24.670,
+              "lng": 24.67,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece"
             },
             {
@@ -92,9 +92,9 @@
               "tags": ["αμμώδης", "μεγάλη", "οργανωμένη", "beach bars"],
               "description": "Η πιο οργανωμένη παραλία του νησιού με 2 beach bars: το Lost Bay και το Palmira. Από τις 3 μεγάλες παραλίες (Καμάρες, Βαθύ, Πλατύς Γιαλός) αυτή είναι η πιο ενδιαφέρουσα.",
               "tips": null,
-              "lat": 36.900,
+              "lat": 36.9,
               "lng": 24.727,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Beach+Sifnos+Greece"
+              "mapsUrl": "https://maps.app.goo.gl/exMLaXspPTiiUux87"
             },
             {
               "id": "vathu",
@@ -122,7 +122,7 @@
               "tips": null,
               "lat": 36.874,
               "lng": 24.747,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Beach+Sifnos+Greece"
+              "mapsUrl": "https://maps.app.goo.gl/ZhE79CcxZXhBHiXK9"
             },
             {
               "id": "cherronisos",
@@ -326,7 +326,12 @@
               "name": "GRADO",
               "aka": null,
               "rating": 2,
-              "tags": ["after hours", "club", "ελληνική μουσική", "ξένη μουσική"],
+              "tags": [
+                "after hours",
+                "club",
+                "ελληνική μουσική",
+                "ξένη μουσική"
+              ],
               "description": "Για πιο after καταστάσεις. Κανονικά λειτουργεί 2 ορόφους: πάνω ελληνικά, κάτω ξένα.",
               "mustTry": [],
               "note": "Ρωτήστε αν χρειάζεται κράτηση.",
