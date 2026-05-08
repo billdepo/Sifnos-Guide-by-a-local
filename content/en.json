@@ -4,7 +4,7 @@
     "subtitle": "A Self-Styled Local's Guide (From Afar)",
     "description": "My favourite beaches, tavernas, bars and flavours — all in one place.",
     "lang": "en",
-    "heroImageUrl": null
+    "heroImageUrl": "images/hero.jpg"
   },
   "nav": {
     "beaches": "Beaches",
@@ -50,7 +50,7 @@
               "description": "The main beach at the port. Handy for a last swim before catching the ferry. On the beach you'll find Old Captain — one of the few beach bars that have kept their authentic character. Coffee and backgammon.",
               "tips": null,
               "lat": 36.983,
-              "lng": 24.670,
+              "lng": 24.67,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece"
             },
             {
@@ -91,7 +91,7 @@
               "tags": ["sandy", "large", "organised", "beach bars"],
               "description": "The most organised beach on the island, with two beach bars: Lost Bay and Palmira. Of the three large beaches (Kamares, Vathi, Platy Gialos), this one has the most going on.",
               "tips": null,
-              "lat": 36.900,
+              "lat": 36.9,
               "lng": 24.727,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Beach+Sifnos+Greece"
             },
@@ -314,7 +314,13 @@
               "name": "Drakakis",
               "aka": null,
               "rating": 2,
-              "tags": ["mezedes", "wine", "ouzo", "tsipouro", "slightly pricey"],
+              "tags": [
+                "mezedes",
+                "wine",
+                "ouzo",
+                "tsipouro",
+                "slightly pricey"
+              ],
               "description": "A mezedopoleio (small plates bar) on the same street. A bit pricey but a great spot — and you can't get more central than this.",
               "mustTry": [],
               "note": "Slightly expensive but worth it.",
@@ -325,7 +331,12 @@
               "name": "GRADO",
               "aka": null,
               "rating": 2,
-              "tags": ["after hours", "club", "greek music", "international music"],
+              "tags": [
+                "after hours",
+                "club",
+                "greek music",
+                "international music"
+              ],
               "description": "The place for late-night dancing. Normally runs two floors: upstairs Greek music, downstairs international.",
               "mustTry": [],
               "note": "Ask if a reservation is needed.",
