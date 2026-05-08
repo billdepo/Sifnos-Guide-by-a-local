@@ -9,7 +9,8 @@ const state = {
   data: null,
 };
 
-let _beachMap = null;
+let _beachMap     = null;
+let _beachMarkers = {};
 
 // ─── DOM Helpers ──────────────────────────────────────────────
 const $ = id => document.getElementById(id);
@@ -117,8 +118,10 @@ function beachCard(item, ui) {
   const tip = item.tips
     ? `<div class="card-tip"><span class="tip-dot">💡</span><span>${item.tips}</span></div>` : '';
 
+  const mappable = item.lat && item.lng ? ` data-beach-id="${item.id}"` : '';
+
   return `
-    <article class="card${item.rating === 0 ? ' card--skip' : ''}">
+    <article class="card${item.rating === 0 ? ' card--skip' : ''}${mappable ? ' card--mappable' : ''}"${mappable}>
       <div class="card-top">
         <div class="card-name-row">
           <h4 class="card-name">${item.name}</h4>
@@ -143,6 +146,7 @@ function beachCard(item, ui) {
 function initBeachMap(items, ui) {
   if (typeof L === 'undefined') return;
   if (_beachMap) { _beachMap.remove(); _beachMap = null; }
+  _beachMarkers = {};
 
   const el = document.getElementById('beach-map');
   if (!el) return;
@@ -173,6 +177,7 @@ function initBeachMap(items, ui) {
     const mapsLink = item.mapsUrl
       ? `<br><a href="${item.mapsUrl}" target="_blank" rel="noopener">↗ Google Maps</a>` : '';
     marker.bindPopup(`<strong>${item.name}</strong><br><small>${label}</small>${mapsLink}`);
+    if (item.id) _beachMarkers[item.id] = marker;
     bounds.push([item.lat, item.lng]);
   });
 
@@ -329,6 +334,23 @@ function tipCard(item) {
     </div>`;
 }
 
+// ─── Beach Card → Map Zoom ────────────────────────────────────
+
+function setupBeachCardClick() {
+  const body = $('beaches-body');
+  if (!body) return;
+  body.addEventListener('click', e => {
+    const card = e.target.closest('[data-beach-id]');
+    if (!card || !_beachMap) return;
+    const marker = _beachMarkers[card.dataset.beachId];
+    if (!marker) return;
+    document.getElementById('beach-map')
+      ?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    _beachMap.flyTo(marker.getLatLng(), 14, { animate: true, duration: 0.8 });
+    setTimeout(() => marker.openPopup(), 900);
+  });
+}
+
 // ─── Render All ───────────────────────────────────────────────
 
 function renderAll(data) {
@@ -396,6 +418,7 @@ async function init() {
     setupLangToggle();
     setupStickyNav();
     setupActiveSection();
+    setupBeachCardClick();
   } catch (err) {
     document.body.innerHTML = `
       <div style="padding:2rem;font-family:sans-serif">

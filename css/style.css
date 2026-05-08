@@ -679,6 +679,15 @@ ul  { list-style: none; }
   border: 1px solid var(--c-border);
 }
 
+.card--mappable {
+  cursor: pointer;
+}
+.card--mappable:hover {
+  box-shadow: 0 4px 16px rgba(26,79,122,0.18);
+  transform: translateY(-2px);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
 /* ═══════════════════════════════════════════════════════════════
    FOOTER
 ═══════════════════════════════════════════════════════════════ */
