@@ -168,6 +168,8 @@
               "tags": ["βότσαλα", "δύσκολη πρόσβαση"],
               "description": "Δεν συνιστάται. Έχει πέτρες με γλίτσα μέσα στη θάλασσα και η κατηφόρα του δρόμου είναι πολύ μεγάλη. Αν πάτε, αφήστε το αμάξι σας ψηλά.",
               "tips": null,
+              "lat": 36.852,
+              "lng": 24.69,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vroulidia+Beach+Sifnos+Greece"
             },
             {
@@ -180,6 +182,8 @@
               "tags": ["βότσαλα", "μικρή"],
               "description": "Μικρή παραλία κάτω από το Κάστρο. Δεν συνιστάται.",
               "tips": null,
+              "lat": 36.984,
+              "lng": 24.762,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seralia+Beach+Kastro+Sifnos+Greece"
             }
           ]
@@ -198,6 +202,8 @@
               "tags": ["βράχια", "τιρκουάζ νερά", "ήσυχη", "κατάβαση"],
               "description": "Από τις αγαπημένες μου βραχώδεις ακτές. Λίγο χωματόδρομος για να φτάσετε και μια μικρή κατάβαση με σκαλάκια (5 λεπτά). Πεντακάθαρα τιρκουάζ νερά — σαν τους Παξούς.",
               "tips": "Κολυμπήστε αριστερότερα του βράχου για να δείτε τα τιρκουάζ νερά με βότσαλα στον πάτο.",
+              "lat": 36.998,
+              "lng": 24.751,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poulati+Rocky+Beach+Artemonas+Sifnos+Greece"
             },
             {
@@ -210,6 +216,8 @@
               "tags": ["βράχια", "εκκλησία", "βουτιές", "κόσμος"],
               "description": "Στα βραχάκια δεξιά (κατεβαίνοντας) της εκκλησίας της Παναγίας Χρυσοπηγής. Πολύ βολικά βράχια για να αράξετε και να κάνετε βουτιές. Must.",
               "tips": null,
+              "lat": 36.874,
+              "lng": 24.747,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece"
             },
             {
@@ -222,6 +230,8 @@
               "tags": ["βράχια", "εκκλησία", "λιγότερος κόσμος"],
               "description": "Παρόμοια εμπειρία με Χρυσοπηγή αλλά με λιγότερο κόσμο και ίσως λίγο πιο δύσβατα τα βράχια.",
               "tips": null,
+              "lat": 36.989,
+              "lng": 24.76,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartiros+Church+Kastro+Sifnos+Greece"
             },
             {
@@ -234,6 +244,8 @@
               "tags": ["βράχια", "ψαροχώρι", "γραφικό", "ήρεμο"],
               "description": "Γραφικό ψαροχώρι στο βορειότερο σημείο του νησιού. Πολύ ωραία βραχώδης ακτή αλλά χωρίς πολύ κόσμο συνήθως. Αφήστε το αμάξι στην πλατεία και πηγαίνετε πεζή.",
               "tips": "Από εκεί κατάγομαι.",
+              "lat": 37.003,
+              "lng": 24.695,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece"
             }
           ]

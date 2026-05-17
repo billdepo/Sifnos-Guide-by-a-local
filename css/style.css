@@ -143,6 +143,45 @@ ul {
   line-height: 1.7;
 }
 
+/* ─── Beach Tabs ─────────────────────────────────────────────── */
+.beach-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 1.75rem;
+  border-bottom: 2px solid var(--c-border);
+}
+
+.beach-tab {
+  padding: 0.55rem 1.25rem;
+  border: none;
+  background: transparent;
+  color: var(--c-text-muted);
+  font-family: var(--f-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  border-radius: 6px 6px 0 0;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+.beach-tab:hover {
+  color: var(--c-primary);
+  background: rgba(26, 79, 122, 0.05);
+}
+.beach-tab.is-active {
+  color: var(--c-primary);
+  font-weight: 600;
+  border-bottom-color: var(--c-primary);
+}
+
+.beach-panel {
+  display: none;
+}
+.beach-panel.is-active {
+  display: block;
+}
+
 /* ─── Hero Scroll Indicator ─────────────────────────────────── */
 .hero-scroll {
   position: absolute;

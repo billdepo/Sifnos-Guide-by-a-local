@@ -167,6 +167,8 @@
               "tags": ["pebble", "difficult access"],
               "description": "Not recommended. The rocks underwater are slippery and the road down has an extremely steep gradient. If you do go, leave the car at the top.",
               "tips": null,
+              "lat": 36.852,
+              "lng": 24.69,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vroulidia+Beach+Sifnos+Greece"
             },
             {
@@ -179,6 +181,8 @@
               "tags": ["pebble", "small"],
               "description": "A small beach below the village of Kastro. Not recommended.",
               "tips": null,
+              "lat": 36.984,
+              "lng": 24.762,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seralia+Beach+Kastro+Sifnos+Greece"
             }
           ]
@@ -197,6 +201,8 @@
               "tags": ["rocky", "turquoise water", "secluded", "short descent"],
               "description": "One of my favourite rocky spots. A short dirt road leads to a small descent (5 minutes with steps). Crystal-clear turquoise water — reminiscent of Paxos.",
               "tips": "Swim to the left of the rock formation in the water — that's where the pebble seabed and the most vivid turquoise colour are.",
+              "lat": 36.998,
+              "lng": 24.751,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poulati+Rocky+Beach+Artemonas+Sifnos+Greece"
             },
             {
@@ -209,6 +215,8 @@
               "tags": ["rocky", "church", "cliff jumping", "busy"],
               "description": "The flat rocks to the right of the Panagia Chrysopigi church (as you walk down) make for perfect sunbathing and diving spots. A must.",
               "tips": null,
+              "lat": 36.874,
+              "lng": 24.747,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece"
             },
             {
@@ -221,6 +229,8 @@
               "tags": ["rocky", "church", "less crowded"],
               "description": "A similar experience to Chrysopigi but with fewer people and slightly trickier rock access.",
               "tips": null,
+              "lat": 36.989,
+              "lng": 24.76,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartiros+Church+Kastro+Sifnos+Greece"
             },
             {
@@ -233,6 +243,8 @@
               "tags": ["rocky", "fishing village", "picturesque", "quiet"],
               "description": "A charming fishing village at the northernmost tip of Sifnos. Beautiful rocky coastline, typically quiet. Park on the square and walk to the rocks.",
               "tips": "This is where I'm from.",
+              "lat": 37.003,
+              "lng": 24.695,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece"
             }
           ]

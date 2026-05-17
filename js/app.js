@@ -93,6 +93,13 @@ function renderNav(nav, ui) {
 // ─── Section: Beaches ─────────────────────────────────────────
 
 function renderBeaches(data, ui) {
+  const tabs = data.subsections
+    .map(
+      (sub, i) =>
+        `<button class="beach-tab${i === 0 ? " is-active" : ""}" data-tab="${sub.id}" role="tab" aria-selected="${i === 0}">${sub.label}</button>`,
+    )
+    .join("");
+
   setHTML(
     "beaches-header",
     `
@@ -101,27 +108,24 @@ function renderBeaches(data, ui) {
     <div class="tip-banner tip-banner--wind">
       <span class="tip-icon">💨</span>
       <p>${data.windTip}</p>
-    </div>`,
+    </div>
+    <div class="beach-tabs" role="tablist">${tabs}</div>`,
   );
 
-  setHTML(
-    "beaches-body",
-    data.subsections
-      .map(
-        (sub) => `
-      <div class="subsection">
-        <h3 class="subsection-title">${sub.label}</h3>
-        ${sub.id === "sandy" ? '<div id="beach-map" class="beach-map"></div>' : ""}
+  const panels = data.subsections
+    .map(
+      (sub, i) => `
+      <div class="beach-panel${i === 0 ? " is-active" : ""}" data-panel="${sub.id}">
         <div class="card-grid">
           ${sub.items.map((item) => beachCard(item, ui)).join("")}
         </div>
       </div>`,
-      )
-      .join(""),
-  );
+    )
+    .join("");
 
-  const sandySub = data.subsections.find((s) => s.id === "sandy");
-  if (sandySub) initBeachMap(sandySub.items, ui);
+  setHTML("beaches-body", `<div id="beach-map" class="beach-map"></div>${panels}`);
+
+  initBeachMap(data.subsections[0].items, ui);
 }
 
 function beachCard(item, ui) {
@@ -172,6 +176,7 @@ function initBeachMap(items, ui) {
   if (!el) return;
 
   const mapped = items.filter((item) => item.lat && item.lng);
+  el.style.display = mapped.length ? "" : "none";
   if (!mapped.length) return;
 
   _beachMap = L.map("beach-map");
@@ -378,6 +383,29 @@ function tipCard(item) {
     </div>`;
 }
 
+// ─── Beach Tabs ───────────────────────────────────────────────
+
+function setupBeachTabs() {
+  document.addEventListener("click", (e) => {
+    const tab = e.target.closest(".beach-tab");
+    if (!tab) return;
+    const tabId = tab.dataset.tab;
+    const beaches = state.data?.sections?.beaches;
+    if (!beaches) return;
+
+    document.querySelectorAll(".beach-tab").forEach((t) => {
+      t.classList.toggle("is-active", t.dataset.tab === tabId);
+      t.setAttribute("aria-selected", String(t.dataset.tab === tabId));
+    });
+    document.querySelectorAll(".beach-panel").forEach((p) => {
+      p.classList.toggle("is-active", p.dataset.panel === tabId);
+    });
+
+    const sub = beaches.subsections.find((s) => s.id === tabId);
+    if (sub) initBeachMap(sub.items, state.data.ui);
+  });
+}
+
 // ─── Beach Card → Map Zoom ────────────────────────────────────
 
 function setupBeachCardClick() {
@@ -466,6 +494,7 @@ async function init() {
     setupLangToggle();
     setupStickyNav();
     setupActiveSection();
+    setupBeachTabs();
     setupBeachCardClick();
   } catch (err) {
     document.body.innerHTML = `
