@@ -10,7 +10,10 @@
     "beaches": "Beaches",
     "drinks": "Drinks",
     "food": "Food",
-    "tips": "Tips"
+    "activities": "Activities",
+    "culture": "Culture",
+    "history": "History",
+    "practical": "Practical"
   },
   "ui": {
     "languageToggle": "ΕΛ",
@@ -22,11 +25,22 @@
     },
     "mapsLink": "View on map",
     "mustTryLabel": "Try:",
+    "nearbyLabel": "Nearby",
     "accessLabels": {
       "car": "By car",
       "hike": "Hiking trail",
       "boat": "By sea",
       "walking": "On foot"
+    },
+    "calendar": {
+      "year": 2026,
+      "monthsShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "weekdays": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+      "noEventsLabel": "Date TBA"
+    },
+    "search": {
+      "placeholder": "Search... (e.g. festival, beach)",
+      "comingSoon": "🚧 Coming soon: search across the whole guide"
     }
   },
   "sections": {
@@ -493,9 +507,141 @@
         ]
       }
     },
-    "tips": {
-      "label": "Tips",
+    "activities": {
+      "label": "Activities",
+      "intro": "From island cruises to hiking through ancient mines — what to do on Sifnos beyond the beach.",
+      "subsections": [
+        {
+          "id": "tours",
+          "label": "Tours",
+          "intro": "Organised experiences worth your time.",
+          "items": [
+            {
+              "name": "Boat Tour around Sifnos",
+              "meta": "Whole season",
+              "description": "Full-day cruise around the island — secluded coves, swim stops, lunch on the boat. Usually departs from Kamares or Platy Gialos. The best way to see Sifnos from a different angle.",
+              "tags": ["sea", "swimming", "full-day"]
+            },
+            {
+              "name": "Horse riding",
+              "location": "Near Apollonia",
+              "description": "Guided rides from a dedicated riding centre. Great for those who want to see Sifnos from a different trail.",
+              "tags": ["families", "different"]
+            },
+            {
+              "name": "Farm visit",
+              "description": "Experience at a local farm — cheeses, dairy products, and a taste of the island's agricultural tradition.",
+              "tags": ["tradition", "families"]
+            }
+          ]
+        },
+        {
+          "id": "sunset",
+          "label": "Sunset",
+          "intro": "Two very different experiences — one easy by car, one that requires a hike.",
+          "items": [
+            {
+              "name": "Agios Symeon",
+              "meta": "By car",
+              "location": "Above Kamares",
+              "description": "Drive up to Agios Symeon — just 10 minutes from Kamares. Incredible views with no effort; the road goes all the way up. Popular spot — go early.",
+              "tags": ["easy access", "view"],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos"
+            },
+            {
+              "name": "Profitis Ilias o Apsilos",
+              "meta": "Hike",
+              "description": "The highest point on the island. ~1-hour hike from the village. Bring water and proper shoes — the reward is a panoramic 360° view."
+            }
+          ]
+        },
+        {
+          "id": "hiking",
+          "label": "Hiking",
+          "intro": "Sifnos has an excellent network of waymarked trails (Sifnos Trails) — from easy strolls to full-day routes. Bring water and good shoes.",
+          "items": [
+            {
+              "name": "Agios Silivestros & the Mines",
+              "meta": "Moderate",
+              "description": "Hike in the north of the island, up to the chapel of Agios Silivestros and the old mines. Historic landscape — this is where the ancient Sifnians extracted gold and silver, which paid for the Siphnian Treasury at Delphi.",
+              "tags": ["history", "mines", "northern Sifnos"]
+            },
+            {
+              "name": "Profitis Ilias o Apsilos",
+              "meta": "Moderate",
+              "description": "Uphill hike to the highest point on the island. Best done early morning or towards sunset.",
+              "tags": ["summit", "July 20 festival"]
+            },
+            {
+              "name": "Kamares → Kastro",
+              "meta": "Easy / Moderate",
+              "description": "Traditional crossing from the port to the medieval Kastro, through the mountain villages. Stop whenever you like — it passes through all the central villages.",
+              "tags": ["classic", "villages"]
+            }
+          ]
+        }
+      ]
+    },
+    "history": {
+      "label": "History",
+      "intro": "A short look at Sifnos's past — from the ancient mines to the modern era.",
+      "chapters": [
+        {
+          "title": "Antiquity — Gold and Silver",
+          "body": "In antiquity Sifnos was one of the wealthiest Cycladic islands, thanks to its gold and silver mines in the north. With this wealth the Sifnians built the famous Siphnian Treasury at Delphi (~525 BC) — one of the most striking dedications in the sanctuary. According to myth, when the Sifnians stopped dedicating gold to Apollo, the god flooded their mines with the sea."
+        },
+        {
+          "title": "Byzantine & Venetian Period",
+          "body": "From 1207 Sifnos passed into the hands of the Venetian Da Corogna family, who built the Kastro — the medieval fortified settlement that still stands today. The Kastro served for centuries as a defence against pirate raids."
+        },
+        {
+          "title": "Piracy",
+          "body": "From the 13th to the 18th century, the Aegean islands were exposed to pirate raids. On Sifnos, the villages were built in the interior, away from the beaches, precisely for this reason. The narrow alleys, dead-end lanes, and tight-knit village layout are all defensive features."
+        },
+        {
+          "title": "Ottoman Period",
+          "body": "From 1617 to 1821 Sifnos was under Ottoman rule but enjoyed relative autonomy due to its distance from the main administrative centres. During this period the island developed important traditions in seafaring and pottery."
+        },
+        {
+          "title": "Modern Era",
+          "body": "In the 19th and 20th centuries the economy was based primarily on pottery (Sifnian Tsoukalades travelled across Greece selling clay vessels) and shipping. Today tourism dominates, but Sifnos still holds tightly to its traditions — gastronomy, panigyria, ceramics, and a strong local community."
+        }
+      ]
+    },
+    "practical": {
+      "label": "Practical",
+      "intro": "Everything practical you need for your visit to Sifnos.",
       "items": [
+        {
+          "id": "ferry",
+          "title": "Ferry",
+          "icon": "ferry",
+          "description": "Sifnos is connected to Piraeus via daily routes (conventional ferries ~5 hours, high-speed ~2.5–3 hours). It also connects to Milos, Serifos, Kimolos, Folegandros and Santorini. Book tickets in advance for August."
+        },
+        {
+          "id": "buses",
+          "title": "Buses (KTEL)",
+          "icon": "bus",
+          "description": "KTEL Sifnou serves all main villages (Kamares, Apollonia, Artemonas, Kastro, Platy Gialos, Faros, Cherronisos, Vathy). Frequency is good in summer. All routes pass through Apollonia."
+        },
+        {
+          "id": "parking",
+          "title": "Parking",
+          "icon": "parking",
+          "description": "In the medieval villages (Apollonia, Artemonas, Kastro) car access is restricted. Park outside and walk in. In summer parking is tight — go early or use the bus."
+        },
+        {
+          "id": "water",
+          "title": "Water",
+          "icon": "water",
+          "description": "Tap water is NOT potable on Sifnos. Buy bottled water or ask for drinking-water fountains in the villages. Many restaurants serve filtered water."
+        },
+        {
+          "id": "supermarkets",
+          "title": "Supermarkets",
+          "icon": "shop",
+          "description": "The largest supermarkets are in Apollonia and Kamares. Smaller grocers exist in almost every village. Generally open daily in summer."
+        },
         {
           "id": "wind",
           "title": "Weather & Wind",
@@ -503,23 +649,131 @@
           "description": "When the north wind (meltemi) blows hard, move to Faros, Vathi or Platy Gialos. These beaches face South-East or South-West and stay much calmer. Always ask a local for the forecast too."
         },
         {
-          "id": "agios-symeon",
-          "title": "Agios Symeon viewpoint",
-          "icon": "mountain",
-          "description": "Drive up to Agios Symeon, just 10 minutes from Kamares. Incredible panoramic view with zero effort — the road goes all the way to the top."
-        },
-        {
-          "id": "ceramics",
-          "title": "Ceramics — the Sifnian Potters",
-          "icon": "gift",
-          "description": "Sifnians were historically known as Tsoukalades (pot-makers) — masters of the wheel and major exporters of earthenware. The island is full of ceramics shops. For a gift, a traditional clay cooking pot (tsukali or gastra) is the perfect souvenir.",
-          "highlight": "On Cherronisos beach you'll find the workshop 'Keramika i Dyskoli' — one of the most traditional on the island."
-        },
-        {
           "id": "ask-locals",
           "title": "Ask the Locals",
           "icon": "people",
           "description": "Always ask locals for tips, weather updates and any festivals or village celebrations happening during your stay. If you find a panigiri (religious feast), go — it's an experience."
+        }
+      ]
+    },
+    "culture": {
+      "label": "Culture",
+      "intro": "From summer panigyria (saint festivals) to museums and ceramic workshops — Sifnos has a living culture worth exploring.",
+      "subsections": [
+        {
+          "id": "panigyria",
+          "label": "Panigyria",
+          "intro": "Food, wine, and dancing till dawn. The traditional saint festivals of Sifnos are some of the best in the Cyclades. Always ask locals for current times and locations — some dates shift year to year.",
+          "items": [
+            {
+              "name": "Panagia Chrysopigi",
+              "meta": "40 days after Easter",
+              "month": 5,
+              "day": 22,
+              "location": "Chrysopigi",
+              "description": "The most important festival on the island. Procession of the icon followed by an open-air celebration in the churchyard."
+            },
+            {
+              "name": "Prophet Elias",
+              "meta": "19–20 July",
+              "month": 7,
+              "day": 19,
+              "endDay": 20,
+              "location": "Profitis Ilias o Apsilos",
+              "description": "Festival at the highest point of Sifnos. Uphill trail, but the view and atmosphere are well worth the climb."
+            },
+            {
+              "name": "Panagia of Poulati",
+              "meta": "Assumption (15 August)",
+              "month": 8,
+              "day": 15,
+              "location": "Poulati",
+              "description": "Festival at the church above Poulati. The busiest panigyri of August."
+            },
+            {
+              "name": "Agios Symeon",
+              "meta": "1 September",
+              "month": 9,
+              "day": 1,
+              "location": "Agios Symeon",
+              "description": "Festival at the small chapel of Agios Symeon with a magnificent view down to Kamares. Quieter than the August festivals."
+            },
+            {
+              "name": "Stavros",
+              "meta": "14 September",
+              "month": 9,
+              "day": 14,
+              "location": "Various chapels",
+              "description": "Local festivals at chapels dedicated to the Holy Cross. The slow closing of the Sifnos summer."
+            }
+          ]
+        },
+        {
+          "id": "events",
+          "label": "Events",
+          "intro": "From food festivals to street parties — cultural events organised by local associations and friends of the island.",
+          "items": [
+            {
+              "name": "Nikolaos Tselementes Cycladic Gastronomy Festival",
+              "meta": "Late September",
+              "month": 9,
+              "day": 25,
+              "endDay": 27,
+              "description": "Gastronomy festival honouring Nikolaos Tselementes, the Sifnian chef who wrote the first modern Greek cookbook. Workshops, seminars, and dinners by top chefs.",
+              "tags": ["gastronomy", "tradition"]
+            },
+            {
+              "name": "Radioactive Street Party",
+              "meta": "Summer",
+              "month": 7,
+              "day": 25,
+              "location": "Apollonia",
+              "description": "Annual street party by local radio station Radioactive. Music, drinks, and half the island out in the street.",
+              "tags": ["music", "nightlife"]
+            },
+            {
+              "name": "Mousifando",
+              "meta": "Summer",
+              "month": 8,
+              "day": 8,
+              "description": "Music festival organised by the Sifnos Cultural Association, featuring local and visiting artists.",
+              "tags": ["music", "concerts"]
+            }
+          ]
+        },
+        {
+          "id": "pottery",
+          "label": "Pottery",
+          "intro": "Sifnians have long been known as 'Tsoukalades' — master potters and exporters of clay cookware. The tradition lives on in working workshops across the island. The most authentic souvenir is a clay cooking vessel (tsoukali or gastra).",
+          "items": [
+            {
+              "name": "Keramika 'I Dyskoli'",
+              "location": "Cherronisos",
+              "description": "One of the most traditional workshops on the island, in one of its most picturesque settings — right by the sea in Cherronisos. Authentic Sifnian pottery on the wheel.",
+              "tags": ["workshop", "tradition", "souvenirs"]
+            }
+          ]
+        },
+        {
+          "id": "museums",
+          "label": "Museums & Sites",
+          "intro": "Few but excellent — Sifnos had an important role in antiquity, with silver mines and a treasury at Delphi.",
+          "items": [
+            {
+              "name": "Agios Andreas Archaeological Site",
+              "location": "Above Katavati",
+              "description": "Ancient acropolis from the Geometric period with sweeping views over the whole island. Important finds and a small archaeological museum on site. One of the most beautiful archaeological sites in the Cyclades.",
+              "tags": ["ancient history", "views"],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Andreas+Archaeological+Site+Sifnos"
+            },
+            {
+              "name": "Sifnos Folklore Museum",
+              "location": "Apollonia",
+              "description": "Collection of traditional Sifnian clothing, tools, and everyday objects. On the main square of Apollonia.",
+              "tags": ["tradition", "folklore"],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Folklore+Museum+Apollonia+Sifnos"
+            }
+          ]
         }
       ]
     }

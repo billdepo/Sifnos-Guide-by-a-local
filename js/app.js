@@ -59,6 +59,24 @@ function renderMapsLink(url, label) {
   return `<a class="maps-link" href="${url}" target="_blank" rel="noopener noreferrer">${label} →</a>`;
 }
 
+function renderNearby(links, label) {
+  if (!links || !links.length) return "";
+  const items = links
+    .map(
+      (l) => `
+      <li class="nearby-item">
+        ${l.icon ? `<span class="nearby-icon">${l.icon}</span>` : ""}
+        <a class="nearby-link" href="${l.url}" target="_blank" rel="noopener noreferrer">${l.name}<span class="nearby-arrow">↗</span></a>${l.note ? ` <span class="nearby-note">— ${l.note}</span>` : ""}
+      </li>`,
+    )
+    .join("");
+  return `
+    <div class="nearby">
+      <span class="nearby-label">📍 ${label || "Κοντά"}:</span>
+      <ul class="nearby-list">${items}</ul>
+    </div>`;
+}
+
 // ─── Hero & Nav ───────────────────────────────────────────────
 
 function renderMeta(meta) {
@@ -88,6 +106,13 @@ function renderNav(nav, ui) {
   document.querySelectorAll(".lang-toggle").forEach((btn) => {
     btn.textContent = ui.languageToggle;
   });
+
+  if (ui.search) {
+    const input = $("search-input");
+    const msg = $("search-coming-soon");
+    if (input) input.placeholder = ui.search.placeholder;
+    if (msg) msg.textContent = ui.search.comingSoon;
+  }
 }
 
 // ─── Section: Beaches ─────────────────────────────────────────
@@ -96,7 +121,7 @@ function renderBeaches(data, ui) {
   const tabs = data.subsections
     .map(
       (sub, i) =>
-        `<button class="beach-tab${i === 0 ? " is-active" : ""}" data-tab="${sub.id}" role="tab" aria-selected="${i === 0}">${sub.label}</button>`,
+        `<button class="tab${i === 0 ? " is-active" : ""}" data-group="beaches" data-tab="${sub.id}" role="tab" aria-selected="${i === 0}">${sub.label}</button>`,
     )
     .join("");
 
@@ -109,13 +134,13 @@ function renderBeaches(data, ui) {
       <span class="tip-icon">💨</span>
       <p>${data.windTip}</p>
     </div>
-    <div class="beach-tabs" role="tablist">${tabs}</div>`,
+    <div class="tabs" role="tablist">${tabs}</div>`,
   );
 
   const panels = data.subsections
     .map(
       (sub, i) => `
-      <div class="beach-panel${i === 0 ? " is-active" : ""}" data-panel="${sub.id}">
+      <div class="panel${i === 0 ? " is-active" : ""}" data-group="beaches" data-panel="${sub.id}">
         <div class="card-grid">
           ${sub.items.map((item) => beachCard(item, ui)).join("")}
         </div>
@@ -140,9 +165,10 @@ function beachCard(item, ui) {
     : "";
 
   const mappable = item.lat && item.lng ? ` data-beach-id="${item.id}"` : "";
+  const cardId = item.id ? ` data-card-id="${item.id}"` : "";
 
   return `
-    <article class="card${item.rating === 0 ? " card--skip" : ""}${mappable ? " card--mappable" : ""}"${mappable}>
+    <article class="card${item.rating === 0 ? " card--skip" : ""}${mappable ? " card--mappable" : ""}"${mappable}${cardId}>
       <div class="card-top">
         <div class="card-name-row">
           <h4 class="card-name">${item.name}</h4>
@@ -154,6 +180,7 @@ function beachCard(item, ui) {
         </div>
       </div>
       <p class="card-body">${item.description}</p>
+      ${renderNearby(item.nearbyLinks, item.nearbyLabel || ui.nearbyLabel)}
       ${tip}
       <div class="card-bottom">
         ${renderTags(item.tags)}
@@ -346,20 +373,30 @@ function localFoodItem(item) {
     </div>`;
 }
 
-// ─── Section: Tips ────────────────────────────────────────────
+// ─── Section: Practical ───────────────────────────────────────
 
 const TIP_ICONS = {
   wind: "💨",
   mountain: "⛰️",
   gift: "🎁",
   people: "🗣️",
+  ferry: "⛴️",
+  bus: "🚌",
+  parking: "🅿️",
+  water: "💧",
+  shop: "🛒",
 };
 
-function renderTips(data) {
-  setHTML("tips-header", `<h2 class="section-title">${data.label}</h2>`);
+function renderPractical(data) {
+  setHTML(
+    "practical-header",
+    `
+    <h2 class="section-title">${data.label}</h2>
+    ${data.intro ? `<p class="section-intro">${data.intro}</p>` : ""}`,
+  );
 
   setHTML(
-    "tips-body",
+    "practical-body",
     `
     <div class="tips-grid">
       ${data.items.map((item) => tipCard(item)).join("")}
@@ -383,26 +420,269 @@ function tipCard(item) {
     </div>`;
 }
 
-// ─── Beach Tabs ───────────────────────────────────────────────
+// ─── Section: Activities ──────────────────────────────────────
 
-function setupBeachTabs() {
+function renderActivities(data, ui) {
+  renderTabbedSection("activities", data, ui);
+}
+
+// ─── Section: History ─────────────────────────────────────────
+
+function renderHistory(data) {
+  setHTML(
+    "history-header",
+    `
+    <h2 class="section-title">${data.label}</h2>
+    ${data.intro ? `<p class="section-intro">${data.intro}</p>` : ""}`,
+  );
+
+  setHTML(
+    "history-body",
+    `<div class="history-chapters">
+      ${data.chapters
+        .map(
+          (c) => `
+        <article class="history-chapter">
+          <h3 class="history-chapter-title">${c.title}</h3>
+          <p class="history-chapter-body">${c.body}</p>
+        </article>`,
+        )
+        .join("")}
+    </div>`,
+  );
+}
+
+// ─── Tabbed Section (shared by Culture + Activities) ──────────
+
+function renderTabbedSection(id, data, ui) {
+  const tabs = data.subsections
+    .map(
+      (sub, i) =>
+        `<button class="tab${i === 0 ? " is-active" : ""}" data-group="${id}" data-tab="${sub.id}" role="tab" aria-selected="${i === 0}">${sub.label}</button>`,
+    )
+    .join("");
+
+  setHTML(
+    `${id}-header`,
+    `
+    <h2 class="section-title">${data.label}</h2>
+    ${data.intro ? `<p class="section-intro">${data.intro}</p>` : ""}
+    <div class="tabs" role="tablist">${tabs}</div>`,
+  );
+
+  const panels = data.subsections
+    .map((sub, i) => {
+      const hasDates = sub.items.some((it) => it.month && it.day);
+      const calendar = hasDates ? renderCalendar(sub.items, ui) : "";
+      return `
+      <div class="panel${i === 0 ? " is-active" : ""}" data-group="${id}" data-panel="${sub.id}">
+        ${sub.intro ? `<p class="subsection-intro">${sub.intro}</p>` : ""}
+        ${calendar}
+        <div class="card-grid">
+          ${sub.items.map((item) => cultureCard(item, ui)).join("")}
+        </div>
+      </div>`;
+    })
+    .join("");
+
+  setHTML(`${id}-body`, panels);
+}
+
+// ─── Section: Culture ─────────────────────────────────────────
+
+function renderCulture(data, ui) {
+  renderTabbedSection("culture", data, ui);
+}
+
+function cultureCard(item, ui) {
+  const meta = item.meta
+    ? `<span class="card-meta">${item.meta}</span>`
+    : "";
+  const location = item.location
+    ? `<span class="badge badge--area">${item.location}</span>`
+    : "";
+  const calKey =
+    item.month && item.day ? ` data-cal-key="${item.month}-${item.day}"` : "";
+
+  return `
+    <article class="card"${calKey}>
+      <div class="card-top">
+        <div class="card-name-row">
+          <h4 class="card-name">${item.name}</h4>
+          ${meta}
+        </div>
+        ${location ? `<div class="card-badges">${location}</div>` : ""}
+      </div>
+      <p class="card-body">${item.description}</p>
+      ${renderNearby(item.nearbyLinks, item.nearbyLabel || ui.nearbyLabel)}
+      <div class="card-bottom">
+        ${renderTags(item.tags)}
+        ${renderMapsLink(item.mapsUrl, ui.mapsLink)}
+      </div>
+    </article>`;
+}
+
+// ─── Calendar ─────────────────────────────────────────────────
+
+function renderCalendar(items, ui) {
+  const cfg = ui.calendar;
+  if (!cfg) return "";
+
+  const dayMap = {};
+  items.forEach((item) => {
+    if (!item.month || !item.day) return;
+    const last = item.endDay || item.day;
+    for (let d = item.day; d <= last; d++) {
+      dayMap[`${item.month}-${d}`] = item;
+    }
+  });
+  if (!Object.keys(dayMap).length) return "";
+
+  const eventMonths = [...new Set(items.filter((i) => i.month).map((i) => i.month))];
+  const minMonth = Math.min(5, ...eventMonths);
+  const maxMonth = Math.max(9, ...eventMonths);
+  const months = [];
+  for (let m = minMonth; m <= maxMonth; m++) months.push(m);
+
+  return `<div class="calendar">${months
+    .map((m) => renderMonth(cfg.year, m, dayMap, cfg))
+    .join("")}</div>`;
+}
+
+function renderMonth(year, month, dayMap, cfg) {
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const firstDay = new Date(year, month - 1, 1).getDay(); // 0=Sun
+  const offset = (firstDay + 6) % 7; // Mon-first
+
+  const weekdayCells = cfg.weekdays
+    .map((w) => `<div class="cal-weekday">${w}</div>`)
+    .join("");
+
+  let dayCells = "";
+  for (let i = 0; i < offset; i++) {
+    dayCells += `<div class="cal-day cal-day--empty"></div>`;
+  }
+  for (let d = 1; d <= daysInMonth; d++) {
+    const item = dayMap[`${month}-${d}`];
+    if (item) {
+      const startKey = `${item.month}-${item.day}`;
+      dayCells += `<button class="cal-day cal-day--event" data-cal-key="${startKey}" title="${item.name}" aria-label="${item.name} — ${d}">${d}</button>`;
+    } else {
+      dayCells += `<div class="cal-day">${d}</div>`;
+    }
+  }
+
+  return `
+    <div class="cal-month">
+      <div class="cal-month-name">${cfg.monthsShort[month - 1]} ${year}</div>
+      <div class="cal-grid">
+        ${weekdayCells}
+        ${dayCells}
+      </div>
+    </div>`;
+}
+
+// ─── Card Cross-Links ─────────────────────────────────────────
+
+function setupCardLinks() {
   document.addEventListener("click", (e) => {
-    const tab = e.target.closest(".beach-tab");
+    const link = e.target.closest("a.card-link[data-target]");
+    if (!link) return;
+    e.preventDefault();
+    const targetId = link.dataset.target;
+    const targetCard = document.querySelector(`[data-card-id="${targetId}"]`);
+    if (!targetCard) return;
+
+    // If card is inside a hidden tab panel, activate that tab first
+    const panel = targetCard.closest(".panel");
+    if (panel && !panel.classList.contains("is-active")) {
+      const group = panel.dataset.group;
+      const tabId = panel.dataset.panel;
+      const tab = document.querySelector(
+        `.tab[data-group="${group}"][data-tab="${tabId}"]`,
+      );
+      if (tab) tab.click();
+    }
+
+    // Scroll + pulse (small delay so the tab switch finishes first)
+    setTimeout(() => {
+      targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+      targetCard.classList.remove("is-pulse");
+      void targetCard.offsetWidth;
+      targetCard.classList.add("is-pulse");
+    }, 120);
+  });
+}
+
+// ─── Search Modal (placeholder) ───────────────────────────────
+
+function setupSearchPlaceholder() {
+  const overlay = $("search-overlay");
+  const btn = $("nav-search");
+  const closeBtn = $("search-close");
+  const input = $("search-input");
+  if (!overlay || !btn) return;
+
+  const open = () => {
+    overlay.removeAttribute("hidden");
+    setTimeout(() => input?.focus(), 50);
+  };
+  const close = () => overlay.setAttribute("hidden", "");
+
+  btn.addEventListener("click", open);
+  closeBtn?.addEventListener("click", close);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) close();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !overlay.hasAttribute("hidden")) close();
+  });
+}
+
+function setupCalendarClick() {
+  document.addEventListener("click", (e) => {
+    const cell = e.target.closest(".cal-day--event");
+    if (!cell) return;
+    const key = cell.dataset.calKey;
+    const card = document.querySelector(`.card[data-cal-key="${key}"]`);
+    if (!card) return;
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+    card.classList.remove("is-pulse");
+    void card.offsetWidth; // restart animation
+    card.classList.add("is-pulse");
+  });
+}
+
+// ─── Section Tabs (generic) ───────────────────────────────────
+
+function setupSectionTabs() {
+  document.addEventListener("click", (e) => {
+    const tab = e.target.closest(".tab");
     if (!tab) return;
+    const group = tab.dataset.group;
     const tabId = tab.dataset.tab;
-    const beaches = state.data?.sections?.beaches;
-    if (!beaches) return;
+    if (!group || !tabId) return;
 
-    document.querySelectorAll(".beach-tab").forEach((t) => {
-      t.classList.toggle("is-active", t.dataset.tab === tabId);
-      t.setAttribute("aria-selected", String(t.dataset.tab === tabId));
-    });
-    document.querySelectorAll(".beach-panel").forEach((p) => {
-      p.classList.toggle("is-active", p.dataset.panel === tabId);
-    });
+    document
+      .querySelectorAll(`.tab[data-group="${group}"]`)
+      .forEach((t) => {
+        const active = t.dataset.tab === tabId;
+        t.classList.toggle("is-active", active);
+        t.setAttribute("aria-selected", String(active));
+      });
+    document
+      .querySelectorAll(`.panel[data-group="${group}"]`)
+      .forEach((p) => {
+        p.classList.toggle("is-active", p.dataset.panel === tabId);
+      });
 
-    const sub = beaches.subsections.find((s) => s.id === tabId);
-    if (sub) initBeachMap(sub.items, state.data.ui);
+    // Section-specific side effects
+    if (group === "beaches") {
+      const sub = state.data?.sections?.beaches?.subsections?.find(
+        (s) => s.id === tabId,
+      );
+      if (sub) initBeachMap(sub.items, state.data.ui);
+    }
   });
 }
 
@@ -432,7 +712,10 @@ function renderAll(data) {
   renderBeaches(data.sections.beaches, data.ui);
   renderDrinks(data.sections.drinks, data.ui);
   renderFood(data.sections.food, data.ui);
-  renderTips(data.sections.tips);
+  renderActivities(data.sections.activities, data.ui);
+  renderCulture(data.sections.culture, data.ui);
+  renderHistory(data.sections.history);
+  renderPractical(data.sections.practical);
 }
 
 // ─── Language Toggle ──────────────────────────────────────────
@@ -494,8 +777,11 @@ async function init() {
     setupLangToggle();
     setupStickyNav();
     setupActiveSection();
-    setupBeachTabs();
+    setupSectionTabs();
     setupBeachCardClick();
+    setupCalendarClick();
+    setupCardLinks();
+    setupSearchPlaceholder();
   } catch (err) {
     document.body.innerHTML = `
       <div style="padding:2rem;font-family:sans-serif">
