@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node scripts\\\\check-content-sync.mjs)",
+      "PowerShell(node --check js\\\\app.js)",
+      "PowerShell(node -e \"require\\('./content/el.json'\\); require\\('./content/en.json'\\); console.log\\('JSON OK'\\)\")",
+      "WebFetch(domain:sifnos.gr)"
+    ]
+  }
+}

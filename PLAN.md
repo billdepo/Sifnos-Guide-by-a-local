@@ -244,7 +244,7 @@ Split into two subsections:
 
 **Workflow for content updates:**
 1. Edit `content/el.json` (source of truth)
-2. Update `content/en.json` with the translation
+2. Run `/sync-en` in Claude Code → translates the changes into `content/en.json` and validates structural parity (`node scripts/check-content-sync.mjs`)
 3. `git push` → live in ~30 seconds
 
 ---
