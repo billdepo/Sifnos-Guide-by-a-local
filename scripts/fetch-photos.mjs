@@ -42,6 +42,18 @@ const PHOTOS = {
   fasolou: "Cyclades Sifnos Fasolou Vue Chryssopigi - panoramio.jpg",
   cherronisos: "Cyclades Sifnos Keronisos Plage - panoramio.jpg",
   fykiada: "Fykiada Bay and Kitriani island.JPG",
+  "kastro-pebble": "Cyclades Sifnos Kastro Seralia - panoramio.jpg",
+
+  // Rocky coast. These entries are named for their landmark, so the landmark
+  // is what the photo shows — Panagia Poulati, the Eptamartyres chapel.
+  poulati: "Sifnos05church.jpg",
+  "chrysopigi-rocky":
+    "Cyclades Sifnos Panagia Chrisopigi Rochers Saoures 09092014 - panoramio.jpg",
+  "kastro-rocky": "Church of the Seven Martyrs 01.jpg",
+  "cherronisos-rocky": "Cyclades Sifnos Keronisos Port - panoramio.jpg",
+
+  // No Commons photo exists for vroulidia, spilia, gialoudia or tsouvales —
+  // the last two are reachable only by sea. They fall back to the emoji.
 
   // Churches & monasteries
   "panagia-chrysopigi-2": "Panagia Chrysopigi on the Greek Island of Sifnos.jpg",
@@ -130,9 +142,12 @@ async function optimise(buf) {
     }
     return buf;
   }
+  // Cap the longest edge, not just the width: photos render into short
+  // landscape boxes with object-fit:cover, so a tall portrait would otherwise
+  // ship ~2x the bytes for pixels that get cropped away anyway.
   return sharp(buf)
     .rotate()
-    .resize({ width: 1200, withoutEnlargement: true })
+    .resize({ width: 1200, height: 1200, fit: "inside", withoutEnlargement: true })
     .jpeg({ quality: 76, mozjpeg: true })
     .toBuffer();
 }

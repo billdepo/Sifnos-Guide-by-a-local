@@ -457,7 +457,12 @@
               "tips": null,
               "lat": 36.984,
               "lng": 24.762,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seralia+Beach+Kastro+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seralia+Beach+Kastro+Sifnos+Greece",
+              "image": {
+                "src": "images/places/kastro-pebble.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Kastro_Seralia_-_panoramio.jpg"
+              }
             },
             {
               "id": "spilia",
@@ -547,7 +552,12 @@
               "tips": "Κολυμπήστε αριστερότερα του βράχου για να δείτε τα τιρκουάζ νερά με βότσαλα στον πάτο.",
               "lat": 36.998,
               "lng": 24.751,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poulati+Rocky+Beach+Artemonas+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Poulati+Rocky+Beach+Artemonas+Sifnos+Greece",
+              "image": {
+                "src": "images/places/poulati.jpg",
+                "credit": "Jon Corelis (CC BY 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Sifnos05church.jpg"
+              }
             },
             {
               "id": "chrysopigi-rocky",
@@ -568,7 +578,12 @@
               "tips": null,
               "lat": 36.9361,
               "lng": 24.7462,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece",
+              "image": {
+                "src": "images/places/chrysopigi-rocky.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Panagia_Chrisopigi_Rochers_Saoures_09092014_-_panoramio.jpg"
+              }
             },
             {
               "id": "kastro-rocky",
@@ -589,7 +604,12 @@
               "tips": null,
               "lat": 36.989,
               "lng": 24.76,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartiros+Church+Kastro+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartiros+Church+Kastro+Sifnos+Greece",
+              "image": {
+                "src": "images/places/kastro-rocky.jpg",
+                "credit": "Abldecn (CC BY 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Church_of_the_Seven_Martyrs_01.jpg"
+              }
             },
             {
               "id": "cherronisos-rocky",
@@ -611,7 +631,12 @@
               "tips": "Από εκεί κατάγομαι.",
               "lat": 37.003,
               "lng": 24.695,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cherronisos+Sifnos+Greece",
+              "image": {
+                "src": "images/places/cherronisos-rocky.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Keronisos_Port_-_panoramio.jpg"
+              }
             }
           ]
         }

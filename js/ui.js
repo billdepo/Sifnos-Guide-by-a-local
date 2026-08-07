@@ -155,7 +155,7 @@ export function row(entry, ui, icon) {
   return `<a class="${cls}" href="#/${viewId}/${groupId}/${item.id}">
       ${feature || hasPhoto ? `<span class="row-media">${media(item, icon)}</span>` : ""}
       <span class="row-main">
-        <span class="row-title">${item.name}${aka}${stars}</span>
+        <span class="row-title"><span class="row-name">${item.name}${aka}</span>${stars}</span>
         ${metaLine(item, ui)}
         ${desc}
       </span>

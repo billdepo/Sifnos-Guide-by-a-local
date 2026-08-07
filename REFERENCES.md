@@ -46,10 +46,10 @@
 
 ## Φωτογραφίες
 
-Αποθηκεύονται τοπικά στο `images/places/`. Προσθήκη/ανανέωση:
+Αποθηκεύονται τοπικά στο `images/places/` (23 αρχεία, ~3 MB). Προσθήκη/ανανέωση:
 `node scripts/fetch-photos.mjs` (δες PLAN.md §10).
 
-**Wikimedia Commons (17)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
+**Wikimedia Commons (22)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
 Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία στο detail sheet — **μην την
 αφαιρέσεις**, είναι υποχρέωση των αδειών CC BY / CC BY-SA.
 
@@ -58,6 +58,13 @@
 credit + link, αλλά το credit ΔΕΝ είναι άδεια. Εκκρεμεί άδεια χρήσης από τον
 δικαιούχο — αν δεν δοθεί, αντικατέστησέ τη με δική σου φωτογραφία.
 Οι μη-Commons πηγές δηλώνονται στο `EXTRA` του `scripts/fetch-photos.mjs`.
+
+**Χωρίς φωτογραφία** (δεν υπάρχει τίποτα στο Commons): Βρουλίδια, Σπηλιά,
+Γιαλούδια, Τσουβάλες — τα δύο τελευταία είναι προσβάσιμα μόνο δια θαλάσσης.
+Πέφτουν πίσω σε emoji. Ιδανικά θέλουν δική σου φωτογραφία.
+
+Σημείωση: η `poulati.jpg` είναι μόνο 480×361 — η μοναδική στο Commons για την
+Παναγία Πουλάτη. Φαίνεται λίγο θολή στο detail sheet.
 
 | Σημείο | Αρχείο | Απόδοση | Πηγή |
 |--------|--------|---------|------|
@@ -69,6 +76,11 @@ credit + link, αλλά το credit ΔΕΝ είναι άδεια. Εκκρεμε
 | Χερρόνησος | `cherronisos.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Keronisos_Plage_-_panoramio.jpg |
 | Φυκιάδα | `fykiada.jpg` | / Thksif2 at Greek Wikipedia (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Fykiada_Bay_and_Kitriani_island.JPG |
 | Χρυσοπηγή (Σαούρες) | `chrysopigi-apokopto.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Panagia_Chrisopigi_Vue_Apokofto_Plage_09092014_-_panoramio.jpg |
+| Κάστρο (Σεράλια) | `kastro-pebble.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Kastro_Seralia_-_panoramio.jpg |
+| Πουλάτη | `poulati.jpg` | Jon Corelis (CC BY 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Sifnos05church.jpg |
+| Χρυσοπηγή (βραχάκια) | `chrysopigi-rocky.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Panagia_Chrisopigi_Rochers_Saoures_09092014_-_panoramio.jpg |
+| Κάστρο (Επταμάρτυρος) | `kastro-rocky.jpg` | Abldecn (CC BY 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Church_of_the_Seven_Martyrs_01.jpg |
+| Χερρόνησος (βραχώδης ακτή) | `cherronisos-rocky.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Keronisos_Port_-_panoramio.jpg |
 | Απολλωνία | `apollonia.jpg` | Horology at English Wikipedia (Public domain, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Apollonia_on_Sifnos.jpg |
 | Αρτεμώνας | `artemonas.jpg` | Jon Corelis (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Artemonas.jpg |
 | Κάστρο | `kastro.jpg` | Kondephy (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Kastro,_Sifnos.jpg |
