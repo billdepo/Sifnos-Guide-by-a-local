@@ -427,10 +427,30 @@ input:focus-visible {
   gap: 0.75rem;
 }
 .note-card {
+  display: flex;
+  flex-direction: column;
   background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--r-md);
+  overflow: hidden;
+}
+.note-media {
+  aspect-ratio: 16 / 9;
+  background: var(--c-surface-2);
+}
+.note-media .media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.note-text {
   padding: 1rem 1.1rem;
+}
+.note-card .media-credit {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.66rem;
+  color: var(--c-muted);
 }
 .note-head {
   display: flex;

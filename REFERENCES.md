@@ -47,45 +47,41 @@
 
 ## Φωτογραφίες
 
-Αποθηκεύονται τοπικά στο `images/places/` (26 αρχεία, ~3,3 MB). Προσθήκη/ανανέωση:
+Αποθηκεύονται τοπικά στο `images/places/` (34 αρχεία, ~4 MB). Προσθήκη/ανανέωση:
 `node scripts/fetch-photos.mjs` (δες PLAN.md §10).
 
-**Wikimedia Commons (25)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
-Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία στο detail sheet — **μην την
-αφαιρέσεις**, είναι υποχρέωση των αδειών CC BY / CC BY-SA.
+**Wikimedia Commons (26)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
+Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία — **μην την αφαιρέσεις**, είναι
+υποχρέωση των αδειών CC BY / CC BY-SA.
 
-⚠️ **Εκτός Commons (1)** — `glyfo.jpg` από το cycladesmap.gr. **Δεν έχει ανοιχτή
-άδεια** και φέρει υδατογράφημα του ιδιοκτήτη. Μπήκε κατόπιν αιτήματος, με
-credit + link, αλλά το credit ΔΕΝ είναι άδεια. Εκκρεμεί άδεια χρήσης από τον
-δικαιούχο. Οι μη-Commons πηγές δηλώνονται στο `EXTRA` του
-`scripts/fetch-photos.mjs`.
+⚠️ **Εκτός Commons (8) — ΧΩΡΙΣ ανοιχτή άδεια.** Μπήκαν κατόπιν αιτήματος του
+ιδιοκτήτη του site, με credit + link, αλλά **το credit ΔΕΝ είναι άδεια** και
+εκκρεμεί έγκριση από κάθε δικαιούχο:
 
-### Γιατί «Ποτό» και «Φαγητό» έχουν σχεδόν καθόλου φωτογραφίες
+| Πηγή | Αρχεία | Τι πρέπει να γίνει |
+|------|--------|--------------------|
+| `sifnos.gr` (επίσημη γκαλερί γαστρονομίας) | μαστέλο, ρεβιθάδα, ρεβυθοκεφτέδες, καπαροσαλάτα, μυζήθρα, μανούρα | ένα email στον Δήμο/διαχειριστή αρκεί |
+| `kelarisifnos.gr` (δική τους φωτογραφία) | Το Κελάρι | ρώτα το μαγαζί — συνήθως χαίρονται |
+| `cycladesmap.gr` (υδατογραφημένη) | Γλυφό | ζήτα άδεια ή αντικατάστησε |
 
-**Τα 15 μαγαζιά** (9 μπαρ, 3 ταβέρνες, 3 αρτοποιεία/ζαχαροπλαστεία) **δεν έχουν
-καμία ελεύθερη φωτογραφία πουθενά** — στα 120 αρχεία «Sifnos» του Commons δεν
-υπάρχει ούτε ένα. Ό,τι κυκλοφορεί online ανήκει στα ίδια τα μαγαζιά (site,
-Instagram, Google Maps) ή σε πλατφόρμες όπως το TripAdvisor.
-**Ο σωστός δρόμος: ζήτα τους τη φωτογραφία.** Ένα μήνυμα στο Instagram αρκεί
-συνήθως — τους συμφέρει κιόλας. Μέχρι τότε, δικές σου φωτογραφίες.
+Η γκαλερί του sifnos.gr δεν έχει alt text· κάθε πιάτο **αναγνωρίστηκε οπτικά**
+πριν μπει. Δύο πιάτα που δεν αναγνωρίστηκαν με βεβαιότητα αφέθηκαν έξω.
 
-**Τα φαγητά** (μαστέλο, ρεβιθάδα, ρεβυθοκεφτέδες, καπαροσαλάτα, μυζήθρα,
-μανούρα, μέλι, τυριά, βότανα) δεν μπήκαν επίτηδες: το Commons δεν έχει τίποτα
-σιφνέικο και μια γενική φωτογραφία «ελληνικής κατσαρόλας» ή ένα γαλλικό βάζο
-μέλι στη θέση συγκεκριμένου σιφνέικου πιάτου **παραπληροφορεί** — χειρότερο από
-το να μην υπάρχει φωτογραφία.
+**Χωρίς φωτογραφία** — δεν βρέθηκε τίποτα προσβάσιμο: Τσικάλι, Χρυσοπηγή
+(ταβέρνα), Εργαστήριο Βενιού, Γρηγόρης, Ζαχαροπλαστείο Θεοδώρου, θυμαρίσιο
+μέλι, βότανα· επίσης Βρουλίδια, Σπηλιά, Γιαλούδια, Τσουβάλες. Τα μαγαζιά δεν
+έχουν δικά τους site (μόνο Facebook/Instagram, που δεν διαβάζονται
+αυτοματοποιημένα) και οι σελίδες των περιοδικών μπλοκάρουν την πρόσβαση.
+**Ο σωστός δρόμος: ζήτα τους φωτογραφία — ή τράβα δική σου.**
 
-**Χωρίς φωτογραφία επίσης** (δεν υπάρχει τίποτα στο Commons): Βρουλίδια, Σπηλιά,
-Γιαλούδια, Τσουβάλες — τα δύο τελευταία προσβάσιμα μόνο δια θαλάσσης.
-
-Σημειώσεις: η `poulati.jpg` είναι μόνο 480×361 (η μοναδική στο Commons για την
-Παναγία Πουλάτη) και φαίνεται λίγο θολή. Η `capers.jpg` είναι Capparis spinosa
-— το ίδιο είδος που φυτρώνει στη Σίφνο, φωτογραφημένο αλλού.
+Σημειώσεις: η `poulati.jpg` είναι 480×361 (η μοναδική στο Commons) και φαίνεται
+λίγο θολή. Η `capers.jpg` είναι Capparis spinosa — το ίδιο είδος που φυτρώνει
+στη Σίφνο, φωτογραφημένο αλλού.
 
 | Σημείο | Αρχείο | Απόδοση | Πηγή |
 |--------|--------|---------|------|
 | Καμάρες | `kamares.jpg` | Golem Unity (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Beach_of_Kamares,_Sifnos_at_Noon.jpg |
-| Γλυφό (ή Βλυχό) | `glyfo.jpg` | cycladesmap.gr | https://cycladesmap.gr/ |
+| Γλυφό (ή Βλυχό) | `glyfo.jpg` | ⚠️ cycladesmap.gr | https://cycladesmap.gr/ |
 | Φασολού | `fasolou.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Fasolou_Vue_Chryssopigi_-_panoramio.jpg |
 | Πλατύς Γιαλός | `platy-gialos.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Platis_Gialos_09092014_-_panoramio.jpg |
 | Βαθύ | `vathu.jpg` | Zde (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Beach_in_Vathy_on_Sifnos,_153617.jpg |
@@ -105,7 +101,15 @@ Instagram, Google Maps) ή σε πλατφόρμες όπως το TripAdvisor.
 | Πλατύς Γιαλός | `platy-gialos-2.jpg` | Kondephy (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Platis_Gialos,_Sifnos.jpg |
 | Βαθύ | `vathi.jpg` | Takeaway (talk) (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Vathy_harbour_Greek_island_of_Sifnos.jpg |
 | Χερρόνησος | `cherronisos-2.jpg` | Margaritaprounia (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Herronisos.JPG |
+| Το Κελάρι | `kelari.jpg` | ⚠️ kelarisifnos.gr | https://kelarisifnos.gr/ |
+| Μαστέλο | `mastelo.jpg` | ⚠️ sifnos.gr | https://sifnos.gr/en/gastronomy/ |
+| Ρεβυθάδα | `revythada.jpg` | ⚠️ sifnos.gr | https://sifnos.gr/en/gastronomy/ |
+| Ρεβυθοκεφτέδες | `revythokeftedes.jpg` | ⚠️ sifnos.gr | https://sifnos.gr/en/gastronomy/ |
+| Καπαροσαλάτα | `kaparosalata.jpg` | ⚠️ sifnos.gr | https://sifnos.gr/en/gastronomy/ |
+| (Ξινο)μυζήθρα | `myzithra.jpg` | ⚠️ sifnos.gr | https://sifnos.gr/en/gastronomy/ |
+| Μανούρα | `manoura.jpg` | ⚠️ sifnos.gr | https://sifnos.gr/en/gastronomy/ |
 | Κάπαρη | `capers.jpg` | Daniel Capilla (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Flower_of_caper_bush_(Capparis_spinosa).jpg |
+| Τυριά | `cheeses.jpg` | Catlemur (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Xidis_Sifniot_Cheese_Counter.jpg |
 | Αμυγδαλωτά & Παραδοσιακά Γλυκά | `almond-sweets-traditional-treats.jpg` | Catlemur (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Sifnos_Amygdalota.jpg |
 | Κεραμικά | `ceramics.jpg` | Catlemur (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Lemonis_Sifniot_Pottery_Troullos.jpg |
 | Παναγία Χρυσοπηγή | `panagia-chrysopigi-2.jpg` | Abldecn (CC BY 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Panagia_Chrysopigi_on_the_Greek_Island_of_Sifnos.jpg |
@@ -121,6 +125,7 @@ Instagram, Google Maps) ή σε πλατφόρμες όπως το TripAdvisor.
 | Leaflet | https://leafletjs.com/ | Διαδραστικός χάρτης (detail sheet + πλήρης χάρτης) |
 | Ferryhopper | https://www.ferryhopper.com/ | Κράτηση ακτοπλοϊκών εισιτηρίων (κάρτα «Φέρι») |
 | Overpass API (OSM) | https://overpass-api.de/ | Έλεγχος θέσεων super market στη Σίφνο |
+| Openverse | https://api.openverse.org/ | Αναζήτηση φωτογραφιών με ανοιχτή άδεια (πέρα από το Commons) |
 | Wikimedia Commons API | https://commons.wikimedia.org/w/api.php | Λήψη φωτογραφιών + metadata αδειών |
 
 ---

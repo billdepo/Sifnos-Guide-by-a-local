@@ -964,7 +964,12 @@
               "must"
             ],
             "description": "Από τις καλύτερες επιλογές για παραδοσιακές σιφνέικες συνταγές.",
-            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece"
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece",
+            "image": {
+              "src": "images/places/kelari.jpg",
+              "credit": "kelarisifnos.gr",
+              "creditUrl": "https://kelarisifnos.gr/"
+            }
           },
           {
             "id": "tsikali",
@@ -1008,7 +1013,12 @@
               "πήλινο σκεύος",
               "κόκκινο κρασί"
             ],
-            "description": "Κατσίκι σιγομαγειρεμένο σε κόκκινο κρασί και άνηθο μέσα σε ομώνυμο πήλινο σκεύος (γάστρα). Η απόλυτη σιφνέικη συνταγή."
+            "description": "Κατσίκι σιγομαγειρεμένο σε κόκκινο κρασί και άνηθο μέσα σε ομώνυμο πήλινο σκεύος (γάστρα). Η απόλυτη σιφνέικη συνταγή.",
+            "image": {
+              "src": "images/places/mastelo.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "revythada",
@@ -1018,7 +1028,12 @@
               "vegan",
               "παραδοσιακό"
             ],
-            "description": "Μουσκεμένα ρεβύθια με βρόχινο νερό που σιγομαγειρεύονται για πολλές ώρες σε ξυλόφουρνο μαζί με κρεμμυδάκι και χυλώνουν. Είναι παραδοσιακά το φαγητό που τρώνε οι Σιφνιοί κάθε Κυριακή μετά την εκκλησία. Λεμονάκι, ψωμί, ελιές (ή εγκιές όπως λένε οι ντόπιοι) και άγιος ο θεός."
+            "description": "Μουσκεμένα ρεβύθια με βρόχινο νερό που σιγομαγειρεύονται για πολλές ώρες σε ξυλόφουρνο μαζί με κρεμμυδάκι και χυλώνουν. Είναι παραδοσιακά το φαγητό που τρώνε οι Σιφνιοί κάθε Κυριακή μετά την εκκλησία. Λεμονάκι, ψωμί, ελιές (ή εγκιές όπως λένε οι ντόπιοι) και άγιος ο θεός.",
+            "image": {
+              "src": "images/places/revythada.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "revythokeftedes",
@@ -1028,7 +1043,12 @@
               "vegan",
               "τηγανιτό"
             ],
-            "description": "Κεφτέδες από ρεβύθια — falafel before it was cool."
+            "description": "Κεφτέδες από ρεβύθια — falafel before it was cool.",
+            "image": {
+              "src": "images/places/revythokeftedes.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "kaparosalata",
@@ -1038,7 +1058,12 @@
               "κάπαρη",
               "τοπικό"
             ],
-            "description": "Το νησί είναι γεμάτο άγρια κάπαρη που κρέμεται από τους πλύθινους τοίχους στα σοκάκια. Η καπαροσαλάτα της γίνεται με μπόλικο κρεμμύδι και κάποιοι λένε ότι θυμίζει γευστικά στιφάδο."
+            "description": "Το νησί είναι γεμάτο άγρια κάπαρη που κρέμεται από τους πλύθινους τοίχους στα σοκάκια. Η καπαροσαλάτα της γίνεται με μπόλικο κρεμμύδι και κάποιοι λένε ότι θυμίζει γευστικά στιφάδο.",
+            "image": {
+              "src": "images/places/kaparosalata.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "myzithra",
@@ -1048,7 +1073,12 @@
               "λευκό",
               "φρέσκο"
             ],
-            "description": "Μαλακό λευκό τυρί που είναι πολύ γευστικό και ταιριάζει πολύ στη χωριάτικη, αλλά και σε επάλειψη σε ψωμί. Ζητήστε το αντί για φέτα στη χωριάτικη σαλάτα."
+            "description": "Μαλακό λευκό τυρί που είναι πολύ γευστικό και ταιριάζει πολύ στη χωριάτικη, αλλά και σε επάλειψη σε ψωμί. Ζητήστε το αντί για φέτα στη χωριάτικη σαλάτα.",
+            "image": {
+              "src": "images/places/myzithra.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "manoura",
@@ -1058,7 +1088,12 @@
               "κόκκινο κρασί",
               "δυνατό"
             ],
-            "description": "Δυνατό τυρί που ωριμάζει μέσα σε κόκκινο κρασί και έχει μια επίστρωση κατακαθιού από έξω. Μοιάζει σα λάσπη εξωτερικά αλλά εκεί είναι όλη η νοστιμιά. Δοκιμάστε το οπωσδήποτε."
+            "description": "Δυνατό τυρί που ωριμάζει μέσα σε κόκκινο κρασί και έχει μια επίστρωση κατακαθιού από έξω. Μοιάζει σα λάσπη εξωτερικά αλλά εκεί είναι όλη η νοστιμιά. Δοκιμάστε το οπωσδήποτε.",
+            "image": {
+              "src": "images/places/manoura.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           }
         ]
       },
@@ -1146,7 +1181,12 @@
               "μανούρα",
               "ξινομυζήθρα"
             ],
-            "description": "Τρεις κλασικές σιφνέικες ποικιλίες: ξινομυζήθρα, χλωρομανούρα και η μανούρα που ωριμάζει σε κόκκινο κρασί."
+            "description": "Τρεις κλασικές σιφνέικες ποικιλίες: ξινομυζήθρα, χλωρομανούρα και η μανούρα που ωριμάζει σε κόκκινο κρασί.",
+            "image": {
+              "src": "images/places/cheeses.jpg",
+              "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Xidis_Sifniot_Cheese_Counter.jpg"
+            }
           },
           {
             "id": "almond-sweets-traditional-treats",

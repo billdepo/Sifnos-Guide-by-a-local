@@ -964,7 +964,12 @@
               "must"
             ],
             "description": "One of the best places to try authentic Sifnian cooking.",
-            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece"
+            "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece",
+            "image": {
+              "src": "images/places/kelari.jpg",
+              "credit": "kelarisifnos.gr",
+              "creditUrl": "https://kelarisifnos.gr/"
+            }
           },
           {
             "id": "tsikali",
@@ -1008,7 +1013,12 @@
               "clay pot",
               "red wine"
             ],
-            "description": "Baby goat slow-cooked in red wine and dill inside a lidded clay pot of the same name (shaped like a casserole dish). The ultimate Sifnian recipe."
+            "description": "Baby goat slow-cooked in red wine and dill inside a lidded clay pot of the same name (shaped like a casserole dish). The ultimate Sifnian recipe.",
+            "image": {
+              "src": "images/places/mastelo.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "revythada",
@@ -1018,7 +1028,12 @@
               "vegan",
               "traditional"
             ],
-            "description": "Chickpeas soaked in rainwater and slow-cooked for many hours in a wood-fired oven with onion until they turn creamy. Traditionally the dish Sifnians eat every Sunday after church. Served with a squeeze of lemon, bread and olives (or 'egkies', as the locals call them) — pure bliss."
+            "description": "Chickpeas soaked in rainwater and slow-cooked for many hours in a wood-fired oven with onion until they turn creamy. Traditionally the dish Sifnians eat every Sunday after church. Served with a squeeze of lemon, bread and olives (or 'egkies', as the locals call them) — pure bliss.",
+            "image": {
+              "src": "images/places/revythada.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "revythokeftedes",
@@ -1028,7 +1043,12 @@
               "vegan",
               "fried"
             ],
-            "description": "Chickpea fritters — falafel before it was cool."
+            "description": "Chickpea fritters — falafel before it was cool.",
+            "image": {
+              "src": "images/places/revythokeftedes.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "kaparosalata",
@@ -1038,7 +1058,12 @@
               "capers",
               "local"
             ],
-            "description": "The island is covered in wild caper bushes hanging off stone walls. The caper salad is made with plenty of onion and some say it tastes a bit like stifado because of it."
+            "description": "The island is covered in wild caper bushes hanging off stone walls. The caper salad is made with plenty of onion and some say it tastes a bit like stifado because of it.",
+            "image": {
+              "src": "images/places/kaparosalata.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "myzithra",
@@ -1048,7 +1073,12 @@
               "white",
               "fresh"
             ],
-            "description": "A soft white cheese that is very tasty and pairs perfectly with a Greek salad, and also spread on bread. Ask for it instead of feta in a Greek salad."
+            "description": "A soft white cheese that is very tasty and pairs perfectly with a Greek salad, and also spread on bread. Ask for it instead of feta in a Greek salad.",
+            "image": {
+              "src": "images/places/myzithra.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           },
           {
             "id": "manoura",
@@ -1058,7 +1088,12 @@
               "red wine",
               "strong"
             ],
-            "description": "A strong aged cheese ripened in red wine, with a dark crust of wine sediment on the outside. It looks like mud on the rind — but that's where all the flavour is. Do not skip this."
+            "description": "A strong aged cheese ripened in red wine, with a dark crust of wine sediment on the outside. It looks like mud on the rind — but that's where all the flavour is. Do not skip this.",
+            "image": {
+              "src": "images/places/manoura.jpg",
+              "credit": "sifnos.gr",
+              "creditUrl": "https://sifnos.gr/en/gastronomy/"
+            }
           }
         ]
       },
@@ -1146,7 +1181,12 @@
               "manoura",
               "xinomizithra"
             ],
-            "description": "Three classic Sifnian varieties: xinomizithra, chloromanoura, and the manoura that ripens in red wine."
+            "description": "Three classic Sifnian varieties: xinomizithra, chloromanoura, and the manoura that ripens in red wine.",
+            "image": {
+              "src": "images/places/cheeses.jpg",
+              "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Xidis_Sifniot_Cheese_Counter.jpg"
+            }
           },
           {
             "id": "almond-sweets-traditional-treats",

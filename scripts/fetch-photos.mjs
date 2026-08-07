@@ -66,6 +66,7 @@ const PHOTOS = {
   "almond-sweets-traditional-treats": "Sifnos Amygdalota.jpg",
   ceramics: "Lemonis Sifniot Pottery Troullos.jpg",
   capers: "Flower of caper bush (Capparis spinosa).jpg",
+  cheeses: "Xidis Sifniot Cheese Counter.jpg",
 
   // Deliberately NOT illustrated: mastelo, revithada, revithokeftedes,
   // kaparosalata, myzithra, manoura, thyme-honey, cheeses, herbs. Commons has
@@ -90,6 +91,37 @@ const EXTRA = {
     creditUrl: "https://cycladesmap.gr/",
     // permission: not yet requested
   },
+
+  // The taverna's own photograph of its courtyard, from its own website.
+  kelari: {
+    url: "https://kelarisifnos.gr/images/portfolio/3.jpg",
+    credit: "kelarisifnos.gr",
+    creditUrl: "https://kelarisifnos.gr/",
+    // permission: not yet requested
+  },
+
+  // The Sifniot dishes, from the island's official gastronomy gallery. The
+  // gallery has no alt text, so each was identified by eye before use — the
+  // two plates that could not be named with confidence were left out rather
+  // than guessed at.
+  ...Object.fromEntries(
+    [
+      ["mastelo", 1], // goat in the clay mastelo, Easter
+      ["manoura", 5], // the dark wine-lees rind is the giveaway
+      ["myzithra", 6],
+      ["revythokeftedes", 8],
+      ["revythada", 9],
+      ["kaparosalata", 12],
+    ].map(([id, n]) => [
+      id,
+      {
+        url: `https://sifnos.gr/wp-content/uploads/gastronomy-${n}-1024x683.jpg`,
+        credit: "sifnos.gr",
+        creditUrl: "https://sifnos.gr/en/gastronomy/",
+        // permission: not yet requested
+      },
+    ]),
+  ),
 };
 
 const API = "https://commons.wikimedia.org/w/api.php";

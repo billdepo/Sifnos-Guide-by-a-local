@@ -163,9 +163,18 @@ export function row(entry, ui, icon) {
 
 /** Short prose entries (local dishes, products) — nothing to hide behind a tap. */
 export function note(item) {
+  const hasPhoto = !!(item.image && item.image.src);
   return `<div class="note-card">
-      <div class="note-head"><h3 class="note-name">${item.name}</h3>${tags(item.tags)}</div>
-      <p class="note-desc">${item.description}</p>
+      ${
+        hasPhoto
+          ? `<div class="note-media"><img class="media-img" src="${item.image.src}" alt="${item.name || ""}" loading="lazy" decoding="async" /></div>`
+          : ""
+      }
+      <div class="note-text">
+        <div class="note-head"><h3 class="note-name">${item.name}</h3>${tags(item.tags)}</div>
+        <p class="note-desc">${item.description}</p>
+        ${mediaCredit(item)}
+      </div>
     </div>`;
 }
 
