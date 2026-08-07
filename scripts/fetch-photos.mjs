@@ -58,6 +58,21 @@ const PHOTOS = {
   // Churches & monasteries
   "panagia-chrysopigi-2": "Panagia Chrysopigi on the Greek Island of Sifnos.jpg",
   "profitis-ilias-monastery": "Profitis Ilias Sifnos.JPG",
+  "seven-martyrs-eptamartyres": "Church of the Seven Martyrs 02.jpg",
+  "panagia-poulati": "Sifnos05church.jpg",
+  "vrysi-monastery-vrysiani": "Cyclades Sifnos Exembela Panagia Vrissiana - panoramio.jpg",
+  "taxiarchis-of-vathi-2": "The church called Taxiarches, Vathy on Sifnos, 153620.jpg",
+  // The point of Agios Symeon is the panorama, which is what this shows
+  "agios-symeon-3": "Simeon sif.jpg",
+
+  // Panigyria, illustrated by the church each one is held at
+  "panagia-chrysopigi": "Sifnos - Chrisopigi Church.jpg",
+  "taxiarchis-of-vathi": "The church called Taxiarches, Vathy on Sifnos, 153620.jpg",
+  "agios-symeon-2": "Simeon sif.jpg",
+
+  // Museums & workshops
+  "agios-andreas-archaeological-site": "Archaeological site Ag. Andreas, Sifnos, 153574.jpg",
+  "pottery-workshops": "Troullos Sifniot Pottery1.jpg",
 
   // Local products. Commons has almost no Sifniot food: these three are the
   // only honest matches. The amygdalota and the ceramics were both shot on

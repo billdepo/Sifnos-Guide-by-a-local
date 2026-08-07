@@ -1577,7 +1577,12 @@
                   "name": "Όλα τα εργαστήρια στο sifnos.gr",
                   "url": "https://sifnos.gr/κεραμική/"
                 }
-              ]
+              ],
+              "image": {
+                "src": "images/places/pottery-workshops.jpg",
+                "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Troullos_Sifniot_Pottery1.jpg"
+              }
             }
           ]
         },
@@ -1823,7 +1828,12 @@
               "month": 5,
               "day": 22,
               "location": "Χρυσοπηγή",
-              "description": "Το πιο σημαντικό πανηγύρι του νησιού. Λιτανεία της εικόνας και γλέντι στα προαύλια της εκκλησίας."
+              "description": "Το πιο σημαντικό πανηγύρι του νησιού. Λιτανεία της εικόνας και γλέντι στα προαύλια της εκκλησίας.",
+              "image": {
+                "src": "images/places/panagia-chrysopigi.jpg",
+                "credit": "KASPAR (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Sifnos_-_Chrisopigi_Church.jpg"
+              }
             },
             {
               "id": "agios-eliseus",
@@ -1931,7 +1941,12 @@
               "month": 8,
               "day": 31,
               "location": "Άγιος Συμεών",
-              "description": "Πανηγύρι στο εκκλησάκι του Αγίου Συμεών με υπέροχη θέα προς τις Καμάρες. Πιο ήσυχη ατμόσφαιρα από τα μεγάλα πανηγύρια του Αυγούστου."
+              "description": "Πανηγύρι στο εκκλησάκι του Αγίου Συμεών με υπέροχη θέα προς τις Καμάρες. Πιο ήσυχη ατμόσφαιρα από τα μεγάλα πανηγύρια του Αυγούστου.",
+              "image": {
+                "src": "images/places/agios-symeon-2.jpg",
+                "credit": "Iason.nb (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Simeon_sif.jpg"
+              }
             },
             {
               "id": "taxiarchis-of-vathi",
@@ -1940,7 +1955,12 @@
               "month": 9,
               "day": 5,
               "location": "Βαθύ",
-              "description": "Πανηγύρι στον Ταξιάρχη, το γραφικό εκκλησάκι πάνω στη θάλασσα του Βαθέος."
+              "description": "Πανηγύρι στον Ταξιάρχη, το γραφικό εκκλησάκι πάνω στη θάλασσα του Βαθέος.",
+              "image": {
+                "src": "images/places/taxiarchis-of-vathi.jpg",
+                "credit": "Zde (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:The_church_called_Taxiarches,_Vathy_on_Sifnos,_153620.jpg"
+              }
             },
             {
               "id": "agios-sozon",
@@ -2072,7 +2092,12 @@
                 "αρχαία ιστορία",
                 "θέα"
               ],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Andreas+Archaeological+Site+Sifnos"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Andreas+Archaeological+Site+Sifnos",
+              "image": {
+                "src": "images/places/agios-andreas-archaeological-site.jpg",
+                "credit": "Zde (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Archaeological_site_Ag._Andreas,_Sifnos,_153574.jpg"
+              }
             },
             {
               "id": "sifnos-folklore-museum",
@@ -2121,7 +2146,12 @@
                 "μουσείο",
                 "ιστορία"
               ],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vrisi+Monastery+Exambela+Sifnos"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vrisi+Monastery+Exambela+Sifnos",
+              "image": {
+                "src": "images/places/vrysi-monastery-vrysiani.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Exembela_Panagia_Vrissiana_-_panoramio.jpg"
+              }
             },
             {
               "id": "seven-martyrs-eptamartyres",
@@ -2134,7 +2164,12 @@
                 "θέα",
                 "ηλιοβασίλεμα"
               ],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartyres+Kastro+Sifnos"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartyres+Kastro+Sifnos",
+              "image": {
+                "src": "images/places/seven-martyrs-eptamartyres.jpg",
+                "credit": "Abldecn (CC BY 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Church_of_the_Seven_Martyrs_02.jpg"
+              }
             },
             {
               "id": "panagia-poulati",
@@ -2146,7 +2181,12 @@
                 "γραφικό",
                 "θέα"
               ],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Poulati+Sifnos"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Poulati+Sifnos",
+              "image": {
+                "src": "images/places/panagia-poulati.jpg",
+                "credit": "Jon Corelis (CC BY 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Sifnos05church.jpg"
+              }
             },
             {
               "id": "agios-symeon-3",
@@ -2160,7 +2200,12 @@
                 "θέα",
                 "πανηγύρι"
               ],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos",
+              "image": {
+                "src": "images/places/agios-symeon-3.jpg",
+                "credit": "Iason.nb (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Simeon_sif.jpg"
+              }
             },
             {
               "id": "taxiarchis-of-vathi-2",
@@ -2173,7 +2218,12 @@
                 "γραφικό",
                 "Βαθύ"
               ],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taxiarchis+church+Vathi+Sifnos"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taxiarchis+church+Vathi+Sifnos",
+              "image": {
+                "src": "images/places/taxiarchis-of-vathi-2.jpg",
+                "credit": "Zde (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:The_church_called_Taxiarches,_Vathy_on_Sifnos,_153620.jpg"
+              }
             },
             {
               "id": "panagia-i-konchi-2",
