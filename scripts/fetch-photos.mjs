@@ -58,6 +58,21 @@ const PHOTOS = {
   // Churches & monasteries
   "panagia-chrysopigi-2": "Panagia Chrysopigi on the Greek Island of Sifnos.jpg",
   "profitis-ilias-monastery": "Profitis Ilias Sifnos.JPG",
+
+  // Local products. Commons has almost no Sifniot food: these three are the
+  // only honest matches. The amygdalota and the ceramics were both shot on
+  // the island; the caper is Capparis spinosa, the same species that grows
+  // wild here, photographed elsewhere.
+  "almond-sweets-traditional-treats": "Sifnos Amygdalota.jpg",
+  ceramics: "Lemonis Sifniot Pottery Troullos.jpg",
+  capers: "Flower of caper bush (Capparis spinosa).jpg",
+
+  // Deliberately NOT illustrated: mastelo, revithada, revithokeftedes,
+  // kaparosalata, myzithra, manoura, thyme-honey, cheeses, herbs. Commons has
+  // nothing for them, and a generic stew or a French honey jar standing in for
+  // a named Sifniot dish misinforms the reader — worse than no photo.
+  // The 15 bars, tavernas and bakeries have no free photos anywhere; see
+  // REFERENCES.md before adding any.
 };
 
 /**

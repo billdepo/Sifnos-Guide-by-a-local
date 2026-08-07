@@ -1150,7 +1150,12 @@
               "capers",
               "meze"
             ],
-            "description": "Fresh, dried or as leaves — harvested on the island's dry-stone terraces, they go with salads and mezes."
+            "description": "Fresh, dried or as leaves — harvested on the island's dry-stone terraces, they go with salads and mezes.",
+            "image": {
+              "src": "images/places/capers.jpg",
+              "credit": "Daniel Capilla (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Flower_of_caper_bush_(Capparis_spinosa).jpg"
+            }
           },
           {
             "id": "cheeses",
@@ -1170,7 +1175,12 @@
               "melopita",
               "pasteli"
             ],
-            "description": "Amygdalota, melopita (honey pie), loukoumi, pasteli and aniseed rings — the sweets of Sifnos."
+            "description": "Amygdalota, melopita (honey pie), loukoumi, pasteli and aniseed rings — the sweets of Sifnos.",
+            "image": {
+              "src": "images/places/almond-sweets-traditional-treats.jpg",
+              "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Sifnos_Amygdalota.jpg"
+            }
           },
           {
             "id": "herbs-aromatics",
@@ -1190,7 +1200,12 @@
               "handmade",
               "gift"
             ],
-            "description": "Handmade clay pots and decorative pieces — the most authentic Sifnian gift. A cooking pot (tsoukali or gastra) keeps the tradition alive."
+            "description": "Handmade clay pots and decorative pieces — the most authentic Sifnian gift. A cooking pot (tsoukali or gastra) keeps the tradition alive.",
+            "image": {
+              "src": "images/places/ceramics.jpg",
+              "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Lemonis_Sifniot_Pottery_Troullos.jpg"
+            }
           }
         ]
       }

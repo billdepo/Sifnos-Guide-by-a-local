@@ -1150,7 +1150,12 @@
               "κάπαρη",
               "μεζές"
             ],
-            "description": "Φρέσκια, ξερή ή σε φύλλα — μαζεύεται στα ξερολιθικά αναβαθμίδια του νησιού και συνοδεύει σαλάτες και μεζέδες."
+            "description": "Φρέσκια, ξερή ή σε φύλλα — μαζεύεται στα ξερολιθικά αναβαθμίδια του νησιού και συνοδεύει σαλάτες και μεζέδες.",
+            "image": {
+              "src": "images/places/capers.jpg",
+              "credit": "Daniel Capilla (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Flower_of_caper_bush_(Capparis_spinosa).jpg"
+            }
           },
           {
             "id": "cheeses",
@@ -1170,7 +1175,12 @@
               "μελόπιτα",
               "παστέλι"
             ],
-            "description": "Αμυγδαλωτά, μελόπιτα, λουκούμια, παστέλι και κουλούρια με γλυκάνισο — τα γλυκά της Σίφνου."
+            "description": "Αμυγδαλωτά, μελόπιτα, λουκούμια, παστέλι και κουλούρια με γλυκάνισο — τα γλυκά της Σίφνου.",
+            "image": {
+              "src": "images/places/almond-sweets-traditional-treats.jpg",
+              "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Sifnos_Amygdalota.jpg"
+            }
           },
           {
             "id": "herbs-aromatics",
@@ -1190,7 +1200,12 @@
               "χειροποίητο",
               "δώρο"
             ],
-            "description": "Χειροποίητα πήλινα σκεύη και διακοσμητικά — το πιο αυθεντικό σιφνέικο δώρο. Ένα τσουκάλι ή μια γάστρα για μαγείρεμα κρατάει την παράδοση ζωντανή."
+            "description": "Χειροποίητα πήλινα σκεύη και διακοσμητικά — το πιο αυθεντικό σιφνέικο δώρο. Ένα τσουκάλι ή μια γάστρα για μαγείρεμα κρατάει την παράδοση ζωντανή.",
+            "image": {
+              "src": "images/places/ceramics.jpg",
+              "credit": "Catlemur (CC BY-SA 4.0, Wikimedia Commons)",
+              "creditUrl": "https://commons.wikimedia.org/wiki/File:Lemonis_Sifniot_Pottery_Troullos.jpg"
+            }
           }
         ]
       }

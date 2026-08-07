@@ -46,25 +46,40 @@
 
 ## Φωτογραφίες
 
-Αποθηκεύονται τοπικά στο `images/places/` (23 αρχεία, ~3 MB). Προσθήκη/ανανέωση:
+Αποθηκεύονται τοπικά στο `images/places/` (26 αρχεία, ~3,3 MB). Προσθήκη/ανανέωση:
 `node scripts/fetch-photos.mjs` (δες PLAN.md §10).
 
-**Wikimedia Commons (22)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
+**Wikimedia Commons (25)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
 Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία στο detail sheet — **μην την
 αφαιρέσεις**, είναι υποχρέωση των αδειών CC BY / CC BY-SA.
 
 ⚠️ **Εκτός Commons (1)** — `glyfo.jpg` από το cycladesmap.gr. **Δεν έχει ανοιχτή
 άδεια** και φέρει υδατογράφημα του ιδιοκτήτη. Μπήκε κατόπιν αιτήματος, με
 credit + link, αλλά το credit ΔΕΝ είναι άδεια. Εκκρεμεί άδεια χρήσης από τον
-δικαιούχο — αν δεν δοθεί, αντικατέστησέ τη με δική σου φωτογραφία.
-Οι μη-Commons πηγές δηλώνονται στο `EXTRA` του `scripts/fetch-photos.mjs`.
+δικαιούχο. Οι μη-Commons πηγές δηλώνονται στο `EXTRA` του
+`scripts/fetch-photos.mjs`.
 
-**Χωρίς φωτογραφία** (δεν υπάρχει τίποτα στο Commons): Βρουλίδια, Σπηλιά,
-Γιαλούδια, Τσουβάλες — τα δύο τελευταία είναι προσβάσιμα μόνο δια θαλάσσης.
-Πέφτουν πίσω σε emoji. Ιδανικά θέλουν δική σου φωτογραφία.
+### Γιατί «Ποτό» και «Φαγητό» έχουν σχεδόν καθόλου φωτογραφίες
 
-Σημείωση: η `poulati.jpg` είναι μόνο 480×361 — η μοναδική στο Commons για την
-Παναγία Πουλάτη. Φαίνεται λίγο θολή στο detail sheet.
+**Τα 15 μαγαζιά** (9 μπαρ, 3 ταβέρνες, 3 αρτοποιεία/ζαχαροπλαστεία) **δεν έχουν
+καμία ελεύθερη φωτογραφία πουθενά** — στα 120 αρχεία «Sifnos» του Commons δεν
+υπάρχει ούτε ένα. Ό,τι κυκλοφορεί online ανήκει στα ίδια τα μαγαζιά (site,
+Instagram, Google Maps) ή σε πλατφόρμες όπως το TripAdvisor.
+**Ο σωστός δρόμος: ζήτα τους τη φωτογραφία.** Ένα μήνυμα στο Instagram αρκεί
+συνήθως — τους συμφέρει κιόλας. Μέχρι τότε, δικές σου φωτογραφίες.
+
+**Τα φαγητά** (μαστέλο, ρεβιθάδα, ρεβυθοκεφτέδες, καπαροσαλάτα, μυζήθρα,
+μανούρα, μέλι, τυριά, βότανα) δεν μπήκαν επίτηδες: το Commons δεν έχει τίποτα
+σιφνέικο και μια γενική φωτογραφία «ελληνικής κατσαρόλας» ή ένα γαλλικό βάζο
+μέλι στη θέση συγκεκριμένου σιφνέικου πιάτου **παραπληροφορεί** — χειρότερο από
+το να μην υπάρχει φωτογραφία.
+
+**Χωρίς φωτογραφία επίσης** (δεν υπάρχει τίποτα στο Commons): Βρουλίδια, Σπηλιά,
+Γιαλούδια, Τσουβάλες — τα δύο τελευταία προσβάσιμα μόνο δια θαλάσσης.
+
+Σημειώσεις: η `poulati.jpg` είναι μόνο 480×361 (η μοναδική στο Commons για την
+Παναγία Πουλάτη) και φαίνεται λίγο θολή. Η `capers.jpg` είναι Capparis spinosa
+— το ίδιο είδος που φυτρώνει στη Σίφνο, φωτογραφημένο αλλού.
 
 | Σημείο | Αρχείο | Απόδοση | Πηγή |
 |--------|--------|---------|------|
@@ -89,6 +104,9 @@ credit + link, αλλά το credit ΔΕΝ είναι άδεια. Εκκρεμε
 | Πλατύς Γιαλός | `platy-gialos-2.jpg` | Kondephy (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Platis_Gialos,_Sifnos.jpg |
 | Βαθύ | `vathi.jpg` | Takeaway (talk) (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Vathy_harbour_Greek_island_of_Sifnos.jpg |
 | Χερρόνησος | `cherronisos-2.jpg` | Margaritaprounia (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Herronisos.JPG |
+| Κάπαρη | `capers.jpg` | Daniel Capilla (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Flower_of_caper_bush_(Capparis_spinosa).jpg |
+| Αμυγδαλωτά & Παραδοσιακά Γλυκά | `almond-sweets-traditional-treats.jpg` | Catlemur (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Sifnos_Amygdalota.jpg |
+| Κεραμικά | `ceramics.jpg` | Catlemur (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Lemonis_Sifniot_Pottery_Troullos.jpg |
 | Παναγία Χρυσοπηγή | `panagia-chrysopigi-2.jpg` | Abldecn (CC BY 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Panagia_Chrysopigi_on_the_Greek_Island_of_Sifnos.jpg |
 | Μονή Προφήτη Ηλία | `profitis-ilias-monastery.jpg` | / Evelin123 at Greek Wikipedia (CC BY-SA 3.0 gr, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Profitis_Ilias_Sifnos.JPG |
 
