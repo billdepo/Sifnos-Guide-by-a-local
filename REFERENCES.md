@@ -41,6 +41,7 @@
 | Βικιπαίδεια — 200 της Καισαριανής | https://el.wikipedia.org/wiki/200_της_Καισαριανής | Στέλιος Σκλάβαινας |
 | Βικιπαίδεια — Στέλιος Σκλάβαινας | https://el.wikipedia.org/wiki/Στέλιος_Σκλάβαινας | Καταγωγή/βιογραφικό (Σίφνος 1907–1944) |
 | Βικιπαίδεια — Ιωάννης Γρυπάρης | https://el.wikipedia.org/wiki/Ιωάννης_Γρυπάρης_(λογοτέχνης) | Ποιητής (γεννήθηκε Αρτεμώνας· ΔΕΝ επιβεβαιώθηκε σύνδεση με Χρυσοπηγή) |
+| sifnos.gr — Χρήσιμα τηλέφωνα | https://sifnos.gr/en/useful-telephone-numbers/ | Τηλέφωνα ταξί Σίφνου (κάρτα «Ταξί» στα Πρακτικά) |
 | Greek Gastronomy Guide | https://www.greekgastronomyguide.gr/item/zaxaroplasteio-theodorou-sifnos/ | Ζαχαροπλαστείο Θεοδώρου |
 | womantoc / Miss Tasty | womantoc.gr, misstasty.gr | Ζαχαροπλαστείο Θεοδώρου (δευτερεύον) |
 
@@ -118,6 +119,8 @@ Instagram, Google Maps) ή σε πλατφόρμες όπως το TripAdvisor.
 | OpenStreetMap — Nominatim | https://nominatim.openstreetmap.org/ | Geocoding παραλιών (διόρθωση συντεταγμένων στον χάρτη) |
 | OpenStreetMap — Tiles | https://www.openstreetmap.org/ | Πλακίδια χάρτη (Leaflet) στην ενότητα «Μπάνιο» |
 | Leaflet | https://leafletjs.com/ | Διαδραστικός χάρτης (detail sheet + πλήρης χάρτης) |
+| Ferryhopper | https://www.ferryhopper.com/ | Κράτηση ακτοπλοϊκών εισιτηρίων (κάρτα «Φέρι») |
+| Overpass API (OSM) | https://overpass-api.de/ | Έλεγχος θέσεων super market στη Σίφνο |
 | Wikimedia Commons API | https://commons.wikimedia.org/w/api.php | Λήψη φωτογραφιών + metadata αδειών |
 
 ---
@@ -128,3 +131,5 @@ Instagram, Google Maps) ή σε πλατφόρμες όπως το TripAdvisor.
 - **Πανηγύρια**: ημερομηνίες βασισμένες στο sifnaiko-fos.gr (εξαίρεση: Άγιος Συμεών 31/8 κατ' απαίτηση — η πηγή αναφέρει 3 Φεβρουαρίου).
 - **Φωτογραφίες**: προτίμησε Commons ή δικές σου· πριν προσθέσεις νέες τρέξε `npm i sharp` — αλλιώς μπαίνουν ασυμπίεστες (~800KB η κάθε μία).
 - **IDs**: κάθε νέο item παίρνει σταθερό `id` με `node scripts/assign-ids.mjs`. Τα ids είναι permalinks — μην τα αλλάζεις.
+- **Ταξί**: ο κατάλογος του sifnos.gr ξεκινά από το Νο2 — δεν αναφέρεται Νο1. Αν το ξέρεις, πρόσθεσέ το.
+- **Super markets**: τα links είναι αναζητήσεις Google Maps (αυτοδιορθώνονται), όχι σταθερές συντεταγμένες — το ΑΒ δεν είναι καταχωρημένο στο OpenStreetMap.

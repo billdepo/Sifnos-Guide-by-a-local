@@ -285,11 +285,6 @@ export function search(query, limit = 40) {
 
 /* ─── Derived collections ──────────────────────────────────────── */
 
-/** Every item across the guide that we rated three stars. */
-export function mustVisit() {
-  return state.index.filter((e) => e.item.rating === 3);
-}
-
 /** Beaches marked as sheltered from the given compass letter ("N"). */
 export function shelteredFrom(letter) {
   return state.index.filter(

@@ -469,6 +469,11 @@ input:focus-visible {
   background: rgba(44, 52, 64, 0.07);
   color: var(--c-text);
 }
+.badge--inactive {
+  background: #f3f4f6;
+  color: var(--c-muted);
+  border: 1px dashed #d5d8dd;
+}
 .badge--car {
   background: #f0fdf4;
   color: #15803d;
@@ -588,6 +593,10 @@ input:focus-visible {
 
 .home-section {
   margin-bottom: 2rem;
+}
+/* The collections slot is filled only when the forecast warrants it */
+.home-section:empty {
+  display: none;
 }
 .home-heading {
   font-family: var(--f-display);
@@ -861,53 +870,80 @@ input:focus-visible {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.6rem;
 }
+/* No aspect-ratio: on a wide screen five square tiles became 300px boxes
+   holding one small emoji. A fixed comfortable height keeps them tidy at
+   every width. */
 .tile {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-  aspect-ratio: 1;
-  padding: 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.7rem;
+  min-height: 116px;
+  padding: 0.85rem;
   background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--r-md);
   color: var(--c-text);
-  text-align: center;
   box-shadow: var(--shadow-1);
-  transition: transform var(--t), box-shadow var(--t);
+  overflow: hidden;
+  transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+.tile::after {
+  content: "";
+  position: absolute;
+  right: -28px;
+  bottom: -34px;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--c-primary-soft);
+  opacity: 0.7;
 }
 .tile:active {
   transform: scale(0.97);
 }
 .tile-icon {
-  font-size: 1.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--c-primary-soft);
+  font-size: 1.35rem;
   line-height: 1;
 }
 .tile-label {
-  font-size: 0.8rem;
-  font-weight: 600;
+  position: relative;
+  font-family: var(--f-display);
+  font-size: 0.98rem;
+  font-weight: 700;
   line-height: 1.2;
 }
 .tile-count {
   position: absolute;
-  top: 0.4rem;
-  right: 0.45rem;
-  font-size: 0.66rem;
+  top: 0.7rem;
+  right: 0.85rem;
+  font-family: var(--f-display);
+  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--c-muted);
-  background: var(--c-bg);
-  border-radius: var(--r-pill);
-  padding: 0.05rem 0.35rem;
+  color: var(--c-primary);
+  line-height: 1;
 }
 .tile--map {
   background: linear-gradient(135deg, var(--c-primary), #2196a6);
   border-color: transparent;
   color: #fff;
 }
+.tile--map::after {
+  background: rgba(255, 255, 255, 0.14);
+}
+.tile--map .tile-icon {
+  background: rgba(255, 255, 255, 0.2);
+}
 .tile--map .tile-count {
-  background: rgba(255, 255, 255, 0.22);
   color: #fff;
 }
 
@@ -1793,16 +1829,24 @@ input:focus-visible {
     display: flex;
     align-items: center;
     gap: 0.15rem;
-    flex: 1;
-    justify-content: flex-end;
+    /* margin-left:auto rather than flex:1 + justify-content:flex-end — with
+       flex-end, anything that overflows spills past the *left* edge and can
+       never be scrolled back into view, which was clipping "Χωριά". */
+    margin-left: auto;
+    flex: 0 1 auto;
+    min-width: 0;
     overflow-x: auto;
     scrollbar-width: none;
+  }
+  /* The brand must not compete with the links for space on the home screen. */
+  .appbar-brand {
+    flex: 0 0 auto;
   }
   .appbar-links::-webkit-scrollbar {
     display: none;
   }
   .appbar-link {
-    padding: 0.4rem 0.7rem;
+    padding: 0.4rem 0.6rem;
     border-radius: var(--r-pill);
     font-size: 0.85rem;
     font-weight: 500;

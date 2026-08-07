@@ -80,7 +80,7 @@
         "West",
         "North-West"
       ],
-      "hintLabel": "Local tip: ",
+      "hintLabel": "Tip: ",
       "hintStrongNorth": "Strong north wind — better head to Faros, Vathi, Platy Gialos or Cherronisos.",
       "hintStrong": "Strong wind today — pick a sheltered beach and ask the locals.",
       "hintCalm": "Light wind — a good day for a swim almost anywhere.",
@@ -101,10 +101,6 @@
     "noEventLabel": "No event in the next few days",
     "seeAll": "See all",
     "collections": {
-      "must": {
-        "title": "The island's must-dos",
-        "subtitle": "What genuinely stands out — beaches, tavernas, bars."
-      },
       "sheltered": {
         "title": "Beaches out of the wind",
         "subtitle": "Sheltered from the north wind blowing today."
@@ -127,7 +123,8 @@
     },
     "searchTitle": "Search",
     "searchHint": "Search beaches, tavernas, bars, festivals, villages…",
-    "searchEmpty": "Nothing found for “{q}”"
+    "searchEmpty": "Nothing found for “{q}”",
+    "inactiveLabel": "Not happening this year"
   },
   "sections": {
     "beaches": {
@@ -907,22 +904,6 @@
               "mustTry": [],
               "note": "Slightly expensive but worth it.",
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Drakakis+Apollonia+Sifnos+Greece"
-            },
-            {
-              "id": "grado",
-              "name": "GRADO",
-              "aka": null,
-              "rating": 2,
-              "tags": [
-                "after hours",
-                "club",
-                "greek music",
-                "international music"
-              ],
-              "description": "The place for late-night dancing. Normally runs two floors: upstairs Greek music, downstairs international.",
-              "mustTry": [],
-              "note": "Ask if a reservation is needed.",
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grado+Club+Apollonia+Sifnos+Greece"
             }
           ]
         },
@@ -1624,7 +1605,14 @@
           "id": "ferry",
           "title": "Ferry",
           "icon": "ferry",
-          "description": "Sifnos is connected to Piraeus and Lavrio via daily routes (conventional ferries ~5 hours, high-speed ~2.5–3 hours). It also connects to Milos, Serifos, Kimolos, Folegandros and Santorini. Book tickets in advance for August — especially if you're bringing a vehicle. For the Lavrio ferry, the Magic Sea Ferries company runs a bus that takes you from the Koropi suburban railway/metro station to the boat — but you need to have selected it when booking your ticket."
+          "description": "Sifnos is connected to Piraeus and Lavrio via daily routes (conventional ferries ~5 hours, high-speed ~2.5–3 hours). It also connects to Milos, Serifos, Kimolos, Folegandros and Santorini. Book tickets in advance for August — especially if you're bringing a vehicle. For the Lavrio ferry, the Magic Sea Ferries company runs a bus that takes you from the Koropi suburban railway/metro station to the boat — but you need to have selected it when booking your ticket.",
+          "contacts": [
+            {
+              "name": "Ferryhopper",
+              "note": "compare and book tickets online",
+              "url": "https://www.ferryhopper.com/"
+            }
+          ]
         },
         {
           "id": "buses",
@@ -1642,6 +1630,51 @@
           }
         },
         {
+          "id": "taxis",
+          "title": "Taxis",
+          "icon": "taxi",
+          "description": "Sifnos has only a handful of taxis and they are busy all summer. Call a driver directly — there is no central dispatch. If you are arriving by ferry or leaving early, book the day before.",
+          "highlight": "On festival nights and whenever a ferry docks, the taxis go quickly.",
+          "contacts": [
+            {
+              "name": "Ταξί 2 — Kalogirou",
+              "phone": "6944 742652"
+            },
+            {
+              "name": "Ταξί 3 — Komis",
+              "phone": "69888 08888"
+            },
+            {
+              "name": "Ταξί 4 — Gerontopoulos",
+              "phone": "6944 444904"
+            },
+            {
+              "name": "Ταξί 5 — Diaremes",
+              "phone": "6944 642680"
+            },
+            {
+              "name": "Ταξί 6 — Anapliotis",
+              "phone": "6944 696409"
+            },
+            {
+              "name": "Ταξί 7 — Depastas",
+              "phone": "6932 403485"
+            },
+            {
+              "name": "Ταξί 8 — Karavis",
+              "phone": "6944 936111"
+            },
+            {
+              "name": "Ταξί 9 — Chrysogelos",
+              "phone": "6944 900972"
+            },
+            {
+              "name": "Ταξί 10 — Koulouris",
+              "phone": "6973 209720"
+            }
+          ]
+        },
+        {
           "id": "parking",
           "title": "Parking",
           "icon": "parking",
@@ -1657,7 +1690,30 @@
           "id": "supermarkets",
           "title": "Supermarkets",
           "icon": "shop",
-          "description": "The largest supermarkets are in Apollonia and Kamares. Smaller grocers exist in almost every village. Generally open daily in summer."
+          "description": "You'll find supermarkets in Kamares, Apollonia, Artemonas and Platy Gialos, and a small grocery in almost every village. The biggest is the AB just outside Artemonas. In summer they open daily.",
+          "nearbyLabel": "Where",
+          "nearbyLinks": [
+            {
+              "name": "AB — just outside Artemonas",
+              "url": "https://www.google.com/maps/search/?api=1&query=AB%20supermarket%20Artemonas%20Sifnos",
+              "icon": "🛒"
+            },
+            {
+              "name": "Kamares",
+              "url": "https://www.google.com/maps/search/?api=1&query=supermarket%20Kamares%20Sifnos",
+              "icon": "⚓"
+            },
+            {
+              "name": "Apollonia",
+              "url": "https://www.google.com/maps/search/?api=1&query=supermarket%20Apollonia%20Sifnos",
+              "icon": "🏘️"
+            },
+            {
+              "name": "Platy Gialos",
+              "url": "https://www.google.com/maps/search/?api=1&query=supermarket%20Platy%20Gialos%20Sifnos",
+              "icon": "🏖️"
+            }
+          ]
         },
         {
           "id": "wind",
@@ -1899,7 +1955,8 @@
               "tags": [
                 "music",
                 "nightlife"
-              ]
+              ],
+              "inactive": true
             },
             {
               "id": "mousifando",

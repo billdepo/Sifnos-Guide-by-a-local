@@ -4,7 +4,7 @@
  */
 
 import {
-  state, t, search, mustVisit, shelteredFrom, mappable, nextEvent, VIEW_ICONS,
+  state, t, search, shelteredFrom, mappable, nextEvent, VIEW_ICONS,
 } from "./store.js";
 import * as ui from "./ui.js";
 import * as maps from "./map.js";
@@ -113,9 +113,7 @@ export function home() {
         ${eventStrip()}
       </section>
 
-      <section class="home-section" id="home-collections">
-        ${collectionCard("must", u.collections.must, mustVisit().length)}
-      </section>
+      <section class="home-section" id="home-collections"></section>
 
       <section class="home-section">
         <h2 class="home-heading">${u.exploreLabel}</h2>
@@ -350,7 +348,7 @@ export function collection(id) {
   const copy = u.collections[id];
   if (!copy) return notFound();
 
-  const entries = id === "must" ? mustVisit() : shelteredFrom("N");
+  const entries = shelteredFrom("N");
 
   mount(`
     <header class="view-head">

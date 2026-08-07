@@ -116,6 +116,8 @@ export function mediaCredit(item) {
 /** One line of context under the name: area, date, access, location. */
 function metaLine(item, ui) {
   const bits = [];
+  // Something still listed but not running this season
+  if (item.inactive) bits.push(`<span class="badge badge--inactive">${ui.inactiveLabel}</span>`);
   if (item.parentArea) bits.push(`<span class="badge badge--area">${item.parentArea}</span>`);
   if (item.location) bits.push(`<span class="badge badge--area">${item.location}</span>`);
   if (item.meta) bits.push(`<span class="badge badge--meta">${item.meta}</span>`);
@@ -137,8 +139,8 @@ function metaLine(item, ui) {
  */
 export function row(entry, ui, icon) {
   const { item, viewId, groupId } = entry;
-  const feature = item.rating === 3;
-  const muted = item.rating === 0;
+  const feature = item.rating === 3 && !item.inactive;
+  const muted = item.rating === 0 || item.inactive;
   const hasPhoto = !!(item.image && item.image.src);
   const cls = ["row", feature && "row--feature", muted && "row--muted"]
     .filter(Boolean)
@@ -175,6 +177,7 @@ export function detail(entry, icon) {
   const hasPhoto = item.image && item.image.src;
 
   const badges = [
+    item.inactive && `<span class="badge badge--inactive">${ui.inactiveLabel}</span>`,
     item.parentArea && `<span class="badge badge--area">${item.parentArea}</span>`,
     item.location && `<span class="badge badge--area">${item.location}</span>`,
     item.locationDetail && `<span class="badge badge--note">${item.locationDetail}</span>`,
@@ -239,16 +242,19 @@ export function detail(entry, icon) {
 
 export const TIP_ICONS = {
   wind: "💨", mountain: "⛰️", gift: "🎁", people: "🗣️", ferry: "⛴️",
-  bus: "🚌", parking: "🅿️", water: "💧", shop: "🛒",
+  bus: "🚌", taxi: "🚕", parking: "🅿️", water: "💧", shop: "🛒",
 };
 
 export function tipCard(item, weatherSlot) {
+  const ui = state.ui;
   return `<div class="tip-card">
       <div class="tip-card-icon">${TIP_ICONS[item.icon] || "📌"}</div>
       <div class="tip-card-content">
         <h3 class="tip-card-title">${item.title}</h3>
         <p class="tip-card-desc">${item.description}</p>
         ${item.highlight ? `<div class="tip-card-highlight">${item.highlight}</div>` : ""}
+        ${nearby(item.nearbyLinks, item.nearbyLabel || ui.nearbyLabel)}
+        ${contacts(item.contacts, ui.contactsLabel)}
         ${item.widget === "weather" ? weatherSlot || "" : ""}
         ${item.embed || item.download ? `<div class="tip-actions">${embed(item.embed)}${download(item.download)}</div>` : ""}
       </div>
