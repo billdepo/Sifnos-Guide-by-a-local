@@ -33,32 +33,68 @@ JSON is directly `fetch()`-able by JS without a parser. It enforces a schema (ra
 ## 3. Architecture: Content–UI Separation
 
 ```
-index.html          ← structural shell only (nav containers, section anchors)
-                       no hardcoded text except the HTML lang attribute
+index.html          ← app shell only: app bar, empty #view, tab bar, sheet, drawer
+                       no content text whatsoever
 
 css/
-  style.css         ← all visual styles, uses CSS custom properties for theming
+  style.css         ← all visual styles, CSS custom properties for theming
 
-js/
-  app.js            ← fetches active language JSON → renders all content into DOM
-                       handles language toggle, localStorage persistence, smooth scroll
+js/                 ← ES modules, loaded natively (no bundler)
+  app.js            ← boot, chrome (app bar / tab bar / drawer), route dispatch
+  router.js         ← hash router: #/view/group/item?f=filters
+  store.js          ← content load, normalisation, search index, collections
+  views.js          ← one render function per screen
+  ui.js             ← shared HTML fragments (rows, detail, badges, calendar)
+  sheet.js          ← the detail bottom sheet
+  map.js            ← Leaflet lifecycle
+  weather.js        ← Open-Meteo fetch + rendering
 
 content/
   el.json           ← Greek content (source of truth — edit this first)
   en.json           ← English content (translated from el.json)
 
 images/
-  hero.jpg          ← main hero image (or use a CDN URL)
-  (optional per-location photos)
+  hero.jpg          ← home hero
+  places/           ← per-item photos from Wikimedia Commons (see §10)
+
+scripts/
+  assign-ids.mjs        ← gives every item a stable, language-independent id
+  check-content-sync.mjs← asserts el/en structural parity
+  fetch-photos.mjs      ← downloads + optimises Commons photos, writes credits
 ```
 
 **Data flow:**
-1. Page loads → `app.js` reads `localStorage.get('lang')` (default: `'el'`)
-2. Fetches `content/{lang}.json`
-3. Renders all sections into the DOM
-4. Language toggle button → flips lang, saves to localStorage, re-renders
+1. Page loads → `store.js` reads `localStorage.get('lang')` (default `'el'`) and fetches `content/{lang}.json`
+2. `normalise()` flattens the JSON's five different section shapes into one `views → groups → items` model, and builds the search index and the `id → item` map
+3. `router.start()` parses the hash and calls `onRoute()`
+4. `onRoute()` renders **exactly one view** into `#view`, then opens the detail sheet if the URL names an item
+5. Language toggle → re-fetch, re-normalise, re-render the current route
 
-All UI strings (section labels, tag names, nav items, button text) live inside the JSON files — **nothing is hardcoded in HTML** beyond structural containers.
+Only one view is in the DOM at a time. That is what keeps a 120-item guide to
+two or three screens of scrolling on a phone instead of twenty.
+
+All UI strings live inside the JSON files — **nothing is hardcoded in HTML**
+beyond structural containers.
+
+### Navigation model
+
+Every piece of navigable state is in the URL, so any screen is linkable and the
+hardware back button always does the obvious thing.
+
+| URL | Screen |
+|-----|--------|
+| `#/` | Home hub: weather, next festival, collections, section tiles |
+| `#/beaches` | Section, first group |
+| `#/beaches/pebble` | Section + group |
+| `#/beaches/pebble/vroulidia` | …with that item's sheet open over it |
+| `#/beaches/sandy?f=must,a-car` | …filtered to must-visit + reachable by car |
+| `#/search?q=vathi` | Search |
+| `#/map` / `#/map/glyfo` | Full-screen map, optionally focused |
+| `#/collection/must` | Derived collection (every ★★★ in the guide) |
+
+Opening an item does **not** re-render the list underneath, so its scroll
+position survives. Closing the sheet pops history when the sheet was opened
+from that list, and replaces it when the user arrived by deep link.
 
 ---
 
@@ -306,17 +342,25 @@ Both fonts from Google Fonts (loaded in `<head>`):
 
 ```
 /
-├── index.html              ← structural shell
+├── index.html              ← app shell
 ├── PLAN.md                 ← this file
+├── REFERENCES.md           ← every source used for the content
 ├── css/
 │   └── style.css
-├── js/
-│   └── app.js
+├── js/                     ← ES modules (see §3)
+│   ├── app.js  router.js  store.js  views.js
+│   └── ui.js   sheet.js   map.js    weather.js
 ├── content/
 │   ├── el.json             ← Greek content (source of truth)
 │   └── en.json             ← English content
+├── scripts/
+│   ├── assign-ids.mjs
+│   ├── check-content-sync.mjs
+│   └── fetch-photos.mjs
 └── images/
-    └── hero.jpg            ← (or reference a CDN URL in the JSON)
+    ├── hero.jpg
+    ├── sifnos-bus-schedule.jpg
+    └── places/             ← 17 Commons photos, ~2 MB total
 ```
 
 ---
@@ -337,11 +381,41 @@ python -m http.server 8000
 
 ---
 
-## 9. Out of Scope for v1
+## 9. Still Out of Scope
 
-- Embedded Google Maps iframes (link-out to Maps is sufficient)
-- Photo gallery per location
-- Filter by rating ("show only ★★★")
 - Comments or user-contributed tips
-- PWA / offline support
+- PWA / offline support (a service worker would suit an on-island guide well —
+  the obvious next step)
 - Print stylesheet
+- Geolocation ("what's near me") — needs coordinates on more than the 17
+  items that have them today
+- Hand-curated itineraries ("one day on Sifnos", "a day with kids"). The
+  derived collections cover the computable cases; a real itinerary is
+  editorial content that has to be written, not generated.
+
+Delivered since v1: per-location photos, filter by rating and access mode,
+full-text search, deep links, a full-screen map, and the detail sheet.
+
+---
+
+## 10. Photos
+
+Photos come from **Wikimedia Commons** and are stored locally under
+`images/places/` — hotlinking Commons is discouraged and fragile.
+
+```bash
+npm i sharp                  # optional, but do it: 10.3 MB → 2.1 MB
+node scripts/fetch-photos.mjs
+```
+
+The script downloads each file, resizes to 1200 px / q76, and writes an
+`image: { src, credit, creditUrl }` block into both JSON files. The credit is
+rendered under the photo in the detail sheet, which is what the CC BY / CC BY-SA
+licences require — **do not strip it**.
+
+To add a photo: find the file on commons.wikimedia.org, add
+`"<item-id>": "<exact File name>"` to `PHOTOS` in the script, re-run. Existing
+downloads are skipped, so re-running is cheap.
+
+Wikimedia rejects generic user agents; the script identifies itself with a
+contact URL, which is a requirement of their bot policy rather than a nicety.

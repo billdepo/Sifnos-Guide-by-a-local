@@ -44,6 +44,34 @@
 | Greek Gastronomy Guide | https://www.greekgastronomyguide.gr/item/zaxaroplasteio-theodorou-sifnos/ | Ζαχαροπλαστείο Θεοδώρου |
 | womantoc / Miss Tasty | womantoc.gr, misstasty.gr | Ζαχαροπλαστείο Θεοδώρου (δευτερεύον) |
 
+## Φωτογραφίες (Wikimedia Commons)
+
+Όλες οι φωτογραφίες είναι CC ή public domain και αποθηκεύονται τοπικά στο `images/places/`.
+Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία στο detail sheet — **μην την αφαιρέσεις**,
+είναι υποχρέωση των αδειών CC BY / CC BY-SA.
+
+Προσθήκη/ανανέωση: `node scripts/fetch-photos.mjs` (δες PLAN.md §10).
+
+| Σημείο | Αρχείο | Απόδοση | Πηγή |
+|--------|--------|---------|------|
+| Καμάρες | `kamares.jpg` | Golem Unity (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Beach_of_Kamares,_Sifnos_at_Noon.jpg |
+| Φασολού | `fasolou.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Fasolou_Vue_Chryssopigi_-_panoramio.jpg |
+| Πλατύς Γιαλός | `platy-gialos.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Platis_Gialos_09092014_-_panoramio.jpg |
+| Βαθύ | `vathu.jpg` | Zde (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Beach_in_Vathy_on_Sifnos,_153617.jpg |
+| Χερρόνησος | `cherronisos.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Keronisos_Plage_-_panoramio.jpg |
+| Φυκιάδα | `fykiada.jpg` | / Thksif2 at Greek Wikipedia (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Fykiada_Bay_and_Kitriani_island.JPG |
+| Χρυσοπηγή (Σαούρες) | `chrysopigi-apokopto.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Panagia_Chrisopigi_Vue_Apokofto_Plage_09092014_-_panoramio.jpg |
+| Απολλωνία | `apollonia.jpg` | Horology at English Wikipedia (Public domain, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Apollonia_on_Sifnos.jpg |
+| Αρτεμώνας | `artemonas.jpg` | Jon Corelis (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Artemonas.jpg |
+| Κάστρο | `kastro.jpg` | Kondephy (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Kastro,_Sifnos.jpg |
+| Καμάρες | `kamares-2.jpg` | Golem Unity (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:View_of_Kamares,_Sifnos_from_Hill.jpg |
+| Φάρος | `faros.jpg` | Luca Conti from Senigallia, Italy (CC BY 2.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Faros_Sifnos_Cyclades.jpg |
+| Πλατύς Γιαλός | `platy-gialos-2.jpg` | Kondephy (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Platis_Gialos,_Sifnos.jpg |
+| Βαθύ | `vathi.jpg` | Takeaway (talk) (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Vathy_harbour_Greek_island_of_Sifnos.jpg |
+| Χερρόνησος | `cherronisos-2.jpg` | Margaritaprounia (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Herronisos.JPG |
+| Παναγία Χρυσοπηγή | `panagia-chrysopigi-2.jpg` | Abldecn (CC BY 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Panagia_Chrysopigi_on_the_Greek_Island_of_Sifnos.jpg |
+| Μονή Προφήτη Ηλία | `profitis-ilias-monastery.jpg` | / Evelin123 at Greek Wikipedia (CC BY-SA 3.0 gr, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Profitis_Ilias_Sifnos.JPG |
+
 ## APIs & τεχνικές υπηρεσίες (ζωντανά στο site)
 
 | Υπηρεσία | URL | Χρήση |
@@ -51,11 +79,14 @@
 | Open-Meteo | https://api.open-meteo.com/ | Widget καιρού (θερμοκρασία, άνεμος μποφόρ/κατεύθυνση, 7ήμερη πρόγνωση). Δωρεάν, χωρίς κλειδί. |
 | OpenStreetMap — Nominatim | https://nominatim.openstreetmap.org/ | Geocoding παραλιών (διόρθωση συντεταγμένων στον χάρτη) |
 | OpenStreetMap — Tiles | https://www.openstreetmap.org/ | Πλακίδια χάρτη (Leaflet) στην ενότητα «Μπάνιο» |
-| Leaflet | https://leafletjs.com/ | Βιβλιοθήκη διαδραστικού χάρτη |
+| Leaflet | https://leafletjs.com/ | Διαδραστικός χάρτης (detail sheet + πλήρης χάρτης) |
+| Wikimedia Commons API | https://commons.wikimedia.org/w/api.php | Λήψη φωτογραφιών + metadata αδειών |
 
 ---
 
 ### Σημειώσεις συντήρησης
-- **Δρομολόγια ΚΤΕΛ** (`files/sifnos-bus-schedule.jpg`): τοπική κόπια — αντικατάστησέ τη κάθε σεζόν από το sifnosbus.gr.
+- **Δρομολόγια ΚΤΕΛ** (`images/sifnos-bus-schedule.jpg`): τοπική κόπια — αντικατάστησέ τη κάθε σεζόν από το sifnosbus.gr.
 - **Εκδηλώσεις**: το embed του e-sifnos ενημερώνεται μόνο του· τα «σταθερά ετήσια» στο καλεντάρι θέλουν χειροκίνητη ανανέωση αν αλλάξουν.
 - **Πανηγύρια**: ημερομηνίες βασισμένες στο sifnaiko-fos.gr (εξαίρεση: Άγιος Συμεών 31/8 κατ' απαίτηση — η πηγή αναφέρει 3 Φεβρουαρίου).
+- **Φωτογραφίες**: πριν προσθέσεις νέες τρέξε `npm i sharp` — αλλιώς μπαίνουν ασυμπίεστες (~800KB η κάθε μία).
+- **IDs**: κάθε νέο item παίρνει σταθερό `id` με `node scripts/assign-ids.mjs`. Τα ids είναι permalinks — μην τα αλλάζεις.

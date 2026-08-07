@@ -7,6 +7,7 @@
     "heroImageUrl": "images/hero.jpg"
   },
   "nav": {
+    "home": "Home",
     "beaches": "Beaches",
     "villages": "Villages",
     "drinks": "Drinks",
@@ -14,7 +15,8 @@
     "activities": "Activities",
     "culture": "Culture",
     "history": "History",
-    "practical": "Practical"
+    "practical": "Practical",
+    "map": "Map"
   },
   "ui": {
     "languageToggle": "ΕΛ",
@@ -50,18 +52,34 @@
         "Nov",
         "Dec"
       ],
-      "weekdays": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+      "weekdays": [
+        "Mo",
+        "Tu",
+        "We",
+        "Th",
+        "Fr",
+        "Sa",
+        "Su"
+      ],
       "noEventsLabel": "Date TBA"
     },
     "search": {
-      "placeholder": "Search... (e.g. festival, beach)",
-      "comingSoon": "🚧 Coming soon: search across the whole guide"
+      "placeholder": "Search... (e.g. festival, beach)"
     },
     "weather": {
       "title": "Weather now in Sifnos",
       "toggleLabel": "Show weather & wind forecast",
       "beaufort": "Beaufort",
-      "directions": ["North", "North-East", "East", "South-East", "South", "South-West", "West", "North-West"],
+      "directions": [
+        "North",
+        "North-East",
+        "East",
+        "South-East",
+        "South",
+        "South-West",
+        "West",
+        "North-West"
+      ],
       "hintLabel": "Local tip: ",
       "hintStrongNorth": "Strong north wind — better head to Faros, Vathi, Platy Gialos or Cherronisos.",
       "hintStrong": "Strong wind today — pick a sheltered beach and ask the locals.",
@@ -69,7 +87,47 @@
       "loading": "Loading weather…",
       "error": "Weather is unavailable right now.",
       "source": "Source: Open-Meteo"
-    }
+    },
+    "home": "Home",
+    "more": "More",
+    "back": "Back",
+    "close": "Close",
+    "menu": "Menu",
+    "photoCredit": "Photo",
+    "exploreLabel": "Explore",
+    "todayLabel": "Today on Sifnos",
+    "todayEventLabel": "Festival today",
+    "nextEventLabel": "Next festival",
+    "noEventLabel": "No festival in the next few days",
+    "seeAll": "See all",
+    "collections": {
+      "must": {
+        "title": "The island's must-dos",
+        "subtitle": "What genuinely stands out — beaches, tavernas, bars."
+      },
+      "sheltered": {
+        "title": "Beaches out of the wind",
+        "subtitle": "Sheltered from the north wind blowing today."
+      }
+    },
+    "filters": {
+      "label": "Filters",
+      "mustOnly": "Must-visit only",
+      "sheltered": "Out of the wind today",
+      "clear": "Clear",
+      "results": "{n} results",
+      "resultsOne": "1 result",
+      "empty": "Nothing matches these filters."
+    },
+    "map": {
+      "title": "Map",
+      "intro": "Every place in the guide that has coordinates. Tap a point for details.",
+      "openLabel": "Open the map",
+      "pointsLabel": "{n} points"
+    },
+    "searchTitle": "Search",
+    "searchHint": "Search beaches, tavernas, bars, festivals, villages…",
+    "searchEmpty": "Nothing found for “{q}”"
   },
   "sections": {
     "beaches": {
@@ -98,7 +156,12 @@
               "tips": null,
               "lat": 36.991473248589344,
               "lng": 24.678388223287932,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece",
+              "image": {
+                "src": "images/places/kamares.jpg",
+                "credit": "Golem Unity (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Beach_of_Kamares,_Sifnos_at_Noon.jpg"
+              }
             },
             {
               "id": "glyfo",
@@ -128,7 +191,10 @@
               "tips": "From here a path also leads to the Chrysopigi church, about 15 minutes on foot. Along the way, the abandoned ore-loading installations of the area's old mine will catch your eye.",
               "lat": 36.944508686428485,
               "lng": 24.7499552463118,
-              "mapsUrl": "https://maps.app.goo.gl/fDbX8tkzj9UzamS46"
+              "mapsUrl": "https://maps.app.goo.gl/fDbX8tkzj9UzamS46",
+              "shelteredFrom": [
+                "N"
+              ]
             },
             {
               "id": "fasolou",
@@ -148,7 +214,15 @@
               "tips": null,
               "lat": 36.940901122878536,
               "lng": 24.752719316004125,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fasolou+Beach+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fasolou+Beach+Sifnos+Greece",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/fasolou.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Fasolou_Vue_Chryssopigi_-_panoramio.jpg"
+              }
             },
             {
               "id": "platy-gialos",
@@ -157,7 +231,12 @@
               "note": null,
               "rating": 2,
               "access": [],
-              "tags": ["sandy", "large", "organised", "beach bars"],
+              "tags": [
+                "sandy",
+                "large",
+                "organised",
+                "beach bars"
+              ],
               "description": "The most organised beach on the island, with quite a few beach bars.",
               "nearbyLabel": "Nicest beach bar",
               "nearbyLinks": [
@@ -171,7 +250,15 @@
               "tips": null,
               "lat": 36.93159084013112,
               "lng": 24.72988512386322,
-              "mapsUrl": "https://maps.app.goo.gl/exMLaXspPTiiUux87"
+              "mapsUrl": "https://maps.app.goo.gl/exMLaXspPTiiUux87",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/platy-gialos.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Platis_Gialos_09092014_-_panoramio.jpg"
+              }
             },
             {
               "id": "vathu",
@@ -180,7 +267,12 @@
               "note": null,
               "rating": 2,
               "access": [],
-              "tags": ["sandy", "large", "beach bar", "tavernas"],
+              "tags": [
+                "sandy",
+                "large",
+                "beach bar",
+                "tavernas"
+              ],
               "description": "A large beach facing south-west. The nicest spot if you have your own parasol or shade is in front of the 'Elies' hotel, where there's plenty of space to spread out. There are also a few beach bars next door if you prefer a sun lounger.",
               "nearbyLabel": "Food & coffee",
               "nearbyLinks": [
@@ -206,7 +298,15 @@
               "tips": null,
               "lat": 36.93113614980339,
               "lng": 24.693565822142997,
-              "mapsUrl": "https://maps.app.goo.gl/saNLhqirFRPuwCFj8"
+              "mapsUrl": "https://maps.app.goo.gl/saNLhqirFRPuwCFj8",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/vathu.jpg",
+                "credit": "Zde (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Beach_in_Vathy_on_Sifnos,_153617.jpg"
+              }
             },
             {
               "id": "cherronisos",
@@ -215,7 +315,12 @@
               "note": "Northernmost point of the island",
               "rating": 1,
               "access": [],
-              "tags": ["sandy", "fishing village", "picturesque", "sunset"],
+              "tags": [
+                "sandy",
+                "fishing village",
+                "picturesque",
+                "sunset"
+              ],
               "description": "A small sandy beach with a jetty to dive off. Probably the most picturesque fishing village on Sifnos. On the north side of the village there are also <a class=\"card-link\" data-target=\"cherronisos-rocky\">fantastic rocks for a swim →</a>. If you stay until sunset, climb up to Agios Georgios (15 minutes from the square — you can drive halfway) for views towards Serifos. There's a gate — open it without hesitation and go in.",
               "nearbyLabel": "In the village",
               "nearbyLinks": [
@@ -235,7 +340,15 @@
               "tips": null,
               "lat": 37.034165571064875,
               "lng": 24.650998658552535,
-              "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958"
+              "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/cherronisos.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Keronisos_Plage_-_panoramio.jpg"
+              }
             },
             {
               "id": "fykiada",
@@ -243,13 +356,30 @@
               "parentArea": null,
               "note": "Accessible only by trail or boat",
               "rating": 2,
-              "access": ["hike", "boat"],
-              "tags": ["sandy", "crystal-clear water", "hiking", "hidden gem", "no shade"],
+              "access": [
+                "hike",
+                "boat"
+              ],
+              "tags": [
+                "sandy",
+                "crystal-clear water",
+                "hiking",
+                "hidden gem",
+                "no shade"
+              ],
               "description": "One of the cleanest beaches on the island, tucked in the south, with crystal-clear water. There's no shade at all, so bring an umbrella or a beach tent — and plenty of water, as there are no facilities on the beach. From June, small boats also run from Platy Gialos and Kamares.",
               "tips": "You can reach it on foot by two trails: the nearest starts from the road to Vathi (about 2 km before you reach it, a fairly flat route of ~3.2 km / 50 min), while there's also a longer route from Platy Gialos. Both are waymarked (Sifnos Trails) so you won't get lost. Trail details: <a href=\"https://sifnostrails.com/en/portfolio-items/4-cedars-olive-trees-and-the-sea/\" target=\"_blank\" rel=\"noopener\">sifnostrails.com</a>.",
               "lat": 36.906974237018964,
               "lng": 24.706041606700722,
-              "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA"
+              "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/fykiada.jpg",
+                "credit": "/ Thksif2 at Greek Wikipedia (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Fykiada_Bay_and_Kitriani_island.JPG"
+              }
             }
           ]
         },
@@ -263,13 +393,28 @@
               "parentArea": null,
               "note": "Beach beside the church",
               "rating": 2,
-              "access": ["walking"],
-              "tags": ["pebble", "church", "rocks", "diving"],
+              "access": [
+                "walking"
+              ],
+              "tags": [
+                "pebble",
+                "church",
+                "rocks",
+                "diving"
+              ],
               "description": "A fairly small, unorganised pebble beach beside the famous Panagia Chrysopigi church. Worth it for the atmosphere of the place. It's on the right-hand side as you face the church. A dive off the Chrysopigi rocks directly opposite is non-negotiable.",
               "tips": null,
               "lat": 36.936315700000016,
               "lng": 24.743836804897374,
-              "mapsUrl": "https://maps.app.goo.gl/ZhE79CcxZXhBHiXK9"
+              "mapsUrl": "https://maps.app.goo.gl/ZhE79CcxZXhBHiXK9",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/chrysopigi-apokopto.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Panagia_Chrisopigi_Vue_Apokofto_Plage_09092014_-_panoramio.jpg"
+              }
             },
             {
               "id": "vroulidia",
@@ -277,8 +422,13 @@
               "parentArea": null,
               "note": null,
               "rating": 0,
-              "access": ["car"],
-              "tags": ["pebble", "difficult access"],
+              "access": [
+                "car"
+              ],
+              "tags": [
+                "pebble",
+                "difficult access"
+              ],
               "description": "Not recommended. The rocks underwater are slippery and the road down has an extremely steep gradient. If you do go, leave the car at the top.",
               "tips": null,
               "lat": 37.023494,
@@ -291,8 +441,13 @@
               "parentArea": "Kastro",
               "note": null,
               "rating": 0,
-              "access": ["car"],
-              "tags": ["pebble", "small"],
+              "access": [
+                "car"
+              ],
+              "tags": [
+                "pebble",
+                "small"
+              ],
               "description": "A small beach below the village of Kastro. Not recommended.",
               "tips": null,
               "lat": 36.984,
@@ -305,8 +460,14 @@
               "parentArea": "Kamares",
               "note": "Next to the port",
               "rating": 1,
-              "access": ["walking"],
-              "tags": ["pebble", "small", "quiet"],
+              "access": [
+                "walking"
+              ],
+              "tags": [
+                "pebble",
+                "small",
+                "quiet"
+              ],
               "description": "A very small, quiet pebble beach right next to the port and marina of Kamares. Ideal for a calmer swim away from the crowds of the main beach.",
               "tips": null,
               "lat": 36.988996,
@@ -319,8 +480,15 @@
               "parentArea": null,
               "note": "Accessible only by sea",
               "rating": 2,
-              "access": ["boat"],
-              "tags": ["pebble", "turquoise water", "secluded", "by boat"],
+              "access": [
+                "boat"
+              ],
+              "tags": [
+                "pebble",
+                "turquoise water",
+                "secluded",
+                "by boat"
+              ],
               "description": "A small cove north of Kamares, with small pebbles that gradually give way to sand and turquoise-green water. Accessible only by sea.",
               "tips": null,
               "lat": 37.007791,
@@ -333,8 +501,15 @@
               "parentArea": null,
               "note": "Accessible only by sea",
               "rating": 2,
-              "access": ["boat"],
-              "tags": ["pebble", "sand", "secluded", "by boat/canoe"],
+              "access": [
+                "boat"
+              ],
+              "tags": [
+                "pebble",
+                "sand",
+                "secluded",
+                "by boat/canoe"
+              ],
               "description": "A small secluded cove on the northern side of the island, with sand and pebbles and a lush green ravine spilling out at the back. Accessible only by sea — for example, by canoe from Cherronisos beach.",
               "tips": null,
               "lat": 37.030304,
@@ -353,8 +528,16 @@
               "parentArea": "Artemonas",
               "note": "Just outside Artemonas",
               "rating": 2,
-              "access": ["car", "walking"],
-              "tags": ["rocky", "turquoise water", "secluded", "short descent"],
+              "access": [
+                "car",
+                "walking"
+              ],
+              "tags": [
+                "rocky",
+                "turquoise water",
+                "secluded",
+                "short descent"
+              ],
               "description": "One of my favourite rocky spots. A short dirt road leads to a small descent (5 minutes with steps). Crystal-clear turquoise water — reminiscent of Paxos.",
               "tips": "Swim to the left of the rock formation in the water — that's where the pebble seabed and the most vivid turquoise colour are.",
               "lat": 36.998,
@@ -367,12 +550,19 @@
               "parentArea": null,
               "note": "Rocks to the right of the church",
               "rating": 2,
-              "access": ["car"],
-              "tags": ["rocky", "church", "cliff jumping", "busy"],
+              "access": [
+                "car"
+              ],
+              "tags": [
+                "rocky",
+                "church",
+                "cliff jumping",
+                "busy"
+              ],
               "description": "The flat rocks to the right of the Panagia Chrysopigi church (as you walk down) make for perfect sunbathing and diving spots. A must.",
               "tips": null,
-              "lat": 36.874,
-              "lng": 24.747,
+              "lat": 36.9361,
+              "lng": 24.7462,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece"
             },
             {
@@ -381,8 +571,15 @@
               "parentArea": "Kastro",
               "note": "Beside the picturesque church",
               "rating": 1,
-              "access": ["car", "walking"],
-              "tags": ["rocky", "church", "less crowded"],
+              "access": [
+                "car",
+                "walking"
+              ],
+              "tags": [
+                "rocky",
+                "church",
+                "less crowded"
+              ],
               "description": "A similar experience to Chrysopigi but with fewer people and slightly trickier rock access.",
               "tips": null,
               "lat": 36.989,
@@ -395,8 +592,16 @@
               "parentArea": null,
               "note": "Northernmost point of the island",
               "rating": 1,
-              "access": ["car", "walking"],
-              "tags": ["rocky", "fishing village", "picturesque", "quiet"],
+              "access": [
+                "car",
+                "walking"
+              ],
+              "tags": [
+                "rocky",
+                "fishing village",
+                "picturesque",
+                "quiet"
+              ],
               "description": "A charming fishing village at the northernmost tip of Sifnos. Beautiful rocky coastline, typically quiet. Park on the square and walk to the rocks.",
               "tips": "This is where I'm from.",
               "lat": 37.003,
@@ -412,67 +617,152 @@
       "intro": "The villages of Sifnos were built inland, away from the pirates. Whitewashed, with narrow alleys and dozens of churches, each has its own character. (Draft text — refine it with your own local take.)",
       "items": [
         {
+          "id": "apollonia",
           "name": "Apollonia",
           "meta": "Capital",
           "description": "The centre of the island — this is where the heart beats. The pedestrian street 'Steno' fills with bars, restaurants and shops, and every bus passes through here. An ideal base if you want to be in the middle of the action.",
-          "tags": ["centre", "nightlife", "base"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollonia+Sifnos"
+          "tags": [
+            "centre",
+            "nightlife",
+            "base"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollonia+Sifnos",
+          "image": {
+            "src": "images/places/apollonia.jpg",
+            "credit": "Horology at English Wikipedia (Public domain, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Apollonia_on_Sifnos.jpg"
+          }
         },
         {
+          "id": "artemonas",
           "name": "Artemonas",
           "meta": "Mansions",
           "description": "The most elegant village, right next to Apollonia. Neoclassical houses, captains' mansions, blooming courtyards and quiet lanes. Home to some of the island's best patisseries and bakeries.",
-          "tags": ["mansions", "quiet", "sweets"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artemonas+Sifnos"
+          "tags": [
+            "mansions",
+            "quiet",
+            "sweets"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artemonas+Sifnos",
+          "image": {
+            "src": "images/places/artemonas.jpg",
+            "credit": "Jon Corelis (CC BY-SA 3.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Artemonas.jpg"
+          }
         },
         {
+          "id": "kastro",
           "name": "Kastro",
           "meta": "Medieval",
           "description": "The old fortified settlement, built on the ancient capital and continuously inhabited for millennia. Covered passageways, Venetian coats of arms, Venetian-style balconies and the sea below. The most atmospheric place for a sunset and a stroll.",
-          "tags": ["historic", "views", "sunset"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kastro+Sifnos"
+          "tags": [
+            "historic",
+            "views",
+            "sunset"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kastro+Sifnos",
+          "image": {
+            "src": "images/places/kastro.jpg",
+            "credit": "Kondephy (CC BY-SA 4.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Kastro,_Sifnos.jpg"
+          }
         },
         {
+          "id": "kamares-2",
           "name": "Kamares",
           "meta": "Port",
           "description": "The island's gateway — this is where the ferries dock. A beach with beach bars, tavernas, hotels and the traditional potteries. Handy for your first and last day.",
-          "tags": ["port", "beach", "ceramics"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Sifnos"
+          "tags": [
+            "port",
+            "beach",
+            "ceramics"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Sifnos",
+          "image": {
+            "src": "images/places/kamares-2.jpg",
+            "credit": "Golem Unity (CC BY-SA 4.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:View_of_Kamares,_Sifnos_from_Hill.jpg"
+          }
         },
         {
+          "id": "faros",
           "name": "Faros",
           "meta": "Fishing village",
           "description": "A picturesque former fishing village in the south-east, with three beaches close together and a path to Chrysopigi. Calm, family-friendly atmosphere.",
-          "tags": ["fishing village", "beaches", "quiet"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Faros+Sifnos"
+          "tags": [
+            "fishing village",
+            "beaches",
+            "quiet"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Faros+Sifnos",
+          "image": {
+            "src": "images/places/faros.jpg",
+            "credit": "Luca Conti from Senigallia, Italy (CC BY 2.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Faros_Sifnos_Cyclades.jpg"
+          }
         },
         {
+          "id": "platy-gialos-2",
           "name": "Platy Gialos",
           "meta": "Southern beach",
           "description": "The most organised seaside village, in the south. A large beach, hotels, tavernas and beach bars — and a base for water sports and boat trips.",
-          "tags": ["beach", "organised", "water sports"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Sifnos"
+          "tags": [
+            "beach",
+            "organised",
+            "water sports"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Sifnos",
+          "image": {
+            "src": "images/places/platy-gialos-2.jpg",
+            "credit": "Kondephy (CC BY-SA 4.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Platis_Gialos,_Sifnos.jpg"
+          }
         },
         {
+          "id": "vathi",
           "name": "Vathi",
           "meta": "Enclosed bay",
           "description": "Built around an enclosed, calm bay in the south-west — until recently reached mostly by boat. Sandy shore, lake-still water and the little Taxiarchis chapel set in the sea.",
-          "tags": ["bay", "calm water", "laid-back"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vathi+Sifnos"
+          "tags": [
+            "bay",
+            "calm water",
+            "laid-back"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vathi+Sifnos",
+          "image": {
+            "src": "images/places/vathi.jpg",
+            "credit": "Takeaway (talk) (CC BY-SA 3.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Vathy_harbour_Greek_island_of_Sifnos.jpg"
+          }
         },
         {
+          "id": "exambela",
           "name": "Exambela",
           "meta": "Tradition",
           "description": "A village south of Apollonia, known for its musical tradition and for the Vrysi Monastery (17th century) with its ecclesiastical museum. Birthplace of the poet Aristomenis Provelengios.",
-          "tags": ["tradition", "monastery", "music"],
+          "tags": [
+            "tradition",
+            "monastery",
+            "music"
+          ],
           "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Exambela+Sifnos"
         },
         {
+          "id": "cherronisos-2",
           "name": "Cherronisos",
           "meta": "The northern tip",
           "description": "The northernmost, remote fishing village — far from everything, with fishing boats, tavernas serving fresh fish and a traditional pottery workshop. Lovely for a sunset with views of Serifos.",
-          "tags": ["remote", "fresh fish", "sunset"],
-          "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958"
+          "tags": [
+            "remote",
+            "fresh fish",
+            "sunset"
+          ],
+          "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958",
+          "image": {
+            "src": "images/places/cherronisos-2.jpg",
+            "credit": "Margaritaprounia (CC BY-SA 3.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Herronisos.JPG"
+          }
         }
       ]
     },
@@ -489,9 +779,18 @@
               "name": "Cavo Sunrise",
               "aka": "Kouvanós",
               "rating": 3,
-              "tags": ["sunset", "cocktails", "laid-back", "must"],
+              "tags": [
+                "sunset",
+                "cocktails",
+                "laid-back",
+                "must"
+              ],
               "description": "Go for the sunset or later. Chilled-out music, generous pours and the owner Kyrios Kostas (who calls himself the Che Guevara of Sifnos) is a true character.",
-              "mustTry": ["Rum Pineapple", "Mojito", "Rum Cola"],
+              "mustTry": [
+                "Rum Pineapple",
+                "Mojito",
+                "Rum Cola"
+              ],
               "note": "Not the tidiest place — but YOLO.",
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cavo+Sunrise+Kastro+Sifnos+Greece"
             }
@@ -507,7 +806,11 @@
               "name": "Botzi",
               "aka": null,
               "rating": 2,
-              "tags": ["rooftop", "upscale", "alley"],
+              "tags": [
+                "rooftop",
+                "upscale",
+                "alley"
+              ],
               "description": "Rooftop bar in the alley of Apollonia. One of the main choices for drinks with a view.",
               "mustTry": [],
               "note": null,
@@ -518,7 +821,11 @@
               "name": "Cosi",
               "aka": null,
               "rating": 2,
-              "tags": ["rooftop", "upscale", "alley"],
+              "tags": [
+                "rooftop",
+                "upscale",
+                "alley"
+              ],
               "description": "Another rooftop in the alley, similar vibe to Botzi. These two are the main options for a more polished atmosphere.",
               "mustTry": [],
               "note": null,
@@ -529,7 +836,11 @@
               "name": "Doloma",
               "aka": null,
               "rating": 2,
-              "tags": ["alternative", "music", "upper alley"],
+              "tags": [
+                "alternative",
+                "music",
+                "upper alley"
+              ],
               "description": "More alternative music and atmosphere. Located higher up in the alley.",
               "mustTry": [],
               "note": null,
@@ -540,7 +851,11 @@
               "name": "Mantalou",
               "aka": null,
               "rating": 2,
-              "tags": ["alternative", "music", "upper alley"],
+              "tags": [
+                "alternative",
+                "music",
+                "upper alley"
+              ],
               "description": "Together with Doloma, the go-to spots for a more alternative crowd in the upper part of the alley.",
               "mustTry": [],
               "note": null,
@@ -591,7 +906,11 @@
               "name": "Mosaiko",
               "aka": null,
               "rating": 3,
-              "tags": ["mezedes", "must", "Artemonas"],
+              "tags": [
+                "mezedes",
+                "must",
+                "Artemonas"
+              ],
               "description": "A must in Artemonas. A great mezedopoleio with a lovely atmosphere.",
               "mustTry": [],
               "note": null,
@@ -602,7 +921,11 @@
               "name": "Diachroniko",
               "aka": null,
               "rating": 1,
-              "tags": ["bar", "casual", "Artemonas"],
+              "tags": [
+                "bar",
+                "casual",
+                "Artemonas"
+              ],
               "description": "A casual bar on the way to Mosaiko. Might catch your eye — worth a quick stop.",
               "mustTry": [],
               "note": null,
@@ -624,7 +947,11 @@
             "location": "Kato Petali",
             "locationDetail": "just outside Apollonia",
             "rating": 3,
-            "tags": ["traditional", "local recipes", "must"],
+            "tags": [
+              "traditional",
+              "local recipes",
+              "must"
+            ],
             "description": "One of the best places to try authentic Sifnian cooking.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece"
           },
@@ -634,7 +961,11 @@
             "location": "Vathi",
             "locationDetail": "right on the beach",
             "rating": 3,
-            "tags": ["traditional", "beachfront", "local recipes"],
+            "tags": [
+              "traditional",
+              "beachfront",
+              "local recipes"
+            ],
             "description": "A taverna right on Vathi beach. Perfect for a long lunch after swimming.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsikali+Taverna+Vathi+Sifnos+Greece"
           },
@@ -644,7 +975,11 @@
             "location": "Chrysopigi",
             "locationDetail": "on the beach",
             "rating": 3,
-            "tags": ["traditional", "beachfront", "church views"],
+            "tags": [
+              "traditional",
+              "beachfront",
+              "church views"
+            ],
             "description": "A taverna right on Chrysopigi beach. Great sea views and the iconic church as backdrop.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Taverna+Sifnos+Greece"
           }
@@ -657,37 +992,61 @@
           {
             "id": "mastelo",
             "name": "Mastelo",
-            "tags": ["meat", "clay pot", "red wine"],
+            "tags": [
+              "meat",
+              "clay pot",
+              "red wine"
+            ],
             "description": "Baby goat slow-cooked in red wine and dill inside a lidded clay pot of the same name (shaped like a casserole dish). The ultimate Sifnian recipe."
           },
           {
             "id": "revythada",
             "name": "Revythada",
-            "tags": ["chickpeas", "vegan", "traditional"],
+            "tags": [
+              "chickpeas",
+              "vegan",
+              "traditional"
+            ],
             "description": "Chickpeas soaked in rainwater and slow-cooked for many hours in a wood-fired oven with onion until they turn creamy. Traditionally the dish Sifnians eat every Sunday after church. Served with a squeeze of lemon, bread and olives (or 'egkies', as the locals call them) — pure bliss."
           },
           {
             "id": "revythokeftedes",
             "name": "Revythokeftedes",
-            "tags": ["chickpeas", "vegan", "fried"],
+            "tags": [
+              "chickpeas",
+              "vegan",
+              "fried"
+            ],
             "description": "Chickpea fritters — falafel before it was cool."
           },
           {
             "id": "kaparosalata",
             "name": "Kaparosalata",
-            "tags": ["salad", "capers", "local"],
+            "tags": [
+              "salad",
+              "capers",
+              "local"
+            ],
             "description": "The island is covered in wild caper bushes hanging off stone walls. The caper salad is made with plenty of onion and some say it tastes a bit like stifado because of it."
           },
           {
             "id": "myzithra",
             "name": "(Xino)myzithra",
-            "tags": ["cheese", "white", "fresh"],
+            "tags": [
+              "cheese",
+              "white",
+              "fresh"
+            ],
             "description": "A soft white cheese that is very tasty and pairs perfectly with a Greek salad, and also spread on bread. Ask for it instead of feta in a Greek salad."
           },
           {
             "id": "manoura",
             "name": "Manoura",
-            "tags": ["cheese", "red wine", "strong"],
+            "tags": [
+              "cheese",
+              "red wine",
+              "strong"
+            ],
             "description": "A strong aged cheese ripened in red wine, with a dark crust of wine sediment on the outside. It looks like mud on the rind — but that's where all the flavour is. Do not skip this."
           }
         ]
@@ -701,7 +1060,12 @@
             "location": "Kamares",
             "locationDetail": null,
             "rating": 3,
-            "tags": ["bougatsa", "cheese pie", "handmade", "breakfast"],
+            "tags": [
+              "bougatsa",
+              "cheese pie",
+              "handmade",
+              "breakfast"
+            ],
             "description": "Handmade bougatsa and cheese pies in Kamares. The perfect stop right off the ferry.",
             "mapsUrl": "https://maps.app.goo.gl/PeqJb9GWAg2whj9TA"
           },
@@ -711,7 +1075,11 @@
             "location": "Artemonas",
             "locationDetail": null,
             "rating": 3,
-            "tags": ["almond sweets", "traditional pastries", "ring biscuits"],
+            "tags": [
+              "almond sweets",
+              "traditional pastries",
+              "ring biscuits"
+            ],
             "description": "The best traditional sweets on the island: amygdalota (almond macaroons), oven biscuits, aniseed rings and wine biscuits.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grigoris+Pastry+Artemonas+Sifnos+Greece"
           },
@@ -721,7 +1089,12 @@
             "location": "Artemonas",
             "locationDetail": "since 1933",
             "rating": 3,
-            "tags": ["almond sweets", "loukoumia", "halvadopita", "historic"],
+            "tags": [
+              "almond sweets",
+              "loukoumia",
+              "halvadopita",
+              "historic"
+            ],
             "description": "A historic pastry shop in Artemonas, open since 1933 and now in its third generation. Famous for its amygdalota (almond macaroons) — soft and fragrant — as well as loukoumia, halvadopites, pastelia and spoon sweets.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zacharoplasteio+Theodorou+Artemonas+Sifnos"
           }
@@ -732,33 +1105,61 @@
         "intro": "Island products for gifts or for home — the taste and aroma of Sifnos.",
         "items": [
           {
+            "id": "thyme-honey",
             "name": "Thyme Honey",
-            "tags": ["honey", "thyme"],
+            "tags": [
+              "honey",
+              "thyme"
+            ],
             "description": "Excellent-quality thyme honey, one of the most sought-after local products."
           },
           {
+            "id": "capers",
             "name": "Capers",
-            "tags": ["capers", "meze"],
+            "tags": [
+              "capers",
+              "meze"
+            ],
             "description": "Fresh, dried or as leaves — harvested on the island's dry-stone terraces, they go with salads and mezes."
           },
           {
+            "id": "cheeses",
             "name": "Cheeses",
-            "tags": ["cheese", "manoura", "xinomizithra"],
+            "tags": [
+              "cheese",
+              "manoura",
+              "xinomizithra"
+            ],
             "description": "Three classic Sifnian varieties: xinomizithra, chloromanoura, and the manoura that ripens in red wine."
           },
           {
+            "id": "almond-sweets-traditional-treats",
             "name": "Almond Sweets & Traditional Treats",
-            "tags": ["amygdalota", "melopita", "pasteli"],
+            "tags": [
+              "amygdalota",
+              "melopita",
+              "pasteli"
+            ],
             "description": "Amygdalota, melopita (honey pie), loukoumi, pasteli and aniseed rings — the sweets of Sifnos."
           },
           {
+            "id": "herbs-aromatics",
             "name": "Herbs & Aromatics",
-            "tags": ["oregano", "sage", "thyme"],
+            "tags": [
+              "oregano",
+              "sage",
+              "thyme"
+            ],
             "description": "Wild oregano, sage, thyme and other island herbs, gathered from the mountains."
           },
           {
+            "id": "ceramics",
             "name": "Ceramics",
-            "tags": ["clay", "handmade", "gift"],
+            "tags": [
+              "clay",
+              "handmade",
+              "gift"
+            ],
             "description": "Handmade clay pots and decorative pieces — the most authentic Sifnian gift. A cooking pot (tsoukali or gastra) keeps the tradition alive."
           }
         ]
@@ -774,10 +1175,15 @@
           "intro": "Organised experiences worth your time.",
           "items": [
             {
+              "id": "boat-tour-around-sifnos",
               "name": "Boat Tour around Sifnos",
               "meta": "Whole season",
               "description": "Full-day cruise around the island — secluded coves, swim stops, lunch on the boat. Morning and afternoon departures, mainly from Platy Gialos and Kamares, on traditional wooden sailboats or speedboats. If you'd rather have something more private, boat rentals with or without a skipper are also available. The best way to see Sifnos from a different angle.",
-              "tags": ["sea", "swimming", "full-day"],
+              "tags": [
+                "sea",
+                "swimming",
+                "full-day"
+              ],
               "contacts": [
                 {
                   "name": "Aegeas Cruises",
@@ -811,30 +1217,57 @@
               ]
             },
             {
+              "id": "island-bus-tour",
               "name": "Island Bus Tour",
               "meta": "No car needed",
               "description": "Organised coach excursions to the island's most important sights — ideal if you don't have your own wheels. Book through the local travel agencies in Apollonia or Kamares.",
-              "tags": ["no car needed", "sights"],
+              "tags": [
+                "no car needed",
+                "sights"
+              ],
               "contacts": [
-                { "name": "Aegean Thesaurus Travel", "phone": "22840 33151" },
-                { "name": "Miles Away", "phone": "22840 71373" },
-                { "name": "Sifnos Experience", "phone": "6936 726289" },
-                { "name": "Travel Bag", "phone": "6987 603159" }
+                {
+                  "name": "Aegean Thesaurus Travel",
+                  "phone": "22840 33151"
+                },
+                {
+                  "name": "Miles Away",
+                  "phone": "22840 71373"
+                },
+                {
+                  "name": "Sifnos Experience",
+                  "phone": "6936 726289"
+                },
+                {
+                  "name": "Travel Bag",
+                  "phone": "6987 603159"
+                }
               ]
             },
             {
+              "id": "horse-riding",
               "name": "Horse riding",
               "location": "Near Apollonia",
               "description": "Guided rides and beginner lessons from a dedicated riding centre. The routes follow the island's old footpaths — great for those who want to see Sifnos from a different trail.",
-              "tags": ["families", "different"],
+              "tags": [
+                "families",
+                "different"
+              ],
               "contacts": [
-                { "name": "Sifnos Horseriding", "phone": "6972 712150" }
+                {
+                  "name": "Sifnos Horseriding",
+                  "phone": "6972 712150"
+                }
               ]
             },
             {
+              "id": "farm-visit",
               "name": "Farm visit",
               "description": "Two farms welcome visitors: the Narlis farm on the road to Kato Petali — cheeses, dairy products and often cooking classes (see the Workshops tab) — and Anthi Farm near Apollonia, where you milk goats, make myzithra cheese, feed the animals and enjoy a farm breakfast or dinner.",
-              "tags": ["tradition", "families"],
+              "tags": [
+                "tradition",
+                "families"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Farm Narlis",
@@ -858,14 +1291,19 @@
           "intro": "Two very different experiences — one easy by car, one that requires a hike.",
           "items": [
             {
+              "id": "agios-symeon",
               "name": "Agios Symeon",
               "meta": "By car",
               "location": "Above Kamares",
               "description": "Drive up to Agios Symeon — just 10 minutes from Kamares. Incredible views with no effort; the road goes all the way up. Popular spot — go early.",
-              "tags": ["easy access", "view"],
+              "tags": [
+                "easy access",
+                "view"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos"
             },
             {
+              "id": "profitis-ilias-o-apsilos",
               "name": "Profitis Ilias o Apsilos",
               "meta": "Hike",
               "description": "The highest point on the island. ~1-hour hike from the village. Bring water and proper shoes — the reward is a panoramic 360° view."
@@ -878,22 +1316,35 @@
           "intro": "Sifnos has an amazing network of some 200 km of old footpaths, with 19 waymarked routes (Sifnos Trails) — from easy strolls to full-day treks, past chapels, dovecotes, threshing floors and dry-stone walls. Maps and details at <a href=\"https://www.sifnostrails.com\" target=\"_blank\" rel=\"noopener\">sifnostrails.com</a>. Best in spring and autumn — in summer start early, with water and good shoes.",
           "items": [
             {
+              "id": "agios-silivestros-the-mines",
               "name": "Agios Silivestros & the Mines",
               "meta": "Moderate",
               "description": "Hike in the north of the island, up to the chapel of Agios Silivestros and the old mines. Historic landscape — this is where the ancient Sifnians extracted gold and silver, which paid for the Siphnian Treasury at Delphi.",
-              "tags": ["history", "mines", "northern Sifnos"]
+              "tags": [
+                "history",
+                "mines",
+                "northern Sifnos"
+              ]
             },
             {
+              "id": "profitis-ilias-o-apsilos-2",
               "name": "Profitis Ilias o Apsilos",
               "meta": "Moderate",
               "description": "Uphill hike to the highest point on the island. Best done early morning or towards sunset.",
-              "tags": ["summit", "July 20 festival"]
+              "tags": [
+                "summit",
+                "July 20 festival"
+              ]
             },
             {
+              "id": "kamares-kastro",
               "name": "Kamares → Kastro",
               "meta": "Easy / Moderate",
               "description": "Traditional crossing from the port to the medieval Kastro, through the mountain villages. Stop whenever you like — it passes through all the central villages.",
-              "tags": ["classic", "villages"]
+              "tags": [
+                "classic",
+                "villages"
+              ]
             }
           ]
         },
@@ -903,10 +1354,14 @@
           "intro": "For the more energetic — from the seabed to the crags.",
           "items": [
             {
+              "id": "scuba-diving-snorkeling",
               "name": "Scuba Diving & Snorkeling",
               "location": "Kamares",
               "description": "The diving centre in Kamares runs discovery dives for beginners, courses and guided dives at hand-picked spots on the island's seabed. The waters around Sifnos are clear and full of life — even a simple snorkel off the rocky shores is worth it.",
-              "tags": ["sea", "beginner friendly"],
+              "tags": [
+                "sea",
+                "beginner friendly"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Diving Center",
@@ -916,10 +1371,14 @@
               ]
             },
             {
+              "id": "kayak-sup-canoe",
               "name": "Kayak, SUP & Canoe",
               "location": "Platy Gialos & Vathi",
               "description": "Kayak, SUP, canoe and sea-bike rentals on the big southern beaches. On a calm morning, paddling out to the neighbouring coves is one of the loveliest ways to start the day.",
-              "tags": ["sea", "families"],
+              "tags": [
+                "sea",
+                "families"
+              ],
               "contacts": [
                 {
                   "name": "Bola",
@@ -939,11 +1398,15 @@
               ]
             },
             {
+              "id": "rock-climbing",
               "name": "Rock Climbing",
               "meta": "Experienced",
               "location": "Above Kamares",
               "description": "Four sport-climbing crags with around 70 routes from 5b to 7b — relatively densely bolted, with anchors at the top of every route. There's no gear rental on the island: bring a 70 m rope, quickdraws and all your own equipment.",
-              "tags": ["mountain", "own gear required"],
+              "tags": [
+                "mountain",
+                "own gear required"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Climbing",
@@ -953,9 +1416,13 @@
               ]
             },
             {
+              "id": "cycling",
               "name": "Cycling",
               "description": "Mountain or trekking bike rides on quiet roads and dirt tracks, on your own or with an organised excursion. Bike rentals are available on the island — but Sifnos is hilly: pace yourself.",
-              "tags": ["sport", "hills"],
+              "tags": [
+                "sport",
+                "hills"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Bike",
@@ -972,10 +1439,14 @@
           "intro": "Learn from the locals — cooking and pottery on the island of Tselementes and the potters.",
           "items": [
             {
+              "id": "sifnian-cooking-classes",
               "name": "Sifnian Cooking Classes",
               "location": "Apollonia & farm",
               "description": "In the birthplace of Tselementes, learn to make revithada, chickpea fritters and other local dishes alongside locals. Classes run in Apollonia and at a local farm on the road to Kato Petali — and at the end you eat what you cooked.",
-              "tags": ["gastronomy", "tradition"],
+              "tags": [
+                "gastronomy",
+                "tradition"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Events",
@@ -992,10 +1463,15 @@
               ]
             },
             {
+              "id": "pottery-workshops",
               "name": "Pottery Workshops",
               "location": "Artemonas & Apollonia",
               "description": "Try the wheel! In Artemonas the Ceramics Museum offers introductory wheel sessions for adults and clay play for kids, while in Apollonia you can paint your own piece. Many of the island's working potteries also welcome visitors — see the Culture section too.",
-              "tags": ["ceramics", "families", "tradition"],
+              "tags": [
+                "ceramics",
+                "families",
+                "tradition"
+              ],
               "contacts": [
                 {
                   "name": "To Pilotechnio",
@@ -1017,15 +1493,25 @@
           "intro": "A large part of Sifnos is protected — ideal for quiet walks away from the crowds.",
           "items": [
             {
+              "id": "natura-2000-area",
               "name": "Natura 2000 Area",
               "meta": "Protected landscape",
               "description": "Since 1976 Sifnos has been designated a landscape of outstanding natural beauty. Around 2,000 hectares — from Profitis Ilias mountain to the western coast — belong to the European Natura 2000 network, with 39 bird species and 19 rare endemic species.",
-              "tags": ["natura", "protected", "hiking"]
+              "tags": [
+                "natura",
+                "protected",
+                "hiking"
+              ]
             },
             {
+              "id": "flora-fauna",
               "name": "Flora & Fauna",
               "description": "Junipers (juniperus oxycedrus), mastic trees, wild olives and aromatic herbs on land; Posidonia seagrass meadows on the seabed. The centuries-old stone terraces hold the soil and tie nature and people together in harmony.",
-              "tags": ["junipers", "herbs", "posidonia"]
+              "tags": [
+                "junipers",
+                "herbs",
+                "posidonia"
+              ]
             }
           ]
         }
@@ -1036,41 +1522,49 @@
       "intro": "A short look at Sifnos's past — from the ancient mines to the modern era.",
       "chapters": [
         {
+          "id": "prehistoric-times",
           "era": "3rd millennium BC",
           "title": "Prehistoric Times",
           "body": "A centre of the Early Cycladic civilisation from the 3rd millennium BC. Tradition names Pelasgians, Carians, Leleges and Phoenicians as the first inhabitants; after the Trojan War, Ionians settled under their leader Alkenor. From the Mycenaean era survives the visitable acropolis of Agios Andreas (13th century BC)."
         },
         {
+          "id": "gold-and-silver",
           "era": "6th–5th c. BC",
           "title": "Gold and Silver",
           "body": "One of the richest islands of the Cyclades: the silver mine at Agios Sostis is considered the second oldest in the world, and gold was mined at Faros and Apokofto. The Sifnians were among the first to mint gold coinage (~600 BC) and built the Siphnian Treasury at Delphi (525 BC) — the first all-marble building of mainland Greece. According to myth, when they stopped dedicating gold to Apollo, the god flooded their mines with the sea."
         },
         {
+          "id": "the-ancient-towers",
           "era": "6th–3rd c. BC",
           "title": "The Ancient Towers",
           "body": "More than 70 circular towers — the highest concentration in Greece — served as watchtowers and fire-signal stations, relaying messages by fire all the way to the ancient acropolises. The network was set up after the Samian raid (525 BC) and is revived by volunteers every Pentecost Sunday."
         },
         {
+          "id": "byzantine-venetian-period",
           "era": "1204–1566",
           "title": "Byzantine & Venetian Period",
           "body": "After 1204 the island joined the Duchy of Naxos, with a Byzantine interlude from 1269. In 1307 it passed to Januli Da Corogna, who fortified Kastro on the site of the ancient capital, and in 1464 to the Gozzadini family."
         },
         {
+          "id": "piracy",
           "era": "13th–18th c.",
           "title": "Piracy",
           "body": "With the Aegean exposed to pirate raids, the villages were built inland. Narrow alleys, blind dead-ends and dense clustering are all defensive features — and the fires on the ancient towers warned of approaching pirates."
         },
         {
+          "id": "ottoman-period",
           "era": "1566–1821",
           "title": "Ottoman Period",
           "body": "In 1566 the island passed to the Ottomans, keeping significant privileges and relative autonomy. In 1687 the School of the Holy Sepulchre was founded — the 'Educational Institution of the Archipelago', with 300 students — producing 3 Patriarchs and 47 Metropolitans. Seafaring and pottery flourished in parallel."
         },
         {
+          "id": "modern-times",
           "era": "1821 – today",
           "title": "Modern Times",
           "body": "In the 1821 Revolution the Sifnians fought under the schoolteacher Nikolaos Chrysogelos — later the first Minister of Education of Greece. In the 19th–20th centuries the economy relied on the Tsoukalades' pottery, on shipping and on iron mining; today tourism dominates, but the traditions hold firm."
         },
         {
+          "id": "names-that-stood-out",
           "era": "18th–20th c.",
           "title": "Names that Stood Out",
           "body": "Little Sifnos produced a disproportionate number of great names. In letters: Nikolaos Tselementes, who wrote the first modern Greek cookbook and whose name became a synonym for the genre; the poets Ioannis Gryparis (Artemonas — a major translator and first director of the National Theatre) and Aristomenis Provelengios (Exambela — MP and member of the Academy of Athens); the satirical poet and combative journalist Kleanthis Triantafyllos ('Rambagas'); and the historian Leften Stavrianos, professor at Northwestern with worldwide reach. In politics and struggle: the schoolteacher Nikolaos Chrysogelos, a 'Great Teacher of the Nation', who led the Sifnians in the 1821 Revolution and became the first Minister of Education of the modern Greek state; and Stelios Sklavainas (1907–1944), KKE deputy for Thessaloniki, one of the 200 executed by the Nazis at the Kaisariani firing range on May Day 1944."
@@ -1145,6 +1639,7 @@
           "intro": "Food, wine, and dancing till dawn. The traditional saint festivals of Sifnos are some of the best in the Cyclades. Always ask locals for current times and locations — some dates shift year to year.",
           "items": [
             {
+              "id": "agia-irini",
               "name": "Agia Irini",
               "meta": "4 May",
               "month": 5,
@@ -1153,6 +1648,7 @@
               "description": "Festival at Choni, towards Cherronisos. One of the first of the year, in spring."
             },
             {
+              "id": "panagia-chrysopigi",
               "name": "Panagia Chrysopigi",
               "meta": "40 days after Easter",
               "month": 5,
@@ -1161,6 +1657,7 @@
               "description": "The most important festival on the island. Procession of the icon followed by an open-air celebration in the churchyard."
             },
             {
+              "id": "agios-eliseus",
               "name": "Agios Eliseus",
               "meta": "13 June",
               "month": 6,
@@ -1169,6 +1666,7 @@
               "description": "Festival at the chapel of Agios Eliseus (Ai Nilias). One of the first festivals of the summer."
             },
             {
+              "id": "agios-silvestros-gabriel",
               "name": "Agios Silvestros & Gabriel",
               "meta": "12 July",
               "month": 7,
@@ -1177,6 +1675,7 @@
               "description": "A festival in the north, at the old mines of Agios Silvestros — see the trail of the same name in the Activities tab."
             },
             {
+              "id": "agia-marina",
               "name": "Agia Marina",
               "meta": "18 July",
               "month": 7,
@@ -1185,6 +1684,7 @@
               "description": "Festival at Agia Marina, above Kamares."
             },
             {
+              "id": "prophet-elias-of-apsilos",
               "name": "Prophet Elias of Apsilos",
               "meta": "19 July",
               "month": 7,
@@ -1193,6 +1693,7 @@
               "description": "Festival at the highest point of Sifnos. Uphill trail, but the view and atmosphere are well worth the climb."
             },
             {
+              "id": "prophet-elias-of-troullaki",
               "name": "Prophet Elias of Troullaki",
               "meta": "19 July",
               "month": 7,
@@ -1201,6 +1702,7 @@
               "description": "The 'other' Prophet Elias festival, on the Troullaki peak (463 m), on the same day as the Apsilos one."
             },
             {
+              "id": "agios-panteleimon",
               "name": "Agios Panteleimon",
               "meta": "26 July",
               "month": 7,
@@ -1209,6 +1711,7 @@
               "description": "Festival in Cherronisos, at the chapel of Agios Polykarpos. A celebration in the island's northern fishing village."
             },
             {
+              "id": "transfiguration-of-the-saviour",
               "name": "Transfiguration of the Saviour",
               "meta": "6 August",
               "month": 8,
@@ -1217,6 +1720,7 @@
               "description": "Festival at the church of Sotira in Finikidi."
             },
             {
+              "id": "panagia-i-konchi",
               "name": "Panagia i Konchi",
               "meta": "15 August",
               "month": 8,
@@ -1225,6 +1729,7 @@
               "description": "The festival of Panagia i Konchi, in the picturesque alleys of Artemonas. One of the big festivals of the Assumption (15 August)."
             },
             {
+              "id": "panagia-platanissa",
               "name": "Panagia Platanissa",
               "meta": "16 August",
               "month": 8,
@@ -1233,6 +1738,7 @@
               "description": "Festival at the church of Panagia in Platanissa, the day after the Assumption."
             },
             {
+              "id": "andreas-stratilatis",
               "name": "Andreas Stratilatis",
               "meta": "19 August",
               "month": 8,
@@ -1241,6 +1747,7 @@
               "description": "Festival at the foot of the Agios Andreas hill, below the archaeological site."
             },
             {
+              "id": "ai-giannis-of-choni",
               "name": "Ai Giannis of Choni",
               "meta": "28 August",
               "month": 8,
@@ -1249,6 +1756,7 @@
               "description": "Festival at Choni, towards Cherronisos."
             },
             {
+              "id": "agios-symeon-2",
               "name": "Agios Symeon",
               "meta": "31 August",
               "month": 8,
@@ -1257,6 +1765,7 @@
               "description": "Festival at the small chapel of Agios Symeon with a magnificent view down to Kamares. Quieter than the August festivals."
             },
             {
+              "id": "taxiarchis-of-vathi",
               "name": "Taxiarchis of Vathi",
               "meta": "5 September",
               "month": 9,
@@ -1265,6 +1774,7 @@
               "description": "Festival at Taxiarchis, the picturesque little church set on the sea at Vathi."
             },
             {
+              "id": "agios-sozon",
               "name": "Agios Sozon",
               "meta": "6 September",
               "month": 9,
@@ -1273,6 +1783,7 @@
               "description": "Festival at Agios Sostis, near the island's ancient mines."
             },
             {
+              "id": "nativity-of-the-virgin-vrysiani",
               "name": "Nativity of the Virgin (Vrysiani)",
               "meta": "7 September",
               "month": 9,
@@ -1281,6 +1792,7 @@
               "description": "The festival of Vrysi Monastery (Vrysiani) in Exambela, for the Nativity of the Theotokos."
             },
             {
+              "id": "stavros-of-choni",
               "name": "Stavros of Choni",
               "meta": "13 September",
               "month": 9,
@@ -1289,6 +1801,7 @@
               "description": "The Holy Cross festival at Choni, towards Cherronisos, on the eve of the Elevation."
             },
             {
+              "id": "stavros",
               "name": "Stavros",
               "meta": "14 September",
               "month": 9,
@@ -1297,6 +1810,7 @@
               "description": "Local festivals at chapels dedicated to the Holy Cross. The slow closing of the Sifnos summer."
             },
             {
+              "id": "agios-nikitas",
               "name": "Agios Nikitas",
               "meta": "15 September",
               "month": 9,
@@ -1317,30 +1831,42 @@
           },
           "items": [
             {
+              "id": "nikolaos-tselementes-cycladic-gastronomy",
               "name": "Nikolaos Tselementes Cycladic Gastronomy Festival",
               "meta": "Late September",
               "month": 9,
               "day": 25,
               "endDay": 27,
               "description": "Gastronomy festival honouring Nikolaos Tselementes, the Sifnian chef who wrote the first modern Greek cookbook. Workshops, seminars, and dinners by top chefs.",
-              "tags": ["gastronomy", "tradition"]
+              "tags": [
+                "gastronomy",
+                "tradition"
+              ]
             },
             {
+              "id": "radioactive-street-party",
               "name": "Radioactive Street Party",
               "meta": "Summer",
               "month": 7,
               "day": 25,
               "location": "Apollonia",
               "description": "Annual street party by local radio station Radioactive. Music, drinks, and half the island out in the street.",
-              "tags": ["music", "nightlife"]
+              "tags": [
+                "music",
+                "nightlife"
+              ]
             },
             {
+              "id": "mousifando",
               "name": "Mousifando",
               "meta": "Summer",
               "month": 8,
               "day": 8,
               "description": "Music festival organised by the Sifnos Cultural Association, featuring local and visiting artists.",
-              "tags": ["music", "concerts"]
+              "tags": [
+                "music",
+                "concerts"
+              ]
             }
           ]
         },
@@ -1350,10 +1876,15 @@
           "intro": "Sifnians have long been known as 'Tsoukalades' — master potters and exporters of clay cookware. The tradition lives on in working workshops across the island. The most authentic souvenir is a clay cooking vessel (tsoukali or gastra).",
           "items": [
             {
+              "id": "keramika-i-dyskoli",
               "name": "Keramika 'I Dyskoli'",
               "location": "Cherronisos",
               "description": "One of the most traditional workshops on the island, in one of its most picturesque settings — right by the sea in Cherronisos. Authentic Sifnian pottery on the wheel.",
-              "tags": ["workshop", "tradition", "souvenirs"]
+              "tags": [
+                "workshop",
+                "tradition",
+                "souvenirs"
+              ]
             }
           ]
         },
@@ -1363,17 +1894,25 @@
           "intro": "Few but excellent — Sifnos had an important role in antiquity, with silver mines and a treasury at Delphi.",
           "items": [
             {
+              "id": "agios-andreas-archaeological-site",
               "name": "Agios Andreas Archaeological Site",
               "location": "Above Katavati",
               "description": "Ancient acropolis from the Geometric period with sweeping views over the whole island. Important finds and a small archaeological museum on site. One of the most beautiful archaeological sites in the Cyclades.",
-              "tags": ["ancient history", "views"],
+              "tags": [
+                "ancient history",
+                "views"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Andreas+Archaeological+Site+Sifnos"
             },
             {
+              "id": "sifnos-folklore-museum",
               "name": "Sifnos Folklore Museum",
               "location": "Apollonia",
               "description": "Collection of traditional Sifnian clothing, tools, and everyday objects. On the main square of Apollonia.",
-              "tags": ["tradition", "folklore"],
+              "tags": [
+                "tradition",
+                "folklore"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Folklore+Museum+Apollonia+Sifnos"
             }
           ]
@@ -1384,76 +1923,131 @@
           "intro": "Sifnos has 237 churches and monasteries — the most, relative to its size, in the Cyclades. Just a few of the most important:",
           "items": [
             {
+              "id": "panagia-chrysopigi-2",
               "name": "Panagia Chrysopigi",
               "meta": "Patron saint",
               "location": "Chrysopigi",
               "description": "The island's patron church, built on a rocky islet linked to Sifnos by a small footbridge. It guards the miraculous icon of Zoodochos Pigi, which according to tradition was found in the sea by fishermen. The rock beneath it is split in two: legend says that as pirates chased two women, the Virgin split the rock to save them. The island's biggest festival is held here on Ascension (40 days after Easter). Rocks all around for a dive.",
-              "tags": ["patron saint", "sea", "festival"],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Chrysopigi+Sifnos"
+              "tags": [
+                "patron saint",
+                "sea",
+                "festival"
+              ],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Chrysopigi+Sifnos",
+              "image": {
+                "src": "images/places/panagia-chrysopigi-2.jpg",
+                "credit": "Abldecn (CC BY 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Panagia_Chrysopigi_on_the_Greek_Island_of_Sifnos.jpg"
+              }
             },
             {
+              "id": "vrysi-monastery-vrysiani",
               "name": "Vrysi Monastery (Vrysiani)",
               "meta": "17th century",
               "location": "Exambela",
               "description": "The island's largest monastery, dedicated to the Nativity of the Theotokos. It houses a Museum of Ecclesiastical Art with old printed books, a gospel from 1796, sacred vessels and icons.",
-              "tags": ["monastery", "museum", "history"],
+              "tags": [
+                "monastery",
+                "museum",
+                "history"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vrisi+Monastery+Exambela+Sifnos"
             },
             {
+              "id": "seven-martyrs-eptamartyres",
               "name": "Seven Martyrs (Eptamartyres)",
               "meta": "On the sea",
               "location": "Kastro",
               "description": "The iconic little church built on a rock in the sea, below Kastro. One of the most photographed spots on the island — perfect for a sunset and dives off the surrounding rocks.",
-              "tags": ["Kastro", "views", "sunset"],
+              "tags": [
+                "Kastro",
+                "views",
+                "sunset"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartyres+Kastro+Sifnos"
             },
             {
+              "id": "panagia-poulati",
               "name": "Panagia Poulati",
               "meta": "1870",
               "location": "Below Artemonas",
               "description": "A blue-and-white church from 1870 on the eastern side of the island, above the rocky coast of Poulati. Wonderful views over the Aegean.",
-              "tags": ["picturesque", "views"],
+              "tags": [
+                "picturesque",
+                "views"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Poulati+Sifnos"
             },
             {
+              "id": "agios-symeon-3",
               "name": "Agios Symeon",
               "meta": "Festival on 1 September",
               "location": "Above Kamares",
               "description": "A little church on a rise above Kamares, with a panoramic 360° view over all the surrounding Cyclades. An ideal spot for sunset — and one of the easiest, since the car reaches almost to the door. Its festival is held on 1 September.",
-              "tags": ["sunset", "easy access", "views", "festival"],
+              "tags": [
+                "sunset",
+                "easy access",
+                "views",
+                "festival"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos"
             },
             {
+              "id": "taxiarchis-of-vathi-2",
               "name": "Taxiarchis of Vathi",
               "meta": "On the sea",
               "location": "Vathi",
               "description": "A picturesque little church built right on the sea, at the edge of Vathi's enclosed bay. With the calm, shallow water mirroring it all around, it's one of the most photogenic spots in southern Sifnos.",
-              "tags": ["sea", "picturesque", "Vathi"],
+              "tags": [
+                "sea",
+                "picturesque",
+                "Vathi"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taxiarchis+church+Vathi+Sifnos"
             },
             {
+              "id": "panagia-i-konchi-2",
               "name": "Panagia i Konchi",
               "meta": "Festival on 15 August",
               "location": "Artemonas",
               "description": "An iconic church tucked in the beautiful alleys of Artemonas, one of the most distinctive in the village. Its big festival is held on 15 August.",
-              "tags": ["Artemonas", "picturesque", "festival"],
+              "tags": [
+                "Artemonas",
+                "picturesque",
+                "festival"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Kogchi+Artemonas+Sifnos"
             },
             {
+              "id": "agios-georgios-of-cherronisos",
               "name": "Agios Georgios of Cherronisos",
               "meta": "Sunset",
               "location": "Cherronisos",
               "description": "If you're in Cherronisos for the sunset, climb up to Agios Georgios for views towards Serifos — 15 minutes from the square (or drive halfway). Beside it stands an ancient tower, of which sadly only scattered stones survive.",
-              "tags": ["sunset", "views", "ancient tower"],
+              "tags": [
+                "sunset",
+                "views",
+                "ancient tower"
+              ],
               "mapsUrl": "https://maps.app.goo.gl/sV7aan9swFz2N2qS9"
             },
             {
+              "id": "profitis-ilias-monastery",
               "name": "Profitis Ilias Monastery",
               "meta": "~680m elevation",
               "location": "Highest peak",
               "description": "A monastery on the island's highest peak, built atop an ancient acropolis. An uphill hike but with a panoramic 360° view — see the Activities tab too.",
-              "tags": ["summit", "hiking", "views"],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Profitis+Ilias+Monastery+Sifnos"
+              "tags": [
+                "summit",
+                "hiking",
+                "views"
+              ],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Profitis+Ilias+Monastery+Sifnos",
+              "image": {
+                "src": "images/places/profitis-ilias-monastery.jpg",
+                "credit": "/ Evelin123 at Greek Wikipedia (CC BY-SA 3.0 gr, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Profitis_Ilias_Sifnos.JPG"
+              }
             }
           ]
         }

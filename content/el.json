@@ -7,6 +7,7 @@
     "heroImageUrl": "images/hero.jpg"
   },
   "nav": {
+    "home": "Αρχική",
     "beaches": "Μπάνιο",
     "villages": "Χωριά",
     "drinks": "Ποτό",
@@ -14,7 +15,8 @@
     "activities": "Δραστηριότητες",
     "culture": "Πολιτιστικά",
     "history": "Ιστορία",
-    "practical": "Πρακτικά"
+    "practical": "Πρακτικά",
+    "map": "Χάρτης"
   },
   "ui": {
     "languageToggle": "EN",
@@ -50,18 +52,34 @@
         "Νοέ",
         "Δεκ"
       ],
-      "weekdays": ["Δε", "Τρ", "Τε", "Πε", "Πα", "Σα", "Κυ"],
+      "weekdays": [
+        "Δε",
+        "Τρ",
+        "Τε",
+        "Πε",
+        "Πα",
+        "Σα",
+        "Κυ"
+      ],
       "noEventsLabel": "Χωρίς συγκεκριμένη ημερομηνία"
     },
     "search": {
-      "placeholder": "Αναζήτηση... (π.χ. πανηγύρι, παραλία)",
-      "comingSoon": "🚧 Σύντομα: αναζήτηση σε όλο τον οδηγό"
+      "placeholder": "Αναζήτηση... (π.χ. πανηγύρι, παραλία)"
     },
     "weather": {
       "title": "Καιρός τώρα στη Σίφνο",
       "toggleLabel": "Δείτε πρόγνωση καιρού & ανέμου",
       "beaufort": "Μποφόρ",
-      "directions": ["Βόρειος", "Βορειοανατολικός", "Ανατολικός", "Νοτιοανατολικός", "Νότιος", "Νοτιοδυτικός", "Δυτικός", "Βορειοδυτικός"],
+      "directions": [
+        "Βόρειος",
+        "Βορειοανατολικός",
+        "Ανατολικός",
+        "Νοτιοανατολικός",
+        "Νότιος",
+        "Νοτιοδυτικός",
+        "Δυτικός",
+        "Βορειοδυτικός"
+      ],
       "hintLabel": "Συμβουλή ντόπιου: ",
       "hintStrongNorth": "Δυνατός βοριάς — καλύτερα Φάρος, Βαθύ, Πλατύ Γιαλός ή Χερρόνησος.",
       "hintStrong": "Δυνατός άνεμος σήμερα — διαλέξτε προστατευμένη παραλία και ρωτήστε ντόπιους.",
@@ -69,7 +87,47 @@
       "loading": "Φόρτωση καιρού…",
       "error": "Ο καιρός δεν είναι διαθέσιμος αυτή τη στιγμή.",
       "source": "Πηγή: Open-Meteo"
-    }
+    },
+    "home": "Αρχική",
+    "more": "Περισσότερα",
+    "back": "Πίσω",
+    "close": "Κλείσιμο",
+    "menu": "Μενού",
+    "photoCredit": "Φωτογραφία",
+    "exploreLabel": "Εξερεύνησε",
+    "todayLabel": "Σήμερα στη Σίφνο",
+    "todayEventLabel": "Πανηγύρι σήμερα",
+    "nextEventLabel": "Επόμενο πανηγύρι",
+    "noEventLabel": "Δεν έχει πανηγύρι στις επόμενες μέρες",
+    "seeAll": "Δες τα όλα",
+    "collections": {
+      "must": {
+        "title": "Τα must του νησιού",
+        "subtitle": "Ό,τι ξεχωρίζει πραγματικά — παραλίες, ταβέρνες, μπαράκια."
+      },
+      "sheltered": {
+        "title": "Παραλίες χωρίς αέρα",
+        "subtitle": "Προστατευμένες από τον βοριά που φυσάει σήμερα."
+      }
+    },
+    "filters": {
+      "label": "Φίλτρα",
+      "mustOnly": "Μόνο τα must",
+      "sheltered": "Χωρίς αέρα σήμερα",
+      "clear": "Καθαρισμός",
+      "results": "{n} αποτελέσματα",
+      "resultsOne": "1 αποτέλεσμα",
+      "empty": "Κανένα αποτέλεσμα με αυτά τα φίλτρα."
+    },
+    "map": {
+      "title": "Χάρτης",
+      "intro": "Όλα τα σημεία του οδηγού με συντεταγμένες. Πάτα ένα σημείο για λεπτομέρειες.",
+      "openLabel": "Άνοιξε τον χάρτη",
+      "pointsLabel": "{n} σημεία"
+    },
+    "searchTitle": "Αναζήτηση",
+    "searchHint": "Ψάξε παραλίες, ταβέρνες, μπαράκια, πανηγύρια, χωριά…",
+    "searchEmpty": "Δεν βρέθηκε κάτι για «{q}»"
   },
   "sections": {
     "beaches": {
@@ -98,7 +156,12 @@
               "tips": null,
               "lat": 36.991473248589344,
               "lng": 24.678388223287932,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Beach+Sifnos+Greece",
+              "image": {
+                "src": "images/places/kamares.jpg",
+                "credit": "Golem Unity (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Beach_of_Kamares,_Sifnos_at_Noon.jpg"
+              }
             },
             {
               "id": "glyfo",
@@ -128,7 +191,10 @@
               "tips": "Από εδώ έχει και ένα δρομάκι για την εκκλησία της Χρυσοπηγής, περίπου 15 λεπτά με τα πόδια. Κατά μήκος της διαδρομής, θα σας τραβήξουν το βλέμμα οι εγκαταλελειμένες εγκαταστάσεις φόρτωσης μεταλλεύματος του παλιού ορυχείου της περιοχής.",
               "lat": 36.944508686428485,
               "lng": 24.7499552463118,
-              "mapsUrl": "https://maps.app.goo.gl/fDbX8tkzj9UzamS46"
+              "mapsUrl": "https://maps.app.goo.gl/fDbX8tkzj9UzamS46",
+              "shelteredFrom": [
+                "N"
+              ]
             },
             {
               "id": "fasolou",
@@ -148,7 +214,15 @@
               "tips": null,
               "lat": 36.940901122878536,
               "lng": 24.752719316004125,
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fasolou+Beach+Sifnos+Greece"
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fasolou+Beach+Sifnos+Greece",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/fasolou.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Fasolou_Vue_Chryssopigi_-_panoramio.jpg"
+              }
             },
             {
               "id": "platy-gialos",
@@ -157,7 +231,12 @@
               "note": null,
               "rating": 2,
               "access": [],
-              "tags": ["αμμώδης", "μεγάλη", "οργανωμένη", "beach bars"],
+              "tags": [
+                "αμμώδης",
+                "μεγάλη",
+                "οργανωμένη",
+                "beach bars"
+              ],
               "description": "Η πιο οργανωμένη παραλία του νησιού, έχοντας κάμποσα beach bars.",
               "nearbyLabel": "Πιο ωραίο beach bar",
               "nearbyLinks": [
@@ -171,7 +250,15 @@
               "tips": null,
               "lat": 36.93159084013112,
               "lng": 24.72988512386322,
-              "mapsUrl": "https://maps.app.goo.gl/exMLaXspPTiiUux87"
+              "mapsUrl": "https://maps.app.goo.gl/exMLaXspPTiiUux87",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/platy-gialos.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Platis_Gialos_09092014_-_panoramio.jpg"
+              }
             },
             {
               "id": "vathu",
@@ -180,7 +267,12 @@
               "note": null,
               "rating": 2,
               "access": [],
-              "tags": ["αμμώδης", "μεγάλη", "beach bar", "ταβέρνες"],
+              "tags": [
+                "αμμώδης",
+                "μεγάλη",
+                "beach bar",
+                "ταβέρνες"
+              ],
               "description": "Μεγάλη παραλία που κοιτάει νοτιοδυτικά. Το πιο ωραίο μέρος αν έχετε ομπρέλα/σκίαστρο είναι μπροστά από το ξενοδοχείο «Elies» όπου έχει άπλα. Επίσης έχει και ορισμένα beach bar παραδίπλα αν θέλετε ξαπλώστρα.",
               "nearbyLabel": "Φαγητό & καφές",
               "nearbyLinks": [
@@ -206,7 +298,15 @@
               "tips": null,
               "lat": 36.93113614980339,
               "lng": 24.693565822142997,
-              "mapsUrl": "https://maps.app.goo.gl/saNLhqirFRPuwCFj8"
+              "mapsUrl": "https://maps.app.goo.gl/saNLhqirFRPuwCFj8",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/vathu.jpg",
+                "credit": "Zde (CC BY-SA 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Beach_in_Vathy_on_Sifnos,_153617.jpg"
+              }
             },
             {
               "id": "cherronisos",
@@ -215,7 +315,12 @@
               "note": "Το πιο βόρειο σημείο του νησιού",
               "rating": 1,
               "access": [],
-              "tags": ["αμμώδης", "ψαροχώρι", "γραφικό", "ηλιοβασίλεμα"],
+              "tags": [
+                "αμμώδης",
+                "ψαροχώρι",
+                "γραφικό",
+                "ηλιοβασίλεμα"
+              ],
               "description": "Μικρή αμμώδης παραλία με προβλήτα για βουτιές. Το πιο γραφικό ψαροχώρι της Σίφνου μάλλον. Στη βόρεια πλευρά του χωριού έχει επίσης <a class=\"card-link\" data-target=\"cherronisos-rocky\">φοβερά βραχάκια για μπάνιο →</a>. Αν μείνετε ως το ηλιοβασίλεμα, ανεβείτε στον Άγιο Γεώργιο (15 λεπτά από την πλατεία — μπορείτε και με αμάξι ως τα μισά) για θέα προς Σέριφο. Έχει πόρτα — ανοίξτε την άφοβα και μπείτε.",
               "nearbyLabel": "Στο χωριό",
               "nearbyLinks": [
@@ -235,7 +340,15 @@
               "tips": null,
               "lat": 37.034165571064875,
               "lng": 24.650998658552535,
-              "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958"
+              "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/cherronisos.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Keronisos_Plage_-_panoramio.jpg"
+              }
             },
             {
               "id": "fykiada",
@@ -243,13 +356,30 @@
               "parentArea": null,
               "note": "Προσβάσιμη μόνο με πεζοπορία ή θαλάσσιο μέσο",
               "rating": 2,
-              "access": ["hike", "boat"],
-              "tags": ["αμμώδης", "κρυστάλλινα νερά", "πεζοπορία", "κρυμμένη", "χωρίς σκιά"],
+              "access": [
+                "hike",
+                "boat"
+              ],
+              "tags": [
+                "αμμώδης",
+                "κρυστάλλινα νερά",
+                "πεζοπορία",
+                "κρυμμένη",
+                "χωρίς σκιά"
+              ],
               "description": "Μια από τις πιο καθαρές παραλίες του νησιού στα νότια, με κρυστάλλινα νερά. Δεν έχει καθόλου σκιά, οπότε φέρτε ομπρέλα ή αντίσκηνο — και αρκετό νερό, αφού δεν υπάρχει καμία παροχή στην παραλία. Από Ιούνιο κάνουν επίσης καραβάκια από Πλατύ Γιαλό και Καμάρες.",
               "tips": "Φτάνετε με τα πόδια από δύο μονοπάτια: το κοντινότερο ξεκινά από τον δρόμο προς το Βαθύ (~2 χλμ πριν φτάσετε, σχετικά flat διαδρομή ~3,2 χλμ / 50′), ενώ υπάρχει και μεγαλύτερη διαδρομή από τον Πλατύ Γιαλό. Και τα δύο είναι σηματοδοτημένα (Sifnos Trails) οπότε δεν χάνεστε. Πληροφορίες για το μονοπάτι: <a href=\"https://sifnostrails.com/el/portfolio-items/4-cedars-olive-trees-and-the-sea/\" target=\"_blank\" rel=\"noopener\">sifnostrails.com</a>.",
               "lat": 36.906974237018964,
               "lng": 24.706041606700722,
-              "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA"
+              "mapsUrl": "https://goo.gl/maps/oPmxotYePSNPss5AA",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/fykiada.jpg",
+                "credit": "/ Thksif2 at Greek Wikipedia (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Fykiada_Bay_and_Kitriani_island.JPG"
+              }
             }
           ]
         },
@@ -263,13 +393,28 @@
               "parentArea": null,
               "note": "Παραλία δίπλα στην εκκλησία",
               "rating": 2,
-              "access": ["walking"],
-              "tags": ["βότσαλο", "εκκλησία", "βράχια", "βουτιές"],
+              "access": [
+                "walking"
+              ],
+              "tags": [
+                "βότσαλο",
+                "εκκλησία",
+                "βράχια",
+                "βουτιές"
+              ],
               "description": "Αρκετά μικρή ανοργάνωτη παραλία με βότσαλο δίπλα στην περίφημη εκκλησία της Παναγίας Χρυσοπηγής. Αξίζει για την ατμόσφαιρα του χώρου. Είναι από τη δεξιά πλευρά της εκκλησίας όπως κοιτάζετε την εκκλησία. Επιβάλλεται και μια βουτιά από τα βράχια της Χρυσοπηγής απέναντι ακριβώς.",
               "tips": null,
               "lat": 36.936315700000016,
               "lng": 24.743836804897374,
-              "mapsUrl": "https://maps.app.goo.gl/ZhE79CcxZXhBHiXK9"
+              "mapsUrl": "https://maps.app.goo.gl/ZhE79CcxZXhBHiXK9",
+              "shelteredFrom": [
+                "N"
+              ],
+              "image": {
+                "src": "images/places/chrysopigi-apokopto.jpg",
+                "credit": "rene boulay (CC BY-SA 3.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Panagia_Chrisopigi_Vue_Apokofto_Plage_09092014_-_panoramio.jpg"
+              }
             },
             {
               "id": "vroulidia",
@@ -277,8 +422,13 @@
               "parentArea": null,
               "note": null,
               "rating": 0,
-              "access": ["car"],
-              "tags": ["βότσαλα", "δύσκολη πρόσβαση"],
+              "access": [
+                "car"
+              ],
+              "tags": [
+                "βότσαλα",
+                "δύσκολη πρόσβαση"
+              ],
               "description": "Δεν συνιστάται. Έχει πέτρες με γλίτσα μέσα στη θάλασσα και η κατηφόρα του δρόμου είναι πολύ μεγάλη. Αν πάτε, αφήστε το αμάξι σας ψηλά.",
               "tips": null,
               "lat": 37.023494,
@@ -291,8 +441,13 @@
               "parentArea": "Κάστρο",
               "note": null,
               "rating": 0,
-              "access": ["car"],
-              "tags": ["βότσαλα", "μικρή"],
+              "access": [
+                "car"
+              ],
+              "tags": [
+                "βότσαλα",
+                "μικρή"
+              ],
               "description": "Μικρή παραλία κάτω από το Κάστρο. Δεν συνιστάται.",
               "tips": null,
               "lat": 36.984,
@@ -305,8 +460,14 @@
               "parentArea": "Καμάρες",
               "note": "Δίπλα στο λιμάνι",
               "rating": 1,
-              "access": ["walking"],
-              "tags": ["βότσαλο", "μικρή", "ήσυχη"],
+              "access": [
+                "walking"
+              ],
+              "tags": [
+                "βότσαλο",
+                "μικρή",
+                "ήσυχη"
+              ],
               "description": "Πολύ μικρή, ήσυχη παραλία με βότσαλο ακριβώς δίπλα στο λιμάνι και τη μαρίνα των Καμαρών. Ιδανική για μια πιο ήρεμη βουτιά μακριά από την πολυκοσμία της κεντρικής παραλίας.",
               "tips": null,
               "lat": 36.988996,
@@ -319,8 +480,15 @@
               "parentArea": null,
               "note": "Προσβάσιμη μόνο δια θαλάσσης",
               "rating": 2,
-              "access": ["boat"],
-              "tags": ["βότσαλα", "γαλαζοπράσινα νερά", "απομονωμένη", "με σκάφος"],
+              "access": [
+                "boat"
+              ],
+              "tags": [
+                "βότσαλα",
+                "γαλαζοπράσινα νερά",
+                "απομονωμένη",
+                "με σκάφος"
+              ],
               "description": "Μικρός όρμος βόρεια των Καμαρών, με μικρά βότσαλα που σιγά-σιγά δίνουν τη θέση τους σε άμμο και γαλαζοπράσινα νερά. Προσβάσιμη μόνο δια θαλάσσης.",
               "tips": null,
               "lat": 37.007791,
@@ -333,8 +501,15 @@
               "parentArea": null,
               "note": "Προσβάσιμη μόνο δια θαλάσσης",
               "rating": 2,
-              "access": ["boat"],
-              "tags": ["βότσαλο", "άμμος", "απομονωμένη", "με σκάφος/κανό"],
+              "access": [
+                "boat"
+              ],
+              "tags": [
+                "βότσαλο",
+                "άμμος",
+                "απομονωμένη",
+                "με σκάφος/κανό"
+              ],
               "description": "Μικρός απομονωμένος όρμος στη βόρεια πλευρά του νησιού, με άμμο και βότσαλο και μια καταπράσινη ρεματιά που καταλήγει στο πίσω μέρος του. Προσβάσιμη μόνο δια θαλάσσης — π.χ. με κανό από την παραλία της Χερρονήσου.",
               "tips": null,
               "lat": 37.030304,
@@ -353,8 +528,16 @@
               "parentArea": "Αρτεμώνας",
               "note": "Δίπλα στον Αρτεμώνα",
               "rating": 2,
-              "access": ["car", "walking"],
-              "tags": ["βράχια", "τιρκουάζ νερά", "ήσυχη", "κατάβαση"],
+              "access": [
+                "car",
+                "walking"
+              ],
+              "tags": [
+                "βράχια",
+                "τιρκουάζ νερά",
+                "ήσυχη",
+                "κατάβαση"
+              ],
               "description": "Από τις αγαπημένες μου βραχώδεις ακτές. Λίγο χωματόδρομος για να φτάσετε και μια μικρή κατάβαση με σκαλάκια (5 λεπτά). Πεντακάθαρα τιρκουάζ νερά — σαν τους Παξούς.",
               "tips": "Κολυμπήστε αριστερότερα του βράχου για να δείτε τα τιρκουάζ νερά με βότσαλα στον πάτο.",
               "lat": 36.998,
@@ -367,12 +550,19 @@
               "parentArea": null,
               "note": "Τα βράχια δεξιά της εκκλησίας",
               "rating": 2,
-              "access": ["car"],
-              "tags": ["βράχια", "εκκλησία", "βουτιές", "κόσμος"],
+              "access": [
+                "car"
+              ],
+              "tags": [
+                "βράχια",
+                "εκκλησία",
+                "βουτιές",
+                "κόσμος"
+              ],
               "description": "Στα βραχάκια δεξιά (κατεβαίνοντας) της εκκλησίας της Παναγίας Χρυσοπηγής. Πολύ βολικά βράχια για να αράξετε και να κάνετε βουτιές. Must.",
               "tips": null,
-              "lat": 36.874,
-              "lng": 24.747,
+              "lat": 36.9361,
+              "lng": 24.7462,
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Church+Sifnos+Greece"
             },
             {
@@ -381,8 +571,15 @@
               "parentArea": "Κάστρο",
               "note": "Δίπλα στη γραφική εκκλησία",
               "rating": 1,
-              "access": ["car", "walking"],
-              "tags": ["βράχια", "εκκλησία", "λιγότερος κόσμος"],
+              "access": [
+                "car",
+                "walking"
+              ],
+              "tags": [
+                "βράχια",
+                "εκκλησία",
+                "λιγότερος κόσμος"
+              ],
               "description": "Παρόμοια εμπειρία με Χρυσοπηγή αλλά με λιγότερο κόσμο και ίσως λίγο πιο δύσβατα τα βράχια.",
               "tips": null,
               "lat": 36.989,
@@ -395,8 +592,16 @@
               "parentArea": null,
               "note": "Το πιο βόρειο σημείο του νησιού",
               "rating": 1,
-              "access": ["car", "walking"],
-              "tags": ["βράχια", "ψαροχώρι", "γραφικό", "ήρεμο"],
+              "access": [
+                "car",
+                "walking"
+              ],
+              "tags": [
+                "βράχια",
+                "ψαροχώρι",
+                "γραφικό",
+                "ήρεμο"
+              ],
               "description": "Γραφικό ψαροχώρι στο βορειότερο σημείο του νησιού. Πολύ ωραία βραχώδης ακτή αλλά χωρίς πολύ κόσμο συνήθως. Αφήστε το αμάξι στην πλατεία και πηγαίνετε πεζή.",
               "tips": "Από εκεί κατάγομαι.",
               "lat": 37.003,
@@ -412,67 +617,152 @@
       "intro": "Τα χωριά της Σίφνου χτίστηκαν στο εσωτερικό του νησιού, μακριά από τους πειρατές. Λευκά, με στενά σοκάκια και δεκάδες εκκλησίες, το καθένα έχει τον δικό του χαρακτήρα. (Πρόχειρο κείμενο — φτιάξε το με τη δική σου ματιά.)",
       "items": [
         {
+          "id": "apollonia",
           "name": "Απολλωνία",
           "meta": "Πρωτεύουσα",
           "description": "Το κέντρο του νησιού — εδώ χτυπάει η καρδιά. Ο πεζόδρομος «το Στενό» γεμίζει με μπαρ, εστιατόρια και μαγαζιά, και όλα τα λεωφορεία περνούν από εδώ. Ιδανική βάση αν θέλετε να είστε στο κέντρο της δράσης.",
-          "tags": ["κέντρο", "διασκέδαση", "βάση"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollonia+Sifnos"
+          "tags": [
+            "κέντρο",
+            "διασκέδαση",
+            "βάση"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Apollonia+Sifnos",
+          "image": {
+            "src": "images/places/apollonia.jpg",
+            "credit": "Horology at English Wikipedia (Public domain, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Apollonia_on_Sifnos.jpg"
+          }
         },
         {
+          "id": "artemonas",
           "name": "Αρτεμώνας",
           "meta": "Αρχοντικά",
           "description": "Το πιο αρχοντικό χωριό, δίπλα στην Απολλωνία. Νεοκλασικά σπίτια, καπετανέικα, ανθισμένες αυλές και ήσυχα σοκάκια. Έχει μερικά από τα καλύτερα ζαχαροπλαστεία και φούρνους του νησιού.",
-          "tags": ["αρχοντικά", "ήσυχο", "γλυκά"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artemonas+Sifnos"
+          "tags": [
+            "αρχοντικά",
+            "ήσυχο",
+            "γλυκά"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artemonas+Sifnos",
+          "image": {
+            "src": "images/places/artemonas.jpg",
+            "credit": "Jon Corelis (CC BY-SA 3.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Artemonas.jpg"
+          }
         },
         {
+          "id": "kastro",
           "name": "Κάστρο",
           "meta": "Μεσαιωνικό",
           "description": "Ο παλιός οχυρωμένος οικισμός, χτισμένος πάνω στην αρχαία πρωτεύουσα και κατοικημένος αδιάκοπα εδώ και χιλιετίες. Σκεπαστά περάσματα, ενετικά οικόσημα, βενετσιάνικα μπαλκόνια και η θάλασσα από κάτω. Το πιο ατμοσφαιρικό μέρος για ηλιοβασίλεμα και βόλτα.",
-          "tags": ["ιστορικό", "θέα", "ηλιοβασίλεμα"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kastro+Sifnos"
+          "tags": [
+            "ιστορικό",
+            "θέα",
+            "ηλιοβασίλεμα"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kastro+Sifnos",
+          "image": {
+            "src": "images/places/kastro.jpg",
+            "credit": "Kondephy (CC BY-SA 4.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Kastro,_Sifnos.jpg"
+          }
         },
         {
+          "id": "kamares-2",
           "name": "Καμάρες",
           "meta": "Λιμάνι",
           "description": "Η πύλη του νησιού — εδώ δένουν τα πλοία. Παραλία με beach bars, ταβέρνες, ξενοδοχεία και τα παραδοσιακά αγγειοπλαστεία. Βολικό για την πρώτη και την τελευταία μέρα.",
-          "tags": ["λιμάνι", "παραλία", "κεραμικά"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Sifnos"
+          "tags": [
+            "λιμάνι",
+            "παραλία",
+            "κεραμικά"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kamares+Sifnos",
+          "image": {
+            "src": "images/places/kamares-2.jpg",
+            "credit": "Golem Unity (CC BY-SA 4.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:View_of_Kamares,_Sifnos_from_Hill.jpg"
+          }
         },
         {
+          "id": "faros",
           "name": "Φάρος",
           "meta": "Ψαροχώρι",
           "description": "Γραφικό πρώην αλιευτικό χωριό στα νοτιοανατολικά, με τρεις παραλίες σε κοντινή απόσταση και μονοπάτι προς τη Χρυσοπηγή. Ήρεμη, οικογενειακή ατμόσφαιρα.",
-          "tags": ["ψαροχώρι", "παραλίες", "ήσυχο"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Faros+Sifnos"
+          "tags": [
+            "ψαροχώρι",
+            "παραλίες",
+            "ήσυχο"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Faros+Sifnos",
+          "image": {
+            "src": "images/places/faros.jpg",
+            "credit": "Luca Conti from Senigallia, Italy (CC BY 2.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Faros_Sifnos_Cyclades.jpg"
+          }
         },
         {
+          "id": "platy-gialos-2",
           "name": "Πλατύς Γιαλός",
           "meta": "Νότια παραλία",
           "description": "Το πιο οργανωμένο παραθαλάσσιο χωριό, στο νότο. Μεγάλη παραλία, ξενοδοχεία, ταβέρνες και beach bars — και βάση για θαλάσσια σπορ και καραβάκια.",
-          "tags": ["παραλία", "οργανωμένο", "θαλάσσια σπορ"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Sifnos"
+          "tags": [
+            "παραλία",
+            "οργανωμένο",
+            "θαλάσσια σπορ"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Platis+Gialos+Sifnos",
+          "image": {
+            "src": "images/places/platy-gialos-2.jpg",
+            "credit": "Kondephy (CC BY-SA 4.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Platis_Gialos,_Sifnos.jpg"
+          }
         },
         {
+          "id": "vathi",
           "name": "Βαθύ",
           "meta": "Κλειστός κόλπος",
           "description": "Χτισμένο γύρω από έναν κλειστό, ήρεμο κόλπο στα νοτιοδυτικά — μέχρι πρόσφατα το έφταναν κυρίως με καΐκι. Αμμουδιά, νερά σαν λίμνη και το εκκλησάκι του Ταξιάρχη μέσα στη θάλασσα.",
-          "tags": ["κόλπος", "ήρεμα νερά", "χαλαρό"],
-          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vathi+Sifnos"
+          "tags": [
+            "κόλπος",
+            "ήρεμα νερά",
+            "χαλαρό"
+          ],
+          "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vathi+Sifnos",
+          "image": {
+            "src": "images/places/vathi.jpg",
+            "credit": "Takeaway (talk) (CC BY-SA 3.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Vathy_harbour_Greek_island_of_Sifnos.jpg"
+          }
         },
         {
+          "id": "exambela",
           "name": "Εξάμπελα",
           "meta": "Παράδοση",
           "description": "Χωριό νότια της Απολλωνίας, γνωστό για τη μουσική του παράδοση και για τη Μονή Βρύσης (17ος αι.) με το εκκλησιαστικό της μουσείο. Γενέτειρα του ποιητή Αριστομένη Προβελέγγιου.",
-          "tags": ["παράδοση", "μοναστήρι", "μουσική"],
+          "tags": [
+            "παράδοση",
+            "μοναστήρι",
+            "μουσική"
+          ],
           "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Exambela+Sifnos"
         },
         {
+          "id": "cherronisos-2",
           "name": "Χερρόνησος",
           "meta": "Το βόρειο άκρο",
           "description": "Το βορειότερο, απομακρυσμένο ψαροχώρι — μακριά από όλα, με καΐκια, ταβέρνες με φρέσκο ψάρι και παραδοσιακό αγγειοπλαστείο. Ωραίο για ηλιοβασίλεμα με θέα τη Σέριφο.",
-          "tags": ["απόμερο", "ψάρι", "ηλιοβασίλεμα"],
-          "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958"
+          "tags": [
+            "απόμερο",
+            "ψάρι",
+            "ηλιοβασίλεμα"
+          ],
+          "mapsUrl": "https://maps.app.goo.gl/ZV8foTo74VnvFn958",
+          "image": {
+            "src": "images/places/cherronisos-2.jpg",
+            "credit": "Margaritaprounia (CC BY-SA 3.0, Wikimedia Commons)",
+            "creditUrl": "https://commons.wikimedia.org/wiki/File:Herronisos.JPG"
+          }
         }
       ]
     },
@@ -489,9 +779,18 @@
               "name": "Cavo Sunrise",
               "aka": "Κουβανός",
               "rating": 3,
-              "tags": ["ηλιοβασίλεμα", "cocktails", "χαλαρό", "must"],
+              "tags": [
+                "ηλιοβασίλεμα",
+                "cocktails",
+                "χαλαρό",
+                "must"
+              ],
               "description": "Πηγαίνετε οπωσδήποτε με το ηλιοβασίλεμα ή αργότερα. Χαλαρή μουσική, μπαμπάτσικες μερίδες και ο κυρ Κώστας (που αυτοαποκαλείται Τσε Γκεβάρα της Σίφνου) είναι μορφή μεγάλη.",
-              "mustTry": ["Ρούμι Ανανά", "Mojito", "Ρούμι Cola"],
+              "mustTry": [
+                "Ρούμι Ανανά",
+                "Mojito",
+                "Ρούμι Cola"
+              ],
               "note": "Δεν είναι το πιο καθαρό μαγαζί — αλλά YOLO.",
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cavo+Sunrise+Kastro+Sifnos+Greece"
             }
@@ -507,7 +806,11 @@
               "name": "Μπότζι",
               "aka": null,
               "rating": 2,
-              "tags": ["ταράτσα", "κυρίλε", "στενό"],
+              "tags": [
+                "ταράτσα",
+                "κυρίλε",
+                "στενό"
+              ],
               "description": "Ταράτσα στο στενό της Απολλωνίας. Από τις κύριες επιλογές για ποτό με θέα.",
               "mustTry": [],
               "note": null,
@@ -518,7 +821,11 @@
               "name": "Cosi",
               "aka": null,
               "rating": 2,
-              "tags": ["ταράτσα", "κυρίλε", "στενό"],
+              "tags": [
+                "ταράτσα",
+                "κυρίλε",
+                "στενό"
+              ],
               "description": "Ταράτσα στο στενό, παρόμοιο με το Μπότζι. Οι δύο κύριες επιλογές για πιο κυρίλε ατμόσφαιρα.",
               "mustTry": [],
               "note": null,
@@ -529,7 +836,11 @@
               "name": "Δόλωμα",
               "aka": null,
               "rating": 2,
-              "tags": ["alternative", "μουσική", "ψηλά στο στενό"],
+              "tags": [
+                "alternative",
+                "μουσική",
+                "ψηλά στο στενό"
+              ],
               "description": "Πιο alternative μουσική και ατμόσφαιρα. Βρίσκεται ψηλότερα στο στενό.",
               "mustTry": [],
               "note": null,
@@ -540,7 +851,11 @@
               "name": "Μανταλού",
               "aka": null,
               "rating": 2,
-              "tags": ["alternative", "μουσική", "ψηλά στο στενό"],
+              "tags": [
+                "alternative",
+                "μουσική",
+                "ψηλά στο στενό"
+              ],
               "description": "Μαζί με το Δόλωμα είναι οι επιλογές για πιο alternative ατμόσφαιρα ψηλά στο στενό.",
               "mustTry": [],
               "note": null,
@@ -551,7 +866,13 @@
               "name": "Δρακάκης",
               "aka": null,
               "rating": 2,
-              "tags": ["μεζές", "κρασί", "ούζο", "τσίπουρο", "λίγο ακριβό"],
+              "tags": [
+                "μεζές",
+                "κρασί",
+                "ούζο",
+                "τσίπουρο",
+                "λίγο ακριβό"
+              ],
               "description": "Μεζεδοπωλείο στον ίδιο δρόμο με τα άλλα. Λίγο τσιμπημένο αλλά ωραίο μαγαζί — και πιο κέντρο δε γίνεται.",
               "mustTry": [],
               "note": "Λίγο ακριβό αλλά αξίζει.",
@@ -585,7 +906,11 @@
               "name": "Μωσαικό",
               "aka": null,
               "rating": 3,
-              "tags": ["μεζεδοπωλείο", "must", "Αρτεμώνας"],
+              "tags": [
+                "μεζεδοπωλείο",
+                "must",
+                "Αρτεμώνας"
+              ],
               "description": "Must επιλογή στον Αρτεμώνα. Μεζεδοπωλείο με ωραία ατμόσφαιρα.",
               "mustTry": [],
               "note": null,
@@ -596,7 +921,11 @@
               "name": "Διαχρονικό",
               "aka": null,
               "rating": 1,
-              "tags": ["μπαράκι", "χαλαρό", "Αρτεμώνας"],
+              "tags": [
+                "μπαράκι",
+                "χαλαρό",
+                "Αρτεμώνας"
+              ],
               "description": "Χαλαρό μπαράκι στη διαδρομή για το Μωσαικό. Μπορεί να σας ψήσει.",
               "mustTry": [],
               "note": null,
@@ -618,7 +947,11 @@
             "location": "Κάτω Πετάλι",
             "locationDetail": "δίπλα στην Απολλωνία",
             "rating": 3,
-            "tags": ["παραδοσιακό", "τοπικές συνταγές", "must"],
+            "tags": [
+              "παραδοσιακό",
+              "τοπικές συνταγές",
+              "must"
+            ],
             "description": "Από τις καλύτερες επιλογές για παραδοσιακές σιφνέικες συνταγές.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=To+Kelari+Apollonia+Sifnos+Greece"
           },
@@ -628,7 +961,11 @@
             "location": "Βαθύ",
             "locationDetail": "πάνω στην παραλία",
             "rating": 3,
-            "tags": ["παραδοσιακό", "στην παραλία", "τοπικές συνταγές"],
+            "tags": [
+              "παραδοσιακό",
+              "στην παραλία",
+              "τοπικές συνταγές"
+            ],
             "description": "Ταβέρνα πάνω στην παραλία του Βαθύ. Ιδανική για μεσημεριανό μετά τη θάλασσα.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tsikali+Taverna+Vathi+Sifnos+Greece"
           },
@@ -638,7 +975,11 @@
             "location": "Χρυσοπηγή",
             "locationDetail": "πάνω στην παραλία",
             "rating": 3,
-            "tags": ["παραδοσιακό", "στην παραλία", "εκκλησία"],
+            "tags": [
+              "παραδοσιακό",
+              "στην παραλία",
+              "εκκλησία"
+            ],
             "description": "Ταβέρνα πάνω στην παραλία της Χρυσοπηγής. Ωραία θέα στη θάλασσα και την εκκλησία.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chrysopigi+Taverna+Sifnos+Greece"
           }
@@ -651,37 +992,61 @@
           {
             "id": "mastelo",
             "name": "Μαστέλο",
-            "tags": ["κρέας", "πήλινο σκεύος", "κόκκινο κρασί"],
+            "tags": [
+              "κρέας",
+              "πήλινο σκεύος",
+              "κόκκινο κρασί"
+            ],
             "description": "Κατσίκι σιγομαγειρεμένο σε κόκκινο κρασί και άνηθο μέσα σε ομώνυμο πήλινο σκεύος (γάστρα). Η απόλυτη σιφνέικη συνταγή."
           },
           {
             "id": "revythada",
             "name": "Ρεβυθάδα",
-            "tags": ["ρεβύθια", "vegan", "παραδοσιακό"],
+            "tags": [
+              "ρεβύθια",
+              "vegan",
+              "παραδοσιακό"
+            ],
             "description": "Μουσκεμένα ρεβύθια με βρόχινο νερό που σιγομαγειρεύονται για πολλές ώρες σε ξυλόφουρνο μαζί με κρεμμυδάκι και χυλώνουν. Είναι παραδοσιακά το φαγητό που τρώνε οι Σιφνιοί κάθε Κυριακή μετά την εκκλησία. Λεμονάκι, ψωμί, ελιές (ή εγκιές όπως λένε οι ντόπιοι) και άγιος ο θεός."
           },
           {
             "id": "revythokeftedes",
             "name": "Ρεβυθοκεφτέδες",
-            "tags": ["ρεβύθια", "vegan", "τηγανιτό"],
+            "tags": [
+              "ρεβύθια",
+              "vegan",
+              "τηγανιτό"
+            ],
             "description": "Κεφτέδες από ρεβύθια — falafel before it was cool."
           },
           {
             "id": "kaparosalata",
             "name": "Καπαροσαλάτα",
-            "tags": ["σαλάτα", "κάπαρη", "τοπικό"],
+            "tags": [
+              "σαλάτα",
+              "κάπαρη",
+              "τοπικό"
+            ],
             "description": "Το νησί είναι γεμάτο άγρια κάπαρη που κρέμεται από τους πλύθινους τοίχους στα σοκάκια. Η καπαροσαλάτα της γίνεται με μπόλικο κρεμμύδι και κάποιοι λένε ότι θυμίζει γευστικά στιφάδο."
           },
           {
             "id": "myzithra",
             "name": "(Ξινο)μυζήθρα",
-            "tags": ["τυρί", "λευκό", "φρέσκο"],
+            "tags": [
+              "τυρί",
+              "λευκό",
+              "φρέσκο"
+            ],
             "description": "Μαλακό λευκό τυρί που είναι πολύ γευστικό και ταιριάζει πολύ στη χωριάτικη, αλλά και σε επάλειψη σε ψωμί. Ζητήστε το αντί για φέτα στη χωριάτικη σαλάτα."
           },
           {
             "id": "manoura",
             "name": "Μανούρα",
-            "tags": ["τυρί", "κόκκινο κρασί", "δυνατό"],
+            "tags": [
+              "τυρί",
+              "κόκκινο κρασί",
+              "δυνατό"
+            ],
             "description": "Δυνατό τυρί που ωριμάζει μέσα σε κόκκινο κρασί και έχει μια επίστρωση κατακαθιού από έξω. Μοιάζει σα λάσπη εξωτερικά αλλά εκεί είναι όλη η νοστιμιά. Δοκιμάστε το οπωσδήποτε."
           }
         ]
@@ -695,7 +1060,12 @@
             "location": "Καμάρες",
             "locationDetail": null,
             "rating": 3,
-            "tags": ["μπουγάτσα", "τυρόπιτα", "χειροποίητο", "πρωινό"],
+            "tags": [
+              "μπουγάτσα",
+              "τυρόπιτα",
+              "χειροποίητο",
+              "πρωινό"
+            ],
             "description": "Χειροποίητες μπουγάτσες και τυρόπιτες στις Καμάρες. Ιδανικό για πρωινό φτάνοντας από το πλοίο.",
             "mapsUrl": "https://maps.app.goo.gl/PeqJb9GWAg2whj9TA"
           },
@@ -705,7 +1075,11 @@
             "location": "Αρτεμώνας",
             "locationDetail": null,
             "rating": 3,
-            "tags": ["αμυγδαλωτά", "παραδοσιακά γλυκά", "κουλούρια"],
+            "tags": [
+              "αμυγδαλωτά",
+              "παραδοσιακά γλυκά",
+              "κουλούρια"
+            ],
             "description": "Τα καλύτερα παραδοσιακά γλυκά: αμυγδαλωτά, μπισκότα φούρνου, κουλούρια με γλυκάνισο και κρασοκούλουρα.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grigoris+Pastry+Artemonas+Sifnos+Greece"
           },
@@ -715,7 +1089,12 @@
             "location": "Αρτεμώνας",
             "locationDetail": "από το 1933",
             "rating": 3,
-            "tags": ["αμυγδαλωτά", "λουκούμια", "χαλβαδόπιτα", "ιστορικό"],
+            "tags": [
+              "αμυγδαλωτά",
+              "λουκούμια",
+              "χαλβαδόπιτα",
+              "ιστορικό"
+            ],
             "description": "Ιστορικό ζαχαροπλαστείο του Αρτεμώνα, ανοιχτό από το 1933 και πλέον στην τρίτη γενιά. Φημισμένο για τα αμυγδαλωτά του — αφράτα και αρωματικά — αλλά και για λουκούμια, χαλβαδόπιτες, παστέλια και γλυκά του κουταλιού.",
             "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zacharoplasteio+Theodorou+Artemonas+Sifnos"
           }
@@ -726,33 +1105,61 @@
         "intro": "Προϊόντα του νησιού για δώρα ή για το σπίτι — η γεύση και το άρωμα της Σίφνου.",
         "items": [
           {
+            "id": "thyme-honey",
             "name": "Θυμαρίσιο Μέλι",
-            "tags": ["μέλι", "θυμάρι"],
+            "tags": [
+              "μέλι",
+              "θυμάρι"
+            ],
             "description": "Εξαιρετικής ποιότητας θυμαρίσιο μέλι, από τα πιο περιζήτητα τοπικά προϊόντα."
           },
           {
+            "id": "capers",
             "name": "Κάπαρη",
-            "tags": ["κάπαρη", "μεζές"],
+            "tags": [
+              "κάπαρη",
+              "μεζές"
+            ],
             "description": "Φρέσκια, ξερή ή σε φύλλα — μαζεύεται στα ξερολιθικά αναβαθμίδια του νησιού και συνοδεύει σαλάτες και μεζέδες."
           },
           {
+            "id": "cheeses",
             "name": "Τυριά",
-            "tags": ["τυρί", "μανούρα", "ξινομυζήθρα"],
+            "tags": [
+              "τυρί",
+              "μανούρα",
+              "ξινομυζήθρα"
+            ],
             "description": "Τρεις κλασικές σιφνέικες ποικιλίες: ξινομυζήθρα, χλωρομανούρα και η μανούρα που ωριμάζει σε κόκκινο κρασί."
           },
           {
+            "id": "almond-sweets-traditional-treats",
             "name": "Αμυγδαλωτά & Παραδοσιακά Γλυκά",
-            "tags": ["αμυγδαλωτά", "μελόπιτα", "παστέλι"],
+            "tags": [
+              "αμυγδαλωτά",
+              "μελόπιτα",
+              "παστέλι"
+            ],
             "description": "Αμυγδαλωτά, μελόπιτα, λουκούμια, παστέλι και κουλούρια με γλυκάνισο — τα γλυκά της Σίφνου."
           },
           {
+            "id": "herbs-aromatics",
             "name": "Βότανα & Αρωματικά",
-            "tags": ["ρίγανη", "φασκόμηλο", "θυμάρι"],
+            "tags": [
+              "ρίγανη",
+              "φασκόμηλο",
+              "θυμάρι"
+            ],
             "description": "Άγρια ρίγανη, φασκόμηλο, θυμάρι και άλλα βότανα του νησιού, μαζεμένα από τα βουνά."
           },
           {
+            "id": "ceramics",
             "name": "Κεραμικά",
-            "tags": ["πηλός", "χειροποίητο", "δώρο"],
+            "tags": [
+              "πηλός",
+              "χειροποίητο",
+              "δώρο"
+            ],
             "description": "Χειροποίητα πήλινα σκεύη και διακοσμητικά — το πιο αυθεντικό σιφνέικο δώρο. Ένα τσουκάλι ή μια γάστρα για μαγείρεμα κρατάει την παράδοση ζωντανή."
           }
         ]
@@ -768,10 +1175,15 @@
           "intro": "Οργανωμένες εμπειρίες που αξίζουν τον χρόνο σας.",
           "items": [
             {
+              "id": "boat-tour-around-sifnos",
               "name": "Boat Tour γύρω από τη Σίφνο",
               "meta": "Όλη η σεζόν",
               "description": "Ολοήμερη κρουαζιέρα γύρω από το νησί — απομονωμένοι κόλποι, βουτιές, μεσημεριανό στο σκάφος. Πρωινά και απογευματινά δρομολόγια, κυρίως από Πλατύ Γιαλό και Καμάρες, με παραδοσιακά ξύλινα καΐκια ή ταχύπλοα. Αν θέλετε κάτι πιο ιδιωτικό, υπάρχουν και ενοικιάσεις σκαφών με ή χωρίς καπετάνιο. Η καλύτερη μέρα για να δείτε τη Σίφνο από άλλη οπτική.",
-              "tags": ["θάλασσα", "βουτιές", "ολοήμερο"],
+              "tags": [
+                "θάλασσα",
+                "βουτιές",
+                "ολοήμερο"
+              ],
               "contacts": [
                 {
                   "name": "Aegeas Cruises",
@@ -805,30 +1217,57 @@
               ]
             },
             {
+              "id": "island-bus-tour",
               "name": "Περιήγηση με Λεωφορείο",
               "meta": "Χωρίς αυτοκίνητο",
               "description": "Οργανωμένες εκδρομές με πούλμαν στα σημαντικότερα αξιοθέατα του νησιού — ιδανικό αν δεν έχετε δικό σας όχημα. Κλείνετε θέση στα τοπικά τουριστικά γραφεία στην Απολλωνία ή στις Καμάρες.",
-              "tags": ["χωρίς αυτοκίνητο", "αξιοθέατα"],
+              "tags": [
+                "χωρίς αυτοκίνητο",
+                "αξιοθέατα"
+              ],
               "contacts": [
-                { "name": "Aegean Thesaurus Travel", "phone": "22840 33151" },
-                { "name": "Miles Away", "phone": "22840 71373" },
-                { "name": "Sifnos Experience", "phone": "6936 726289" },
-                { "name": "Travel Bag", "phone": "6987 603159" }
+                {
+                  "name": "Aegean Thesaurus Travel",
+                  "phone": "22840 33151"
+                },
+                {
+                  "name": "Miles Away",
+                  "phone": "22840 71373"
+                },
+                {
+                  "name": "Sifnos Experience",
+                  "phone": "6936 726289"
+                },
+                {
+                  "name": "Travel Bag",
+                  "phone": "6987 603159"
+                }
               ]
             },
             {
+              "id": "horse-riding",
               "name": "Ιππασία",
               "location": "Κοντά στην Απολλωνία",
               "description": "Βόλτες με άλογα και μαθήματα για αρχάριους από εξειδικευμένο κέντρο. Οι διαδρομές ακολουθούν τα παλιά μονοπάτια του νησιού — ιδανικό για όσους θέλουν να δουν τη Σίφνο από διαφορετικό μονοπάτι.",
-              "tags": ["οικογένειες", "διαφορετικό"],
+              "tags": [
+                "οικογένειες",
+                "διαφορετικό"
+              ],
               "contacts": [
-                { "name": "Sifnos Horseriding", "phone": "6972 712150" }
+                {
+                  "name": "Sifnos Horseriding",
+                  "phone": "6972 712150"
+                }
               ]
             },
             {
+              "id": "farm-visit",
               "name": "Επίσκεψη σε Φάρμα",
               "description": "Δύο φάρμες ανοιχτές για επισκέπτες: η φάρμα Narlis στον δρόμο για το Κάτω Πετάλι — τυριά, γαλακτοκομικά και συχνά μαθήματα μαγειρικής (δείτε την καρτέλα Εργαστήρια) — και η Φάρμα της Ανθής κοντά στην Απολλωνία, όπου αρμέγετε κατσίκες, φτιάχνετε μυζήθρα, ταΐζετε τα ζώα και τρώτε πρωινό ή δείπνο της φάρμας.",
-              "tags": ["παράδοση", "οικογένειες"],
+              "tags": [
+                "παράδοση",
+                "οικογένειες"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Farm Narlis",
@@ -852,14 +1291,19 @@
           "intro": "Δύο διαφορετικές εμπειρίες — μία εύκολη με αυτοκίνητο, μία με πεζοπορία.",
           "items": [
             {
+              "id": "agios-symeon",
               "name": "Άγιος Συμεών",
               "meta": "Με αυτοκίνητο",
               "location": "Πάνω από Καμάρες",
               "description": "Ανεβείτε με το αμάξι μέχρι τον Άγιο Συμεών, μόλις 10 λεπτά από τις Καμάρες. Απίστευτη θέα χωρίς κόπο — το αυτοκίνητο πάει μέχρι τέλος. Δημοφιλές σημείο, πηγαίνετε νωρίς.",
-              "tags": ["εύκολη πρόσβαση", "θέα"],
+              "tags": [
+                "εύκολη πρόσβαση",
+                "θέα"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos"
             },
             {
+              "id": "profitis-ilias-o-apsilos",
               "name": "Προφήτης Ηλίας ο Αψηλός",
               "meta": "Με πεζοπορία",
               "description": "Το ψηλότερο σημείο του νησιού. Πεζοπορία ~1 ώρα από το χωριό. Φέρτε νερό και κατάλληλα παπούτσια — η αμοιβή είναι πανοραμική θέα 360°."
@@ -872,22 +1316,35 @@
           "intro": "Η Σίφνος έχει ένα εκπληκτικό δίκτυο περίπου 200 χλμ. παλιών μονοπατιών, με 19 σηματοδοτημένες διαδρομές (Sifnos Trails) — από εύκολες βόλτες μέχρι ολοήμερες πορείες, ανάμεσα σε ξωκλήσια, περιστεριώνες, αλώνια και ξερολιθιές. Χάρτες και λεπτομέρειες στο <a href=\"https://www.sifnostrails.com\" target=\"_blank\" rel=\"noopener\">sifnostrails.com</a>. Καλύτερες εποχές η άνοιξη και το φθινόπωρο — το καλοκαίρι ξεκινήστε νωρίς, με νερό και καλά παπούτσια.",
           "items": [
             {
+              "id": "agios-silivestros-the-mines",
               "name": "Άγιος Σιλίβεστρος & Μεταλλεία",
               "meta": "Μέτρια δυσκολία",
               "description": "Πεζοπορία στα βόρεια του νησιού, μέχρι την εκκλησία του Αγίου Σιλίβεστρου και τα παλιά μεταλλεία. Ιστορικό τοπίο — από εδώ έβγαζαν χρυσό και ασήμι οι αρχαίοι Σιφνιοί, χτίζοντας τον Θησαυρό των Σιφνίων στους Δελφούς.",
-              "tags": ["ιστορία", "μεταλλεία", "βόρεια Σίφνος"]
+              "tags": [
+                "ιστορία",
+                "μεταλλεία",
+                "βόρεια Σίφνος"
+              ]
             },
             {
+              "id": "profitis-ilias-o-apsilos-2",
               "name": "Προφήτης Ηλίας ο Αψηλός",
               "meta": "Μέτρια δυσκολία",
               "description": "Ανηφορική πεζοπορία στο ψηλότερο σημείο του νησιού. Ιδανικά νωρίς το πρωί ή προς το ηλιοβασίλεμα.",
-              "tags": ["κορυφή", "πανηγύρι 20 Ιουλίου"]
+              "tags": [
+                "κορυφή",
+                "πανηγύρι 20 Ιουλίου"
+              ]
             },
             {
+              "id": "kamares-kastro",
               "name": "Καμάρες → Κάστρο",
               "meta": "Εύκολη / Μέτρια",
               "description": "Παραδοσιακή διάβαση από το λιμάνι μέχρι το μεσαιωνικό Κάστρο, μέσα από τα ορεινά χωριά. Μπορείτε να σταματήσετε όπου θέλετε — περνά απ' όλα τα κεντρικά χωριά.",
-              "tags": ["κλασικό", "χωριά"]
+              "tags": [
+                "κλασικό",
+                "χωριά"
+              ]
             }
           ]
         },
@@ -897,10 +1354,14 @@
           "intro": "Για τους πιο δραστήριους — από τον βυθό μέχρι τα βράχια.",
           "items": [
             {
+              "id": "scuba-diving-snorkeling",
               "name": "Καταδύσεις & Snorkeling",
               "location": "Καμάρες",
               "description": "Το καταδυτικό κέντρο στις Καμάρες οργανώνει βαπτίσεις για αρχάριους, μαθήματα και οργανωμένες καταδύσεις σε επιλεγμένα σημεία του βυθού. Τα νερά της Σίφνου είναι καθαρά και γεμάτα ζωή — αξίζει και ένα απλό snorkeling στις βραχώδεις ακτές.",
-              "tags": ["θάλασσα", "και για αρχάριους"],
+              "tags": [
+                "θάλασσα",
+                "και για αρχάριους"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Diving Center",
@@ -910,10 +1371,14 @@
               ]
             },
             {
+              "id": "kayak-sup-canoe",
               "name": "Kayak, SUP & Κανό",
               "location": "Πλατύς Γιαλός & Βαθύ",
               "description": "Ενοικιάσεις kayak, SUP, κανό και θαλάσσιου ποδηλάτου στις μεγάλες νότιες παραλίες. Με ήρεμη θάλασσα, η κωπηλασία μέχρι τους γύρω όρμους είναι από τους ωραιότερους τρόπους να ξεκινήσει η μέρα.",
-              "tags": ["θάλασσα", "οικογένειες"],
+              "tags": [
+                "θάλασσα",
+                "οικογένειες"
+              ],
               "contacts": [
                 {
                   "name": "Bola",
@@ -933,11 +1398,15 @@
               ]
             },
             {
+              "id": "rock-climbing",
               "name": "Αναρρίχηση",
               "meta": "Για έμπειρους",
               "location": "Πάνω από τις Καμάρες",
               "description": "Τέσσερα αναρριχητικά πεδία με περίπου 70 σπορ διαδρομές, από 5b μέχρι 7b — σχετικά πυκνά ασφαλισμένες, με ρελέ στο τέλος κάθε διαδρομής. Δεν υπάρχει ενοικίαση εξοπλισμού στο νησί: φέρτε σχοινί 70μ., σετάκια και όλο τον εξοπλισμό σας.",
-              "tags": ["βουνό", "δικός σας εξοπλισμός"],
+              "tags": [
+                "βουνό",
+                "δικός σας εξοπλισμός"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Climbing",
@@ -947,9 +1416,13 @@
               ]
             },
             {
+              "id": "cycling",
               "name": "Ποδηλασία",
               "description": "Ορεινή ή trekking ποδηλασία σε ήσυχους δρόμους και χωματόδρομους, μόνοι σας ή με οργανωμένη εξόρμηση. Υπάρχει ενοικίαση ποδηλάτων στο νησί — αλλά η Σίφνος είναι ανηφορική: υπολογίστε τις δυνάμεις σας.",
-              "tags": ["άθληση", "ανηφόρες"],
+              "tags": [
+                "άθληση",
+                "ανηφόρες"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Bike",
@@ -966,10 +1439,14 @@
           "intro": "Μάθετε από τους ντόπιους — μαγειρική και κεραμική στο νησί του Τσελεμεντέ και των Τσουκαλάδων.",
           "items": [
             {
+              "id": "sifnian-cooking-classes",
               "name": "Μαθήματα Σιφνέικης Μαγειρικής",
               "location": "Απολλωνία & φάρμα",
               "description": "Στη γενέτειρα του Τσελεμεντέ, μαθαίνετε να φτιάχνετε ρεβιθάδα, ρεβιθοκεφτέδες και άλλα τοπικά πιάτα δίπλα σε ντόπιους. Μαθήματα γίνονται στην Απολλωνία και σε τοπική φάρμα στον δρόμο για το Κάτω Πετάλι — και στο τέλος τρώτε αυτά που φτιάξατε.",
-              "tags": ["γαστρονομία", "παράδοση"],
+              "tags": [
+                "γαστρονομία",
+                "παράδοση"
+              ],
               "contacts": [
                 {
                   "name": "Sifnos Events",
@@ -986,10 +1463,15 @@
               ]
             },
             {
+              "id": "pottery-workshops",
               "name": "Εργαστήρια Κεραμικής",
               "location": "Αρτεμώνας & Απολλωνία",
               "description": "Δοκιμάστε τον τροχό! Στον Αρτεμώνα το Μουσείο Κεραμικής προσφέρει γνωριμία με τον τροχό για μεγάλους και παιχνίδι με πηλό για παιδιά, ενώ στην Απολλωνία μπορείτε να ζωγραφίσετε το δικό σας κεραμικό. Πολλά παραδοσιακά αγγειοπλαστεία του νησιού είναι ανοιχτά για επισκέπτες — δείτε και την ενότητα Πολιτιστικά.",
-              "tags": ["κεραμική", "οικογένειες", "παράδοση"],
+              "tags": [
+                "κεραμική",
+                "οικογένειες",
+                "παράδοση"
+              ],
               "contacts": [
                 {
                   "name": "Το Πηλοτεχνείο",
@@ -1011,15 +1493,25 @@
           "intro": "Ένα μεγάλο κομμάτι της Σίφνου είναι προστατευόμενο — ιδανικό για ήσυχες βόλτες μακριά από τον κόσμο.",
           "items": [
             {
+              "id": "natura-2000-area",
               "name": "Περιοχή Natura 2000",
               "meta": "Προστατευόμενο τοπίο",
               "description": "Από το 1976 η Σίφνος έχει χαρακτηριστεί τοπίο ιδιαίτερου φυσικού κάλλους. Περίπου 20.000 στρέμματα — από τον Προφήτη Ηλία μέχρι τη δυτική ακτή — ανήκουν στο ευρωπαϊκό δίκτυο Natura 2000, με 39 είδη πουλιών και 19 σπάνια ενδημικά είδη.",
-              "tags": ["natura", "προστατευόμενο", "πεζοπορία"]
+              "tags": [
+                "natura",
+                "προστατευόμενο",
+                "πεζοπορία"
+              ]
             },
             {
+              "id": "flora-fauna",
               "name": "Χλωρίδα & Πανίδα",
               "description": "Κέδρα (juniperus oxycedrus), σχίνα, αγριελιές και αρωματικά βότανα στη στεριά· λιβάδια Ποσειδωνίας στον βυθό. Οι αιωνόβιες πεζούλες (ξερολιθιές) συγκρατούν το χώμα και δένουν αρμονικά τη φύση με τον άνθρωπο.",
-              "tags": ["κέδρα", "βότανα", "ποσειδωνία"]
+              "tags": [
+                "κέδρα",
+                "βότανα",
+                "ποσειδωνία"
+              ]
             }
           ]
         }
@@ -1030,41 +1522,49 @@
       "intro": "Λίγα λόγια για το παρελθόν της Σίφνου — από τα αρχαία μεταλλεία ως τη σύγχρονη εποχή.",
       "chapters": [
         {
+          "id": "prehistoric-times",
           "era": "3η χιλιετία π.Χ.",
           "title": "Προϊστορικά Χρόνια",
           "body": "Κέντρο του πρωτοκυκλαδικού πολιτισμού από την 3η χιλιετία π.Χ. Πρώτοι κάτοικοι κατά την παράδοση οι Πελασγοί, οι Κάρες, οι Λέλεγες και οι Φοίνικες· μετά τον Τρωικό πόλεμο εγκαταστάθηκαν Ίωνες με αρχηγό τον Αλκήνορα. Από τη μυκηναϊκή εποχή σώζεται η επισκέψιμη ακρόπολη του Αγίου Ανδρέα (13ος αι. π.Χ.)."
         },
         {
+          "id": "gold-and-silver",
           "era": "6ος–5ος αι. π.Χ.",
           "title": "Χρυσός και Ασήμι",
           "body": "Από τα πλουσιότερα νησιά των Κυκλάδων: το ορυχείο αργύρου στον Άγιο Σώστη θεωρείται το δεύτερο αρχαιότερο στον κόσμο, ενώ χρυσό έβγαζαν σε Φάρο και Απόκοφτο. Οι Σιφνιοί έκοψαν από τους πρώτους χρυσό νόμισμα (~600 π.Χ.) και έχτισαν τον Θησαυρό των Σιφνίων στους Δελφούς (525 π.Χ.) — το πρώτο ολομάρμαρο κτίριο της ηπειρωτικής Ελλάδας. Κατά τον μύθο, όταν σταμάτησαν να αφιερώνουν χρυσό στον Απόλλωνα, ο θεός έπνιξε τα μεταλλεία με θάλασσα."
         },
         {
+          "id": "the-ancient-towers",
           "era": "6ος–3ος αι. π.Χ.",
           "title": "Οι Αρχαίοι Πύργοι",
           "body": "Πάνω από 70 κυκλικοί πύργοι — η μεγαλύτερη πυκνότητα στην Ελλάδα — λειτουργούσαν ως παρατηρητήρια και φρυκτωρίες, μεταδίδοντας μηνύματα με φωτιές μέχρι τις αρχαίες ακροπόλεις. Το δίκτυο στήθηκε μετά την επιδρομή των Σαμίων (525 π.Χ.) και αναβιώνει από εθελοντές κάθε Κυριακή της Πεντηκοστής."
         },
         {
+          "id": "byzantine-venetian-period",
           "era": "1204–1566",
           "title": "Βυζάντιο & Ενετοκρατία",
           "body": "Μετά το 1204 εντάχθηκε στο Δουκάτο της Νάξου, με ένα βυζαντινό διάλειμμα από το 1269. Το 1307 πέρασε στον Ιαννούλη Δα Κορόνια, που οχύρωσε το Κάστρο πάνω στη θέση της αρχαίας πρωτεύουσας, και το 1464 στην οικογένεια των Γοτζαδίνων."
         },
         {
+          "id": "piracy",
           "era": "13ος–18ος αι.",
           "title": "Πειρατεία",
           "body": "Με το Αιγαίο εκτεθειμένο σε πειρατικές επιδρομές, τα χωριά χτίστηκαν στο εσωτερικό του νησιού. Τα στενά σοκάκια, τα τυφλά αδιέξοδα και η πυκνή δόμηση είναι όλα αμυντικά στοιχεία — και οι φωτιές στους αρχαίους πύργους προειδοποιούσαν όταν πλησίαζαν πειρατές."
         },
         {
+          "id": "ottoman-period",
           "era": "1566–1821",
           "title": "Οθωμανική Περίοδος",
           "body": "Το 1566 το νησί πέρασε στους Οθωμανούς, με σημαντικά προνόμια και σχετική αυτονομία. Το 1687 ιδρύθηκε η Σχολή του Παναγίου Τάφου — το «Παιδευτήριον του Αρχιπελάγους», με 300 μαθητές — που ανέδειξε 3 Πατριάρχες και 47 Μητροπολίτες. Παράλληλα άνθισαν η ναυτιλία και η κεραμική."
         },
         {
+          "id": "modern-times",
           "era": "1821 – σήμερα",
           "title": "Νεότερα Χρόνια",
           "body": "Στην Επανάσταση του 1821 οι Σιφνιοί συμμετείχαν με επικεφαλής τον δάσκαλο Νικόλαο Χρυσόγελο — αργότερα πρώτο Υπουργό Παιδείας της Ελλάδας. Τον 19ο–20ό αιώνα η οικονομία στηρίχθηκε στην κεραμική των Τσουκαλάδων, τη ναυτιλία και τα μεταλλεία σιδήρου· σήμερα κυριαρχεί ο τουρισμός, αλλά οι παραδόσεις κρατούν γερά."
         },
         {
+          "id": "names-that-stood-out",
           "era": "18ος–20ός αι.",
           "title": "Πρόσωπα που Ξεχώρισαν",
           "body": "Η μικρή Σίφνος έβγαλε δυσανάλογα πολλά μεγάλα ονόματα. Στα γράμματα: ο Νικόλαος Τσελεμεντές, που έγραψε το πρώτο σύγχρονο ελληνικό βιβλίο μαγειρικής και το όνομά του έγινε συνώνυμο του είδους· οι ποιητές Ιωάννης Γρυπάρης (Αρτεμώνας — σπουδαίος μεταφραστής και πρώτος διευθυντής του Εθνικού Θεάτρου) και Αριστομένης Προβελέγγιος (Εξάμπελα — βουλευτής και Ακαδημαϊκός)· ο σατιρικός ποιητής και μαχητικός δημοσιογράφος Κλεάνθης Τριαντάφυλλος («Ραμπαγάς»)· και ο ιστορικός Λευτέρης Σταυριανός, καθηγητής στο Northwestern με παγκόσμια απήχηση. Στην πολιτική και τους αγώνες: ο δάσκαλος Νικόλαος Χρυσόγελος, «Μέγας Διδάσκαλος του Γένους», που ηγήθηκε των Σιφνιών στην Επανάσταση του 1821 και έγινε ο πρώτος Υπουργός Παιδείας του νεοελληνικού κράτους· και ο Στέλιος Σκλάβαινας (1907–1944), βουλευτής Θεσσαλονίκης του ΚΚΕ, ένας από τους 200 που εκτελέστηκαν από τους Ναζί στο Σκοπευτήριο της Καισαριανής την Πρωτομαγιά του 1944."
@@ -1139,6 +1639,7 @@
           "intro": "Φαγητό, κρασί, και χορός μέχρι το πρωί. Τα Σιφνέικα πανηγύρια είναι από τα ωραιότερα των Κυκλάδων. Ρωτάτε πάντα ντόπιους για ώρες και τοποθεσίες — οι ημερομηνίες κάποιων πανηγυριών αλλάζουν.",
           "items": [
             {
+              "id": "agia-irini",
               "name": "Αγία Ειρήνη",
               "meta": "4 Μαΐου",
               "month": 5,
@@ -1147,6 +1648,7 @@
               "description": "Πανηγύρι στη Χώνη, προς τη Χερρόνησο. Από τα πρώτα της χρονιάς, με την άνοιξη."
             },
             {
+              "id": "panagia-chrysopigi",
               "name": "Παναγία Χρυσοπηγή",
               "meta": "40 μέρες μετά το Πάσχα",
               "month": 5,
@@ -1155,6 +1657,7 @@
               "description": "Το πιο σημαντικό πανηγύρι του νησιού. Λιτανεία της εικόνας και γλέντι στα προαύλια της εκκλησίας."
             },
             {
+              "id": "agios-eliseus",
               "name": "Άγιος Ελισαίος",
               "meta": "13 Ιουνίου",
               "month": 6,
@@ -1163,6 +1666,7 @@
               "description": "Πανηγύρι στο εκκλησάκι του Αγίου Ελισαίου (Άι Νιλιάς). Από τα πρώτα πανηγύρια του καλοκαιριού."
             },
             {
+              "id": "agios-silvestros-gabriel",
               "name": "Άγιος Συλβέστρος & Γαβριήλ",
               "meta": "12 Ιουλίου",
               "month": 7,
@@ -1171,6 +1675,7 @@
               "description": "Πανηγύρι στα βόρεια, στα παλιά μεταλλεία του Αγίου Σιλίβεστρου — δείτε και το ομώνυμο μονοπάτι στις Δραστηριότητες."
             },
             {
+              "id": "agia-marina",
               "name": "Αγία Μαρίνα",
               "meta": "18 Ιουλίου",
               "month": 7,
@@ -1179,6 +1684,7 @@
               "description": "Πανηγύρι στην Αγία Μαρίνα, πάνω από τις Καμάρες."
             },
             {
+              "id": "prophet-elias-of-apsilos",
               "name": "Προφήτης Ηλίας του Αψηλού",
               "meta": "19 Ιουλίου",
               "month": 7,
@@ -1187,6 +1693,7 @@
               "description": "Πανηγύρι στο ψηλότερο σημείο του νησιού. Ανηφορικό μονοπάτι αλλά αξίζει για τη θέα και την ατμόσφαιρα."
             },
             {
+              "id": "prophet-elias-of-troullaki",
               "name": "Προφήτης Ηλίας του Τρουλλακιού",
               "meta": "19 Ιουλίου",
               "month": 7,
@@ -1195,6 +1702,7 @@
               "description": "Το «άλλο» πανηγύρι του Προφήτη Ηλία, στην κορυφή του Τρουλλακιού (463 μ.), την ίδια μέρα με του Αψηλού."
             },
             {
+              "id": "agios-panteleimon",
               "name": "Άγιος Παντελεήμονας",
               "meta": "26 Ιουλίου",
               "month": 7,
@@ -1203,6 +1711,7 @@
               "description": "Πανηγύρι στη Χερρόνησο, στο εκκλησάκι του Αγίου Πολυκάρπου. Γλέντι στο βορινό ψαροχώρι του νησιού."
             },
             {
+              "id": "transfiguration-of-the-saviour",
               "name": "Μεταμόρφωση του Σωτήρος",
               "meta": "6 Αυγούστου",
               "month": 8,
@@ -1211,6 +1720,7 @@
               "description": "Πανηγύρι στην εκκλησία της Σωτήρας στο Φινικίδι."
             },
             {
+              "id": "panagia-i-konchi",
               "name": "Παναγία η Κόγχη",
               "meta": "15 Αυγούστου",
               "month": 8,
@@ -1219,6 +1729,7 @@
               "description": "Το πανηγύρι της Παναγίας της Κόγχης, στα γραφικά σοκάκια του Αρτεμώνα. Από τα μεγάλα πανηγύρια του Δεκαπενταύγουστου."
             },
             {
+              "id": "panagia-platanissa",
               "name": "Παναγία Πλατάνισσα",
               "meta": "16 Αυγούστου",
               "month": 8,
@@ -1227,6 +1738,7 @@
               "description": "Πανηγύρι στην εκκλησία της Παναγίας στην Πλατάνισσα, την επομένη του Δεκαπενταύγουστου."
             },
             {
+              "id": "andreas-stratilatis",
               "name": "Ανδρέας Στρατηλάτης",
               "meta": "19 Αυγούστου",
               "month": 8,
@@ -1235,6 +1747,7 @@
               "description": "Πανηγύρι στους πρόποδες του λόφου του Αγίου Ανδρέα, κάτω από τον αρχαιολογικό χώρο."
             },
             {
+              "id": "ai-giannis-of-choni",
               "name": "Αη Γιάννης της Χώνης",
               "meta": "28 Αυγούστου",
               "month": 8,
@@ -1243,6 +1756,7 @@
               "description": "Πανηγύρι στη Χώνη, προς τη Χερρόνησο."
             },
             {
+              "id": "agios-symeon-2",
               "name": "Άγιος Συμεών",
               "meta": "31 Αυγούστου",
               "month": 8,
@@ -1251,6 +1765,7 @@
               "description": "Πανηγύρι στο εκκλησάκι του Αγίου Συμεών με υπέροχη θέα προς τις Καμάρες. Πιο ήσυχη ατμόσφαιρα από τα μεγάλα πανηγύρια του Αυγούστου."
             },
             {
+              "id": "taxiarchis-of-vathi",
               "name": "Ταξιάρχης Βαθέος",
               "meta": "5 Σεπτεμβρίου",
               "month": 9,
@@ -1259,6 +1774,7 @@
               "description": "Πανηγύρι στον Ταξιάρχη, το γραφικό εκκλησάκι πάνω στη θάλασσα του Βαθέος."
             },
             {
+              "id": "agios-sozon",
               "name": "Άγιος Σώζων",
               "meta": "6 Σεπτεμβρίου",
               "month": 9,
@@ -1267,6 +1783,7 @@
               "description": "Πανηγύρι στον Άγιο Σώστη, κοντά στα αρχαία μεταλλεία του νησιού."
             },
             {
+              "id": "nativity-of-the-virgin-vrysiani",
               "name": "Γενέσιο Θεοτόκου (Βρυσιανή)",
               "meta": "7 Σεπτεμβρίου",
               "month": 9,
@@ -1275,6 +1792,7 @@
               "description": "Το πανηγύρι της Μονής Βρύσης (Βρυσιανή) στα Εξάμπελα, για το Γενέσιο της Θεοτόκου."
             },
             {
+              "id": "stavros-of-choni",
               "name": "Σταυρού Χώνης",
               "meta": "13 Σεπτεμβρίου",
               "month": 9,
@@ -1283,6 +1801,7 @@
               "description": "Πανηγύρι του Σταυρού στη Χώνη, προς τη Χερρόνησο, την παραμονή της Ύψωσης."
             },
             {
+              "id": "stavros",
               "name": "Σταυρός",
               "meta": "14 Σεπτεμβρίου",
               "month": 9,
@@ -1291,6 +1810,7 @@
               "description": "Τοπικά πανηγύρια σε ξωκλήσια του Σταυρού. Σιγά-σιγά κλείνει το καλοκαίρι."
             },
             {
+              "id": "agios-nikitas",
               "name": "Άγιος Νικήτας",
               "meta": "15 Σεπτεμβρίου",
               "month": 9,
@@ -1311,30 +1831,42 @@
           },
           "items": [
             {
+              "id": "nikolaos-tselementes-cycladic-gastronomy",
               "name": "Φεστιβάλ Κυκλαδικής Γαστρονομίας \"Νικόλαος Τσελεμεντές\"",
               "meta": "Τέλος Σεπτεμβρίου",
               "month": 9,
               "day": 25,
               "endDay": 27,
               "description": "Γαστρονομικό φεστιβάλ προς τιμήν του Σιφνιού μάγειρα Νικόλαου Τσελεμεντέ — του ανθρώπου που έγραψε το πρώτο σύγχρονο ελληνικό βιβλίο μαγειρικής. Σεμινάρια, εργαστήρια και δείπνα από κορυφαίους σεφ.",
-              "tags": ["γαστρονομία", "παράδοση"]
+              "tags": [
+                "γαστρονομία",
+                "παράδοση"
+              ]
             },
             {
+              "id": "radioactive-street-party",
               "name": "Street Party Radioactive",
               "meta": "Καλοκαίρι",
               "month": 7,
               "day": 25,
               "location": "Απολλωνία",
               "description": "Ετήσιο street party του τοπικού ραδιοφωνικού σταθμού Radioactive. Μουσική, drinks, και ο μισός κόσμος του νησιού στο δρόμο.",
-              "tags": ["μουσική", "νεολαία"]
+              "tags": [
+                "μουσική",
+                "νεολαία"
+              ]
             },
             {
+              "id": "mousifando",
               "name": "Μουσιφάντο",
               "meta": "Καλοκαίρι",
               "month": 8,
               "day": 8,
               "description": "Μουσικό φεστιβάλ του Πολιτιστικού Συλλόγου της Σίφνου με τοπικούς και προσκεκλημένους καλλιτέχνες.",
-              "tags": ["μουσική", "συναυλίες"]
+              "tags": [
+                "μουσική",
+                "συναυλίες"
+              ]
             }
           ]
         },
@@ -1344,10 +1876,15 @@
           "intro": "Οι Σιφνιοί ήταν παραδοσιακά γνωστοί ως «Τσουκαλάδες» — μάστορες στον τροχό και μεγάλοι εξαγωγείς πήλινων σκευών. Σήμερα η παράδοση κρατάει γερά σε λειτουργικά εργαστήρια σε όλο το νησί. Αν ψάχνετε για δώρο, ένα πήλινο μαγειρικό σκεύος (τσουκάλι ή γάστρα) είναι το αυθεντικότερο.",
           "items": [
             {
+              "id": "keramika-i-dyskoli",
               "name": "Κεραμικά «Η Δύσκολη»",
               "location": "Χερρόνησος",
               "description": "Ένα από τα πιο παραδοσιακά εργαστήρια του νησιού, σε ένα από τα πιο γραφικά μέρη — δίπλα στη θάλασσα στη Χερρόνησο. Αυθεντικά Σιφνέικα κεραμικά στον τροχό.",
-              "tags": ["εργαστήρι", "παράδοση", "δώρα"]
+              "tags": [
+                "εργαστήρι",
+                "παράδοση",
+                "δώρα"
+              ]
             }
           ]
         },
@@ -1357,17 +1894,25 @@
           "intro": "Λίγα αλλά εξαιρετικά — η Σίφνος είχε σημαντικό ρόλο στην αρχαιότητα, με ασημορυχεία και θησαυρό στους Δελφούς.",
           "items": [
             {
+              "id": "agios-andreas-archaeological-site",
               "name": "Αρχαιολογικός Χώρος Αγίου Ανδρέα",
               "location": "Πάνω από Κατάβαθη",
               "description": "Αρχαία ακρόπολη της Γεωμετρικής περιόδου με θέα όλο το νησί. Σημαντικά ευρήματα και μικρό αρχαιολογικό μουσείο στον χώρο. Από τους πιο όμορφους αρχαιολογικούς χώρους των Κυκλάδων.",
-              "tags": ["αρχαία ιστορία", "θέα"],
+              "tags": [
+                "αρχαία ιστορία",
+                "θέα"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Andreas+Archaeological+Site+Sifnos"
             },
             {
+              "id": "sifnos-folklore-museum",
               "name": "Λαογραφικό Μουσείο Σίφνου",
               "location": "Απολλωνία",
               "description": "Συλλογή με Σιφνέικα παραδοσιακά ρούχα, εργαλεία και αντικείμενα της καθημερινής ζωής. Στην πλατεία της Απολλωνίας.",
-              "tags": ["παράδοση", "λαογραφία"],
+              "tags": [
+                "παράδοση",
+                "λαογραφία"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Folklore+Museum+Apollonia+Sifnos"
             }
           ]
@@ -1378,76 +1923,131 @@
           "intro": "Η Σίφνος έχει 237 εκκλησίες και μοναστήρια — οι περισσότερες αναλογικά στις Κυκλάδες. Ελάχιστες οι πιο σημαντικές:",
           "items": [
             {
+              "id": "panagia-chrysopigi-2",
               "name": "Παναγία Χρυσοπηγή",
               "meta": "Πολιούχος",
               "location": "Χρυσοπηγή",
               "description": "Η πολιούχος του νησιού, χτισμένη σε βραχονησίδα που ενώνεται με τη Σίφνο με ένα μικρό γεφυράκι. Φυλάει τη θαυματουργή εικόνα της Ζωοδόχου Πηγής, που κατά την παράδοση βρέθηκε στη θάλασσα από ψαράδες. Ο βράχος από κάτω είναι σχισμένος στα δύο: ο θρύλος λέει πως, καθώς πειρατές κυνηγούσαν δύο γυναίκες, η Παναγία έσχισε τον βράχο για να τις σώσει. Το μεγαλύτερο πανηγύρι του νησιού γίνεται εδώ της Αναλήψεως (40 μέρες μετά το Πάσχα). Γύρω της βραχάκια για βουτιές.",
-              "tags": ["πολιούχος", "θάλασσα", "πανηγύρι"],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Chrysopigi+Sifnos"
+              "tags": [
+                "πολιούχος",
+                "θάλασσα",
+                "πανηγύρι"
+              ],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Chrysopigi+Sifnos",
+              "image": {
+                "src": "images/places/panagia-chrysopigi-2.jpg",
+                "credit": "Abldecn (CC BY 4.0, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Panagia_Chrysopigi_on_the_Greek_Island_of_Sifnos.jpg"
+              }
             },
             {
+              "id": "vrysi-monastery-vrysiani",
               "name": "Μονή Βρύσης (Βρυσιανή)",
               "meta": "17ος αιώνας",
               "location": "Εξάμπελα",
               "description": "Το μεγαλύτερο μοναστήρι του νησιού, αφιερωμένο στο Γενέσιο της Θεοτόκου. Στεγάζει Μουσείο Εκκλησιαστικής Τέχνης με παλαίτυπα, Ευαγγέλιο του 1796, ιερά σκεύη και εικόνες.",
-              "tags": ["μοναστήρι", "μουσείο", "ιστορία"],
+              "tags": [
+                "μοναστήρι",
+                "μουσείο",
+                "ιστορία"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vrisi+Monastery+Exambela+Sifnos"
             },
             {
+              "id": "seven-martyrs-eptamartyres",
               "name": "Επτά Μάρτυρες",
               "meta": "Πάνω στη θάλασσα",
               "location": "Κάστρο",
               "description": "Το εμβληματικό εκκλησάκι χτισμένο σε βράχο μέσα στη θάλασσα, κάτω από το Κάστρο. Από τα πιο φωτογραφημένα σημεία του νησιού — ιδανικό για ηλιοβασίλεμα και βουτιές από τα γύρω βράχια.",
-              "tags": ["Κάστρο", "θέα", "ηλιοβασίλεμα"],
+              "tags": [
+                "Κάστρο",
+                "θέα",
+                "ηλιοβασίλεμα"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eptamartyres+Kastro+Sifnos"
             },
             {
+              "id": "panagia-poulati",
               "name": "Παναγία Πουλάτη",
               "meta": "1870",
               "location": "Κάτω από τον Αρτεμώνα",
               "description": "Γαλαζόλευκη εκκλησία του 1870 στην ανατολική πλευρά του νησιού, πάνω από τη βραχώδη ακτή της Πουλάτης. Υπέροχη θέα στο Αιγαίο.",
-              "tags": ["γραφικό", "θέα"],
+              "tags": [
+                "γραφικό",
+                "θέα"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Poulati+Sifnos"
             },
             {
+              "id": "agios-symeon-3",
               "name": "Άγιος Συμεών",
               "meta": "Πανηγύρι 1 Σεπτεμβρίου",
               "location": "Πάνω από Καμάρες",
               "description": "Εκκλησάκι σε ύψωμα πάνω από τις Καμάρες, με πανοραμική θέα 360° σε όλες τις γύρω Κυκλάδες. Ιδανικό σημείο για ηλιοβασίλεμα — και από τα πιο εύκολα, αφού το αυτοκίνητο φτάνει σχεδόν ως την πόρτα. Το πανηγύρι του γίνεται την 1η Σεπτεμβρίου.",
-              "tags": ["ηλιοβασίλεμα", "εύκολη πρόσβαση", "θέα", "πανηγύρι"],
+              "tags": [
+                "ηλιοβασίλεμα",
+                "εύκολη πρόσβαση",
+                "θέα",
+                "πανηγύρι"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agios+Symeon+Sifnos"
             },
             {
+              "id": "taxiarchis-of-vathi-2",
               "name": "Ταξιάρχης Βαθέος",
               "meta": "Πάνω στη θάλασσα",
               "location": "Βαθύ",
               "description": "Γραφικό εκκλησάκι χτισμένο πάνω στη θάλασσα, στην άκρη του κλειστού κόλπου του Βαθέος. Με τα ήρεμα, ρηχά νερά γύρω του να το καθρεφτίζουν, είναι από τα πιο φωτογενή σημεία της νότιας Σίφνου.",
-              "tags": ["θάλασσα", "γραφικό", "Βαθύ"],
+              "tags": [
+                "θάλασσα",
+                "γραφικό",
+                "Βαθύ"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taxiarchis+church+Vathi+Sifnos"
             },
             {
+              "id": "panagia-i-konchi-2",
               "name": "Παναγία η Κόγχη",
               "meta": "Πανηγύρι 15 Αυγούστου",
               "location": "Αρτεμώνας",
               "description": "Iconic εκκλησία μέσα στα όμορφα στενάκια του Αρτεμώνα, από τις πιο χαρακτηριστικές του χωριού. Το μεγάλο της πανηγύρι γίνεται τον Δεκαπενταύγουστο.",
-              "tags": ["Αρτεμώνας", "γραφικό", "πανηγύρι"],
+              "tags": [
+                "Αρτεμώνας",
+                "γραφικό",
+                "πανηγύρι"
+              ],
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panagia+Kogchi+Artemonas+Sifnos"
             },
             {
+              "id": "agios-georgios-of-cherronisos",
               "name": "Άγιος Γεώργιος Χερρονήσου",
               "meta": "Ηλιοβασίλεμα",
               "location": "Χερρόνησος",
               "description": "Αν βρεθείτε στη Χερρόνησο για ηλιοβασίλεμα, ανεβείτε στον Άγιο Γεώργιο για θέα προς τη Σέριφο — 15 λεπτά από την πλατεία (ή με αυτοκίνητο ως τα μισά). Δίπλα του στέκει αρχαίος πύργος, από τον οποίο δυστυχώς σώζονται μόνο σκόρπιες πέτρες.",
-              "tags": ["ηλιοβασίλεμα", "θέα", "αρχαίος πύργος"],
+              "tags": [
+                "ηλιοβασίλεμα",
+                "θέα",
+                "αρχαίος πύργος"
+              ],
               "mapsUrl": "https://maps.app.goo.gl/sV7aan9swFz2N2qS9"
             },
             {
+              "id": "profitis-ilias-monastery",
               "name": "Μονή Προφήτη Ηλία",
               "meta": "~680μ υψόμετρο",
               "location": "Ψηλότερη κορυφή",
               "description": "Μοναστήρι στην ψηλότερη κορυφή του νησιού, χτισμένο πάνω σε αρχαία ακρόπολη. Ανηφορική πεζοπορία αλλά με πανοραμική θέα 360° — δείτε και την καρτέλα Δραστηριότητες.",
-              "tags": ["κορυφή", "πεζοπορία", "θέα"],
-              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Profitis+Ilias+Monastery+Sifnos"
+              "tags": [
+                "κορυφή",
+                "πεζοπορία",
+                "θέα"
+              ],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Profitis+Ilias+Monastery+Sifnos",
+              "image": {
+                "src": "images/places/profitis-ilias-monastery.jpg",
+                "credit": "/ Evelin123 at Greek Wikipedia (CC BY-SA 3.0 gr, Wikimedia Commons)",
+                "creditUrl": "https://commons.wikimedia.org/wiki/File:Profitis_Ilias_Sifnos.JPG"
+              }
             }
           ]
         }
