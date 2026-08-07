@@ -820,6 +820,34 @@
               ],
               "note": "Not the tidiest place — but YOLO.",
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cavo+Sunrise+Kastro+Sifnos+Greece"
+            },
+            {
+              "id": "loggia",
+              "name": "Loggia",
+              "tags": [
+                "wine bar",
+                "sunset",
+                "vinyl",
+                "tapas"
+              ],
+              "description": "A wine bar in Kastro, in what used to be a grill house. Over 100 Greek labels — natural, organic and biodynamic, all low-intervention — with about a dozen poured by the glass. Vinyl on the turntable, live music now and then, and tapas to go with it. Just before 7 they set the tables out along the old walls, looking down to the sea and the Seven Martyrs.",
+              "mustTry": [
+                "Wine by the glass",
+                "Tapas"
+              ],
+              "note": "It fills up for sunset and you will want a booking. Otherwise come later, once the sun is down.",
+              "contacts": [
+                {
+                  "name": "Loggia Wine Bar",
+                  "phone": "22840 31965"
+                },
+                {
+                  "name": "@loggia_sifnos",
+                  "note": "Instagram — bookings",
+                  "url": "https://www.instagram.com/loggia_sifnos/"
+                }
+              ],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loggia%20Wine%20Bar%20Kastro%20Sifnos"
             }
           ]
         },

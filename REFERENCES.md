@@ -34,6 +34,10 @@
 | Το Πηλοτεχνείο | https://pilotechnio.com/ · 22840 32124 | Δραστηριότητες → Κεραμική |
 | Ζαχαροπλαστείο Θεοδώρου | (Αρτεμώνας) · 22840 31370 | Φαγητό → Αρτοποιεία & Γλυκά |
 
+| Loggia Wine Bar — Instagram | https://www.instagram.com/loggia_sifnos/ | Κρατήσεις (κάρτα «Loggia», Ποτό/Κάστρο) |
+| wineanorak.com | https://wineanorak.com/2025/10/22/sifnos-the-gastronomic-greek-island-3-lunch-at-omega-3-and-loggia-wine-bar-in-kastro/ | Loggia: στήσιμο τραπεζιών πριν τις 7, ουρές στο ηλιοβασίλεμα (αυτοψία αρθρογράφου) |
+| Greeka — Loggia | https://www.greeka.com/cyclades/sifnos/eat-drink/bars/kastro/loggia/ | Loggia: περιγραφή, θέση |
+
 ## Ιστορικά / βιογραφικά (επιβεβαίωση facts)
 
 | Πηγή | URL | Χρήση |
@@ -138,3 +142,4 @@
 - **IDs**: κάθε νέο item παίρνει σταθερό `id` με `node scripts/assign-ids.mjs`. Τα ids είναι permalinks — μην τα αλλάζεις.
 - **Ταξί**: ο κατάλογος του sifnos.gr ξεκινά από το Νο2 — δεν αναφέρεται Νο1. Αν το ξέρεις, πρόσθεσέ το.
 - **Super markets**: τα links είναι αναζητήσεις Google Maps (αυτοδιορθώνονται), όχι σταθερές συντεταγμένες — το ΑΒ δεν είναι καταχωρημένο στο OpenStreetMap.
+- **Loggia**: το τηλέφωνο 22840 31965 επιβεβαιώθηκε από δύο ανεξάρτητες πηγές· το 211 που δίνει το Greeka είναι μάλλον νούμερο call-tracking. Δεν μπήκε rating — είναι δική σου κρίση.

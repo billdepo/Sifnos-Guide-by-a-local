@@ -820,6 +820,34 @@
               ],
               "note": "Δεν είναι το πιο καθαρό μαγαζί — αλλά YOLO.",
               "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cavo+Sunrise+Kastro+Sifnos+Greece"
+            },
+            {
+              "id": "loggia",
+              "name": "Loggia",
+              "tags": [
+                "wine bar",
+                "ηλιοβασίλεμα",
+                "βινύλιο",
+                "tapas"
+              ],
+              "description": "Wine bar στο Κάστρο, σε μια παλιά ψησταριά που ανακαινίστηκε. Πάνω από 100 ετικέτες ελληνικού κρασιού — φυσικά, βιολογικά και βιοδυναμικά, με χαμηλή παρέμβαση — και καμιά δωδεκαριά από αυτά σερβίρονται σε ποτήρι. Μουσική από βινύλιο, ζωντανά κατά καιρούς, και tapas για συνοδεία. Λίγο πριν τις 7 στήνουν τα τραπέζια πάνω στα τείχη, με θέα στη θάλασσα και στους Επτά Μάρτυρες.",
+              "mustTry": [
+                "Κρασί σε ποτήρι",
+                "Tapas"
+              ],
+              "note": "Την ώρα του ηλιοβασιλέματος γεμίζει και θέλει κράτηση. Αλλιώς πηγαίνετε αργότερα, αφού δύσει ο ήλιος.",
+              "contacts": [
+                {
+                  "name": "Loggia Wine Bar",
+                  "phone": "22840 31965"
+                },
+                {
+                  "name": "@loggia_sifnos",
+                  "note": "Instagram — κρατήσεις",
+                  "url": "https://www.instagram.com/loggia_sifnos/"
+                }
+              ],
+              "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Loggia%20Wine%20Bar%20Kastro%20Sifnos"
             }
           ]
         },
