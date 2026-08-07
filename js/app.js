@@ -134,6 +134,9 @@ function renderMeta(meta) {
   setHTML("hero-title", meta.title);
   setHTML("hero-subtitle", meta.subtitle);
   setHTML("hero-description", meta.description);
+  // Compact mobile nav bar + drawer header show the island name
+  setHTML("nav-title", meta.title);
+  setHTML("nav-drawer-title", meta.title);
 
   if (meta.heroImageUrl) {
     document.querySelector(".hero").style.backgroundImage =
@@ -144,13 +147,26 @@ function renderMeta(meta) {
 }
 
 function renderNav(nav, ui) {
-  const linksHTML = Object.entries(nav)
-    .map(
-      ([id, label]) =>
-        `<a class="nav-link" href="#${id}" role="listitem">${label}</a>`,
-    )
-    .join("");
-  setHTML("nav-links", linksHTML);
+  const entries = Object.entries(nav);
+  setHTML(
+    "nav-links",
+    entries
+      .map(
+        ([id, label]) =>
+          `<a class="nav-link" href="#${id}" role="listitem">${label}</a>`,
+      )
+      .join(""),
+  );
+  // Mobile drawer gets the same links (kept in sync for active-highlighting)
+  setHTML(
+    "nav-drawer-links",
+    entries
+      .map(
+        ([id, label]) =>
+          `<a class="nav-link nav-drawer-link" href="#${id}">${label}</a>`,
+      )
+      .join(""),
+  );
 
   document.querySelectorAll(".lang-toggle").forEach((btn) => {
     btn.textContent = ui.languageToggle;
@@ -802,6 +818,44 @@ function setupSearchPlaceholder() {
   });
 }
 
+// ─── Mobile Nav Drawer ────────────────────────────────────────
+
+function setupNavDrawer() {
+  const overlay = $("nav-drawer");
+  const toggle = $("nav-toggle");
+  const closeBtn = $("nav-drawer-close");
+  if (!overlay || !toggle) return;
+
+  const open = () => {
+    overlay.removeAttribute("hidden");
+    document.body.classList.add("no-scroll");
+    toggle.setAttribute("aria-expanded", "true");
+  };
+  const close = () => {
+    overlay.setAttribute("hidden", "");
+    document.body.classList.remove("no-scroll");
+    toggle.setAttribute("aria-expanded", "false");
+  };
+
+  toggle.addEventListener("click", open);
+  closeBtn?.addEventListener("click", close);
+  overlay.addEventListener("click", (e) => {
+    // Close when tapping the dimmed backdrop, a section link, or a
+    // drawer action (coffee / contact / language)
+    if (
+      e.target === overlay ||
+      e.target.closest(".nav-drawer-link") ||
+      e.target.closest(".nav-drawer-actions a") ||
+      e.target.closest(".lang-toggle")
+    ) {
+      close();
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !overlay.hasAttribute("hidden")) close();
+  });
+}
+
 function setupCalendarClick() {
   document.addEventListener("click", (e) => {
     const cell = e.target.closest(".cal-day--event");
@@ -1105,6 +1159,7 @@ async function init() {
     setupCalendarClick();
     setupCardLinks();
     setupSearchPlaceholder();
+    setupNavDrawer();
     setupLazyEmbeds();
   } catch (err) {
     document.body.innerHTML = `
