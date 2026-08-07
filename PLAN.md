@@ -417,5 +417,11 @@ To add a photo: find the file on commons.wikimedia.org, add
 `"<item-id>": "<exact File name>"` to `PHOTOS` in the script, re-run. Existing
 downloads are skipped, so re-running is cheap.
 
+Photos from anywhere else go in the script's `EXTRA` map instead. **These carry
+no open licence** — credit is not permission, and republishing someone's photo
+without it is the site owner's risk to take. One is in use today (`glyfo.jpg`,
+cycladesmap.gr, watermarked, permission not yet requested). Prefer a Commons
+file or your own photo whenever one exists; see REFERENCES.md.
+
 Wikimedia rejects generic user agents; the script identifies itself with a
 contact URL, which is a requirement of their bot policy rather than a nicety.

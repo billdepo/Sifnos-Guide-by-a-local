@@ -48,6 +48,23 @@ const PHOTOS = {
   "profitis-ilias-monastery": "Profitis Ilias Sifnos.JPG",
 };
 
+/**
+ * Photos from anywhere other than Commons: item id → { url, credit, creditUrl }.
+ *
+ * ⚠️ These carry NO open licence. Everything in PHOTOS above is CC or public
+ * domain and safe to republish; anything here is used at the site owner's own
+ * risk and needs the rights holder's permission. Credit alone is not a licence.
+ * Prefer a Commons file, or the owner's own photo, whenever one exists.
+ */
+const EXTRA = {
+  glyfo: {
+    url: "https://cycladesmap.gr/wp-content/uploads/2024/07/Glyfo-Beach-Sifnos-35.jpg",
+    credit: "cycladesmap.gr",
+    creditUrl: "https://cycladesmap.gr/",
+    // permission: not yet requested
+  },
+};
+
 const API = "https://commons.wikimedia.org/w/api.php";
 // Wikimedia blocks generic agents — their policy wants a contact address.
 const UA = "sifnos-guide/1.0 (https://github.com/billdepo/Sifnos-Guide-by-a-local)";
@@ -166,6 +183,27 @@ for (const id of ids) {
     src: `images/places/${name}`,
     credit: `${info.author} (${info.license}, Wikimedia Commons)`,
     creditUrl: info.page,
+  };
+}
+
+for (const [id, info] of Object.entries(EXTRA)) {
+  const name = `${id}.jpg`;
+  const dest = join(outDir, name);
+  if (!existsSync(dest)) {
+    try {
+      await download(info.url, dest);
+      downloaded++;
+      console.log(`  ↓ ${name} (non-Commons — check permission)`);
+    } catch (err) {
+      console.warn(`  ! ${name}: ${err.message}`);
+      failures.push(id);
+      continue;
+    }
+  }
+  images[id] = {
+    src: `images/places/${name}`,
+    credit: info.credit,
+    creditUrl: info.creditUrl,
   };
 }
 

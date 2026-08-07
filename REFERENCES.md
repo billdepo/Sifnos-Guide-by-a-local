@@ -44,17 +44,25 @@
 | Greek Gastronomy Guide | https://www.greekgastronomyguide.gr/item/zaxaroplasteio-theodorou-sifnos/ | Ζαχαροπλαστείο Θεοδώρου |
 | womantoc / Miss Tasty | womantoc.gr, misstasty.gr | Ζαχαροπλαστείο Θεοδώρου (δευτερεύον) |
 
-## Φωτογραφίες (Wikimedia Commons)
+## Φωτογραφίες
 
-Όλες οι φωτογραφίες είναι CC ή public domain και αποθηκεύονται τοπικά στο `images/places/`.
-Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία στο detail sheet — **μην την αφαιρέσεις**,
-είναι υποχρέωση των αδειών CC BY / CC BY-SA.
+Αποθηκεύονται τοπικά στο `images/places/`. Προσθήκη/ανανέωση:
+`node scripts/fetch-photos.mjs` (δες PLAN.md §10).
 
-Προσθήκη/ανανέωση: `node scripts/fetch-photos.mjs` (δες PLAN.md §10).
+**Wikimedia Commons (17)** — CC ή public domain, ελεύθερα αναδημοσιεύσιμα.
+Η απόδοση εμφανίζεται κάτω από κάθε φωτογραφία στο detail sheet — **μην την
+αφαιρέσεις**, είναι υποχρέωση των αδειών CC BY / CC BY-SA.
+
+⚠️ **Εκτός Commons (1)** — `glyfo.jpg` από το cycladesmap.gr. **Δεν έχει ανοιχτή
+άδεια** και φέρει υδατογράφημα του ιδιοκτήτη. Μπήκε κατόπιν αιτήματος, με
+credit + link, αλλά το credit ΔΕΝ είναι άδεια. Εκκρεμεί άδεια χρήσης από τον
+δικαιούχο — αν δεν δοθεί, αντικατέστησέ τη με δική σου φωτογραφία.
+Οι μη-Commons πηγές δηλώνονται στο `EXTRA` του `scripts/fetch-photos.mjs`.
 
 | Σημείο | Αρχείο | Απόδοση | Πηγή |
 |--------|--------|---------|------|
 | Καμάρες | `kamares.jpg` | Golem Unity (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Beach_of_Kamares,_Sifnos_at_Noon.jpg |
+| Γλυφό (ή Βλυχό) | `glyfo.jpg` | cycladesmap.gr | https://cycladesmap.gr/ |
 | Φασολού | `fasolou.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Fasolou_Vue_Chryssopigi_-_panoramio.jpg |
 | Πλατύς Γιαλός | `platy-gialos.jpg` | rene boulay (CC BY-SA 3.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Platis_Gialos_09092014_-_panoramio.jpg |
 | Βαθύ | `vathu.jpg` | Zde (CC BY-SA 4.0, Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Beach_in_Vathy_on_Sifnos,_153617.jpg |
@@ -88,5 +96,5 @@
 - **Δρομολόγια ΚΤΕΛ** (`images/sifnos-bus-schedule.jpg`): τοπική κόπια — αντικατάστησέ τη κάθε σεζόν από το sifnosbus.gr.
 - **Εκδηλώσεις**: το embed του e-sifnos ενημερώνεται μόνο του· τα «σταθερά ετήσια» στο καλεντάρι θέλουν χειροκίνητη ανανέωση αν αλλάξουν.
 - **Πανηγύρια**: ημερομηνίες βασισμένες στο sifnaiko-fos.gr (εξαίρεση: Άγιος Συμεών 31/8 κατ' απαίτηση — η πηγή αναφέρει 3 Φεβρουαρίου).
-- **Φωτογραφίες**: πριν προσθέσεις νέες τρέξε `npm i sharp` — αλλιώς μπαίνουν ασυμπίεστες (~800KB η κάθε μία).
+- **Φωτογραφίες**: προτίμησε Commons ή δικές σου· πριν προσθέσεις νέες τρέξε `npm i sharp` — αλλιώς μπαίνουν ασυμπίεστες (~800KB η κάθε μία).
 - **IDs**: κάθε νέο item παίρνει σταθερό `id` με `node scripts/assign-ids.mjs`. Τα ids είναι permalinks — μην τα αλλάζεις.

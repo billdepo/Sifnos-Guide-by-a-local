@@ -194,7 +194,12 @@
               "mapsUrl": "https://maps.app.goo.gl/fDbX8tkzj9UzamS46",
               "shelteredFrom": [
                 "N"
-              ]
+              ],
+              "image": {
+                "src": "images/places/glyfo.jpg",
+                "credit": "cycladesmap.gr",
+                "creditUrl": "https://cycladesmap.gr/"
+              }
             },
             {
               "id": "fasolou",
