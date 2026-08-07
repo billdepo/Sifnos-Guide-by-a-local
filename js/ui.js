@@ -131,8 +131,9 @@ function metaLine(item, ui) {
 }
 
 /**
- * A list row. Rating drives weight: three stars get a photo and a description
- * excerpt, a zero-star entry collapses to a single muted line.
+ * A list row. Every row has the same shape so a list scans cleanly; rating
+ * shows through colour only — gold stars and a gold edge for a three-star
+ * entry, a muted dashed line for a zero-star one.
  */
 export function row(entry, ui, icon) {
   const { item, viewId, groupId } = entry;
@@ -148,16 +149,11 @@ export function row(entry, ui, icon) {
     item.rating === undefined || item.rating === null
       ? ""
       : `<span class="row-stars">${coloredStars(item.rating, "stars--sm")}</span>`;
-  const desc = feature && item.description
-    ? `<p class="row-desc">${stripTags(item.description)}</p>`
-    : "";
-
   return `<a class="${cls}" href="#/${viewId}/${groupId}/${item.id}">
       ${feature || hasPhoto ? `<span class="row-media">${media(item, icon)}</span>` : ""}
       <span class="row-main">
         <span class="row-title"><span class="row-name">${item.name}${aka}</span>${stars}</span>
         ${metaLine(item, ui)}
-        ${desc}
       </span>
       <span class="row-chevron" aria-hidden="true">›</span>
     </a>`;
@@ -169,10 +165,6 @@ export function note(item) {
       <div class="note-head"><h3 class="note-name">${item.name}</h3>${tags(item.tags)}</div>
       <p class="note-desc">${item.description}</p>
     </div>`;
-}
-
-function stripTags(html) {
-  return String(html).replace(/<[^>]+>/g, "");
 }
 
 /* ─── Detail (sheet body) ────────────────────────────────────── */
