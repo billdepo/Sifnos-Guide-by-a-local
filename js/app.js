@@ -27,6 +27,8 @@ function renderChrome() {
   el("appbar-back").setAttribute("aria-label", u.back);
   el("appbar-back").innerHTML =
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>';
+  el("appbar-home").setAttribute("aria-label", u.home);
+  el("appbar-home").setAttribute("title", u.home);
   el("appbar-search").setAttribute("aria-label", u.searchTitle);
   el("lang-toggle").textContent = u.languageToggle;
   el("lang-toggle").setAttribute("aria-label", "Switch language");
@@ -70,6 +72,9 @@ function updateChromeState(route) {
   const isSearch = route.view === "search";
 
   el("appbar-back").hidden = isHome;
+  // Back only goes one step; this is the way out from anywhere. It matters
+  // most on desktop, where the brand is hidden and there is no tab bar.
+  el("appbar-home").hidden = isHome;
   el("appbar-brand").hidden = !isHome;
   el("appbar-search").hidden = isSearch;
 

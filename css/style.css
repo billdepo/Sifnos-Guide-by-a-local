@@ -1138,17 +1138,33 @@ input:focus-visible {
   padding: 0 1.25rem;
 }
 .detail-media {
-  display: none;
-}
-.detail-media.has-photo {
-  display: block;
   margin: 0 -1.25rem 1rem;
+}
+
+/* Show the whole photo. Cropping to a fixed band cut the subject out of the
+   frame — the beach at Seralia was simply gone — so the image is contained
+   and a blurred copy of itself fills whatever the letterbox leaves. */
+.media-frame {
   position: relative;
+  aspect-ratio: 16 / 10;
+  max-height: 46dvh;
+  overflow: hidden;
+  background: var(--c-surface-2);
+}
+.media-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(22px) saturate(1.3);
+  transform: scale(1.2);
 }
 .detail-media .media-img {
+  position: relative;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 .detail-media .media-credit {
   display: block;
@@ -1156,9 +1172,6 @@ input:focus-visible {
   font-size: 0.68rem;
   color: var(--c-muted);
   background: var(--c-bg);
-}
-.detail-media .media-icon {
-  display: none;
 }
 
 .detail-head {
@@ -1725,6 +1738,26 @@ input:focus-visible {
 }
 
 /* ═══ SMALL PHONES ══════════════════════════════════════════════ */
+/* Narrow phones: the app bar now carries back + home + search + language, so
+   claw back enough room for the longest section name to fit uncut. */
+@media (max-width: 400px) {
+  .appbar-inner {
+    gap: 0;
+    padding-left: max(0.25rem, env(safe-area-inset-left));
+    padding-right: max(0.25rem, env(safe-area-inset-right));
+  }
+  .appbar-btn {
+    width: 40px;
+  }
+  .lang-toggle {
+    min-width: 40px;
+    padding: 0 0.5rem;
+  }
+  .appbar-title {
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 360px) {
   .view-head,
   .view-body,
@@ -1762,9 +1795,6 @@ input:focus-visible {
   }
   .tiles {
     grid-template-columns: repeat(4, 1fr);
-  }
-  .detail-media .media-img {
-    height: 260px;
   }
 }
 

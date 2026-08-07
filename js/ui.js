@@ -215,7 +215,16 @@ export function detail(entry, icon) {
     .join("");
 
   return `<article class="detail">
-      <div class="detail-media${hasPhoto ? " has-photo" : ""}">${media(item, icon)}${mediaCredit(item)}</div>
+      ${
+        hasPhoto
+          ? `<div class="detail-media">
+        <div class="media-frame">
+          <img class="media-bg" src="${item.image.src}" alt="" aria-hidden="true" />
+          <img class="media-img" src="${item.image.src}" alt="${item.name || ""}" />
+        </div>${mediaCredit(item)}
+      </div>`
+          : ""
+      }
       <header class="detail-head">
         <h2 class="detail-title" id="sheet-title">${item.name}${
           item.aka ? ` <span class="row-aka">(${item.aka})</span>` : ""
