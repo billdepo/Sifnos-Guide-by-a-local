@@ -96,9 +96,9 @@
     "photoCredit": "Φωτογραφία",
     "exploreLabel": "Εξερεύνησε",
     "todayLabel": "Σήμερα στη Σίφνο",
-    "todayEventLabel": "Πανηγύρι σήμερα",
-    "nextEventLabel": "Επόμενο πανηγύρι",
-    "noEventLabel": "Δεν έχει πανηγύρι στις επόμενες μέρες",
+    "todayEventLabel": "Εκδήλωση σήμερα",
+    "nextEventLabel": "Επόμενη εκδήλωση",
+    "noEventLabel": "Δεν έχει εκδήλωση στις επόμενες μέρες",
     "seeAll": "Δες τα όλα",
     "collections": {
       "must": {

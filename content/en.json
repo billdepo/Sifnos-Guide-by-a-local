@@ -96,9 +96,9 @@
     "photoCredit": "Photo",
     "exploreLabel": "Explore",
     "todayLabel": "Today on Sifnos",
-    "todayEventLabel": "Festival today",
-    "nextEventLabel": "Next festival",
-    "noEventLabel": "No festival in the next few days",
+    "todayEventLabel": "Event today",
+    "nextEventLabel": "Next event",
+    "noEventLabel": "No event in the next few days",
     "seeAll": "See all",
     "collections": {
       "must": {

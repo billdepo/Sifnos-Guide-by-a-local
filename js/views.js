@@ -155,7 +155,9 @@ function eventStrip() {
   const u = state.ui;
   const label = next.isToday ? u.todayEventLabel : u.nextEventLabel;
   const months = u.calendar.monthsShort;
-  return `<a class="event-strip${next.isToday ? " is-today" : ""}" href="#/culture/panigyria/${next.item.id}">
+  // The next dated thing can be a panigyri or a one-off event, so link to
+  // wherever it actually lives rather than assuming the panigyria tab.
+  return `<a class="event-strip${next.isToday ? " is-today" : ""}" href="#/${next.viewId}/${next.groupId}/${next.item.id}">
       <span class="event-date">
         <span class="event-day">${next.item.day}</span>
         <span class="event-month">${months[next.item.month - 1]}</span>
